@@ -169,7 +169,7 @@ body{
   margin: 0;
   margin-right: 400px;
   padding: 0;
-  background-color: #2479D9;
+  background-color: #137531;
   padding: 2.4px 10px;
   border: none;
 
@@ -182,11 +182,11 @@ body{
   transition-duration: 0.25s;
 }
 .sub-header-div-2-btn:hover{
-  background-color: #65a1ec;
+  background-color: #1b7a37;
   cursor: pointer;
 }
 .sub-header-div-2-btn:active{
-  background-color: #8fb8eb;
+  background-color: #1a6831;
   box-shadow: inset 0px 1px 1px rgba(1, 1, 1, 40%);
 }
 
