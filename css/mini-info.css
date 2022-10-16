@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.mini-info{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.stanga{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: center;
+
+  width: 950px;
+  height: 500px;
+
+  flex: 7;
+}
+.stanga img{
+  position: absolute;
+
+  left: 220px;
+  top: 160px;
+
+  width: 450px;
+
+  z-index: 5;
+}
+.stanga p{
+  position: absolute;
+  top: 240px;
+  left: 210px;
+
+  z-index: 6;
+
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  color: #fff;
+}
+
+.dreapta{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  flex: 1;
+}
+.dreapta-img{
+  width: 100%;
+  height: 100%;
+}
+.dreapta-info{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+  padding-left: 200px;
+}
+.dreapta-info-imagini{
+  position: relative;
+  display: flex;
+  width: 500px;
+  margin-top: 160px;
+
+  padding-left: 45px;
+
+  border: none;
+  border-radius: 15px;
+
+  background-color: rgba(1, 1, 1, 60%);
+  align-items: center;
+  flex-direction: row;
+  align-content: space-around;
+}
+.d-icon-1{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 58px;
+}
+.d-icon-2{
+  margin-bottom: 10px;
+  width: 58px;
+}
+.d-icon-3{
+  width: 58px;
+
+  margin-bottom: 35px;
+}
+.dreapta-info-text{
+  display: flex;
+  padding-top: 50px;
+
+
+  text-align: left;
+
+  flex-direction: column;
+}
+.dreapta-info-text p{
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+
+  margin-left: 15px;
+}
+.d-para-1{
+  position: absolute;
+
+  top: 40px;
+  margin-bottom: 0px;
+}
+.d-para-2{
+  position: absolute;
+
+  top: 90px;
+}
+.d-para-3{
+  position: absolute;
+
+  top: 140px;
+}
+
+
+
+
+
