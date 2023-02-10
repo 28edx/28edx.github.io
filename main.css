@@ -160,7 +160,7 @@
     text-align: center;
     /* gap: 5px; */
     width: 150px;
-    height: 100px;
+    height: 150px;
     background-color: #1D1C27;
     padding: 15px 0;
     border-style: none;
@@ -317,26 +317,28 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    /* gap: 5px; */
     width: 120px;
     height: 120px;
     background-color: #1D1C27;
-    padding: 0 0;
+    padding: 0px 0px;
     border-style: none;
     border-radius: 15px;
-    justify-content: center;
     align-items: center;
   }
   .caseta h1{
     font-size: 12px;
+    width: auto;
+    height: auto;
   }
   .caseta p{
     font-size: 8px;
   }
   .caseta-img{
+    margin-top: 1vh;
     width: 35px;
   }
   .caseta-img-dolar{
+    margin-top: 1vh;
     width: 20px;
   }
   #caseta-dolar{
