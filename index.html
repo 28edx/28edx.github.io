@@ -1,127 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>mihneaconstruct.com</title>
+  <title>MihneaConstruct - Meserie pe felie</title>
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/mini-info.css">
-  </head>
-  <body>
-    <div class="headers">
-      <div class="header">
-        <button class="mihnea-logo-btn">
-          <img src="images/mihnea-logo.png">
-        </button>
-        <!-- SEARCH
-          SEARCH BAR - NU AM FOLOSINTA PENTRU EL PENTRU MOMENT
-          drq stie de ce l-am si bagat prima oara
-          ce cauti? daca deja ai produsele in fata
+  <link rel="icon" href="img/site-logo.png">
+
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="center.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
   
-          e ca si cum decizi ca cauti pe google maps casa ta cand deja esti in ea, n-are sens
+</head>
+<body>
+  <header>
+    <nav class="upper-navbar">
+        <img src="img/header/logo-trsprnt-alb.png" class="mc-logo-1">
+        <a href="contact/" target="_blank" class="contact">
+          Contact 
+          <img src="img/header/contact.png" class="contact-img">
+        </a>
+    </nav>
+    <nav class="navbar">
+        <div class="articole">
+          <ul>
+            <a href="articole/" target="_blank" class="articole-a">
+              Rasfoieste Articole
+              <img class="articole-img" src="img/header/book-open.png">
+            </a>
+          </ul>
+        </div>
+        <ul><a href="informatii/" target="_blank">Informatii</a></ul>
+    </nav>
+  </header>
+
+  <div class="body">
+    <div class="img-container">
+      <div class="infotaiment">
+        <div>
+          <p class="main-h1">Gata să-ți faci curtea de vis?</p>
+        </div>
+        <div>
+          <p>Sau să-ți schimbi felul cum arată ceva la casă?</p>
+        </div>
+        <div>
+          <p>Sau pur și simplu un adaos curții tale.</p>
+        </div>
+        <a href="articole/" target="_blank" class="buton-articole">
+          <p class="articole-txt">Răsfoiește Articole</p>
+        </a>
+      </div>
+      <img src="img/body/body-wallpaper.png" class="body-img">
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="actiuni-rapide">
+      <p>Acțiuni Rapide</p>
+      <div class="butoane">
+        <a href="articole/casa/" class="butoane-a">
+          <img src="img/main/articole-casa.png" id="casa-img">
+          Aricole Casă
+        </a>
+        <a href="articole/curte/" class="butoane-a">
+          <img src="img/main/articole-curte.png">
+          Articole Curte
+        </a>
+        <a href="informatii/" class="butoane-a">
+          <img src="img/main/ar-informatii.png">
+          Informații
+        </a>
+        <a href="contact/" class="butoane-a" id="buton-contact">
+          <img src="img/main/ar-contact.png">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <div class="intrebari">
+      <p class="intrb-p">De ce de la noi?</p>
+      <div class="casete">
+        <div class="caseta">
+          <img src="img/casete/cs-livrare.png" class="caseta-img">
+          <h1>Transport rapid disponibil în toată țara</h1>
+          <p>Dispunem de livrarea articolelor, rapid, în toată țara</p>
+        </div>
+        <div class="caseta">
+          <img src="img/casete/cs-casca.png" class="caseta-img">
+          <h1>Oferim montaje contra-cost</h1>
+          <p>Dispunem de muncitori care vă poate oferii montarea articolelelor cumpărate contra-cost</p>
+        </div>
+        <div class="caseta">
+          <img src="img/casete/cs-casa.png" class="caseta-img">
+          <h1>Oferim articole variate</h1>
+          <p>Oferim o gamă variată de articole legate de casă, curte, decorațiuni ș.a.m.d</p>
+        </div>
+        <div class="caseta" id="caseta-dolar">
+          <img src="img/casete/cs-dolar.png" class="caseta-img-dolar">
+          <h1>Preț raport calitate</h1>
+          <p>Articolele pe care le dispunem, au prețul în raport cu calitatea pe care o oferim</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
-          <div class="search">
-          <div class="search-bar">
-            <input type="text" placeholder="Cauta....">
-          </div>
-          <button>
-            <img src="images/Icon feather-search.png" class="search-icon">
-          </button>
-        </div>
-        -->
-        <div class="contact">
-          <button>
-            Contact
-            <img src="images/Icon awesome-phone.png">
-          </button>
-        </div>
-      </div>
-      
-      <div class="sub-header">
-        <div class="sub-header-div-1">
-          <div class="categorii-produse">
-            <button class="sub-header-button">
-                <div class="icons">
-                  <img src="images/Rectangle 6.png" class="icon-1">
-                  <img src="images/Rectangle 6.png" class="icon-2">
-                  <img src="images/Rectangle 6.png" class="icon-2">
-                </div>
-                <div class="text">
-                  Categorii Produse
-                </div>
-            </button>
-          </div>
-          <div class="sub-header-text">
-            <button class="sub-header-text-btn">
-                <p>Promotii</p>
-            </button>
-            <button class="sub-header-text-btn-2">
-              <p>Livrare</p>
-            </button>
-          </div>
-        </div>
-        <div class="sub-header-div-2">
-          <button class="sub-header-div-2-btn">
-            Informatii
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="home">
-      <div class="fundal">
-        <img src="images/4.png" class="imagine-fundal">
-      </div>
-      <div class="informatii">
-        <div class="informatii-text">
-          <p class="h1">
-            Vrei sa iti faci curtea de vis?
-          </p>
-          <p class="para1">
-            Poate o fantana?
-          </p>
-          <p class="para2">
-            Sau un gazon nou?
-          </p>
-        </div>
-        <button class="informatii-btn">
-          Aflati mai multe
-        </button>
-      </div>
-    </div>
-
-    <div class="mini-info">
-      <div class="stanga">
-        <img src="images/mihnea-logo-alb.png">
-        <p>De ce de la noi?</p>
-      </div>
-      <div class="dreapta">
-        <div class="dreapta-img">
-          <div class="dreapta-info">
-            <div class="dreapta-info-imagini">
-              <div style="
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                ">
-                <img src="images/Icon awesome-hard-hat.png" class="d-icon-1">
-                <img src="images/Icon awesome-truck.png" class="d-icon-2">
-                <img src="images/Path 3.png" class="d-icon-3">
-              </div>
-              <div class="dreapta-info-text">
-                <p class="d-para-1">Oferim transport in toata tara</p>
-                <p class="d-para-2">Oferim montaje contracost</p>
-                <p class="d-para-3">Oferim orice articol in privire la <br> casa si gradina</p>
-              </div>
-            </div>
-          </div>
-          <img src="images/13.png" class="fundal-2">
-        </div>
-      </div>
-    </div>
-  </body>
+  <footer class="bottom">
+    <img src="img/header/logo-trsprnt-alb.png">
+    <h1>Copyright &#169; 2022-2023 | MIHNEA CONSTRUCT S.R.L</h1>
+    <p>Website by <a href="https://28edx.github.io">28edx</a></p>
+  </footer>
+</body>
 </html>
