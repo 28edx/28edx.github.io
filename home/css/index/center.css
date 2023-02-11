@@ -61,6 +61,11 @@ p{
   margin-left: 12vh;
 
   border-radius: 5px;
+
+  transition: all 0.1s;
+}
+.buton-articole:hover{
+  background-color: #2fb65a;
 }
 
 @media all and (max-width: 1200px) {

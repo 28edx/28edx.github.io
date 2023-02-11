@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-h1{
+  font-size: 23px;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.caseta{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: relative;
+  margin-top: 2vh;
+}
+.caseta h2{
+  position: absolute;
+  bottom: 5px;
+
+  font-size: 20px;
+
+  z-index: 5;
+}
+.caseta img{
+  position: relative;
+}
+
+.gradient{
+  position: absolute;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  width: 183px;
+  height: 183px;
+
+  z-index: 1;
+
+  border-style: none;
+  border-radius: 4px;
+}
+
+
+
+.casete{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vh;
+
+  margin-top: 2vh;
+}
+.casete a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.casete h2{
+  position: absolute;
+  bottom: 5px;
+
+  font-size: 20px;
+
+  z-index: 5;
+}
+.gradient-2{
+  position: absolute;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  width: 183px;
+  height: 184px;
+
+  z-index: 1;
+
+  border-style: none;
+  border-radius: 4px;
+}
+
+
+/* RESPONSIVE MEDIAS
+-------------------------------------------
+1: <450px - iPhone XR,11,SE sau modele cu ecran mai mic de 450px dar mai mare de 400px
+2: <400px - Galaxy Fold
+-------------------------------------------
+*/
+@media all and (max-width: 550px)
+{
+  .casete{
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+  }
+}
+
+@media all and (max-width: 450px)
+{
+  .main-h1{
+    font-size: 18px;
+  }
+  .caseta h2{
+    font-size: 15px;
+  }
+  .caseta img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .gradient{
+    width: 120px;
+    height: 120px;
+    border-style: none;
+    border-radius: 3px;
+  }
+  
+  .casete{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1vh;
+  }
+  .casete h2{
+    font-size: 15px;
+  }
+  .casete img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .gradient-2{
+    width: 120px;
+    height: 120px;
+    border-radius: 3px;
+  }
+  
+}
+
+@media all and (max-width: 400px)
+{
+  .main-h1{
+    font-size: 18px;
+  }
+  .caseta h2{
+    font-size: 15px;
+  }
+  .caseta img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .gradient{
+    width: 120px;
+    height: 120px;
+    border-style: none;
+    border-radius: 3px;
+  }
+  
+  .casete{
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+  }
+  .casete h2{
+    font-size: 15px;
+  }
+  .casete img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .gradient-2{
+    width: 120px;
+    height: 120px;
+    border-radius: 3px;
+  }
+  
+}
+
+@media all and (max-width: 250px)
+{
+  .casete{
+    grid-template-columns: 1fr;
+    gap: 1vh;
+  }
+}
+
