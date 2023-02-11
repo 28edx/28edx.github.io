@@ -1,0 +1,269 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.articol-body{
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 5vh;
+
+  gap: 35vh;
+}
+.articol-body a{
+  display: flex;
+  flex-direction: row;
+}
+
+#inapoi{
+  margin-left: 5vh;
+
+  padding: 5px 10px;
+  background-color: rgb(35, 157, 71);
+}
+#inapoi-h2{
+  display: flex;
+  align-items: center;
+
+  padding: 5px 10px;
+  background-color: rgb(19, 117, 49);
+
+  font-size: 20px;
+  font-weight: normal;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.articol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articol-descriere{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.articol-descriere h3{
+  margin-left: 5vh;
+  width: 80vh;
+  font-weight: normal;
+}
+#articol-h2{
+  font-size: 15px;
+  font-weight: normal;
+}
+#articol-h1{
+  font-size: 25px;
+  text-align: center;
+}
+
+#contact-a{
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin-top: 8vh;
+}
+#contact{
+  padding: 5px 10px;
+  background-color: rgb(35, 157, 71);
+}
+#contact-h2{
+  padding: 5px 10px;
+  background-color: rgb(19, 117, 49);
+
+  font-size: 18px;
+  font-weight: normal;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+@media all and (max-width: 1450px)
+{
+  .articol-body{
+    gap: 35vh;
+  }
+
+  .articol-descriere{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .articol-descriere h3{
+    margin-left: 5vh;
+    width: 50vh;
+    font-size: 13px;
+    font-weight: normal;
+  }
+}
+
+@media all and (max-width: 1250px)
+{
+  .articol-body{
+    gap: 5vh;
+  }
+
+  .articol-descriere{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .articol-descriere h3{
+    margin-left: 5vh;
+    width: 50vh;
+    font-size: 15px;
+  }
+}
+
+
+@media all and (max-width: 770px)
+{
+  #inapoi{
+    margin-left: 2vh;
+  
+    padding: 3px 6px;
+    background-color: rgb(35, 157, 71);
+
+    width: 15px;
+    height: 25px;
+    object-fit: cover;
+  }
+  #inapoi-h2{
+    display: flex;
+    align-items: center;
+
+    padding: 3px 6px;
+    background-color: rgb(19, 117, 49);
+  
+    font-size: 14px;
+    font-weight: normal;
+  
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  #contact{
+    padding: 3px 6px;
+    background-color: rgb(35, 157, 71);
+
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+  }
+  #contact-h2{
+    display: flex;
+    align-items: center;
+
+    padding: 3px 6px;
+    background-color: rgb(19, 117, 49);
+  
+    font-size: 14px;
+    font-weight: normal;
+  
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .articol-body{
+    gap: 1vh;
+  }
+
+  .articol-descriere{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .articol-descriere h3{
+    margin-left: 5vh;
+    width: 32vh;
+    font-size: 13px;
+    font-weight: normal;
+  }
+}
+
+@media all and (max-width: 530px)
+{
+  .articol-body{
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .articol{
+    margin-top: 2vh;
+  }
+
+  .articol-descriere{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .articol-descriere img{
+    width: 130px;
+    height: 230px;
+    object-fit: cover;
+  }
+  .articol-descriere h3{
+    margin-left: 1vh;
+  }
+
+  #contact-a{
+    margin-top: 2vh;
+  }
+}
+
+@media all and (max-width: 430px)
+{
+  .articol-descriere{
+    flex-direction: column;
+  }
+  .articol-descriere img{
+    width: 50%;
+    height: 25vh;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  .articol-descriere h3{
+    margin-left: 0;
+    width: 40vh;
+    object-fit: cover;
+    font-weight: normal;
+  }
+}
+
+@media all and (max-width: 320px)
+{
+  .articol-descriere h3{
+    margin-left: 0;
+    width: 30vh;
+    object-fit: cover;
+    font-weight: normal;
+  }
+}
+
+@media all and (max-width: 270px)
+{
+  .articol-descriere img{
+    width: 20vh;
+    height: 25vh;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .articol-descriere h3{
+    margin-left: 0;
+    width: 25vh;
+    object-fit: cover;
+    font-weight: normal;
+  }
+
+  #contact-a{
+    margin-bottom: 2vh;
+  }
+}
