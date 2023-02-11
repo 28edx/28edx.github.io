@@ -102,12 +102,7 @@
 }
 
 @media all and (max-width: 1200px) {
-  .intrebari{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+
   .intrb-p{
     font-weight: bold;
     font-size: 25px;
@@ -120,24 +115,10 @@
     margin-bottom: 2vh;
   }
   .caseta{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    /* gap: 5px; */
     align-items: center;
     width: 250px;
     height: 163px;
-    background-color: #1D1C27;
     padding: 15px 0;
-    border-style: none;
-    border-radius: 15px;
-  }
-  .caseta h1{
-    font-size: 18px;
-  }
-  .caseta p{
-    font-size: 14px;
   }
 }
 
@@ -160,17 +141,8 @@
     margin-bottom: 2vh;
   }
   .caseta{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    /* gap: 5px; */
     width: 150px;
     height: 150px;
-    background-color: #1D1C27;
-    padding: 15px 0;
-    border-style: none;
-    border-radius: 15px;
     align-items: center;
     align-content: center;
   }
