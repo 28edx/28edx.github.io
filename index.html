@@ -1,120 +1,167 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MihneaConstruct - Meserie pe felie</title>
+  <title>Hanul din Meri</title>
 
-  <link rel="icon" href="home/img/site-logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/informatii.css">
+  <link rel="stylesheet" href="css/galerie.css">
+  <link rel="stylesheet" href="css/locatie.css">
+  <link rel="stylesheet" href="css/footer.css">
 
-  <link rel="stylesheet" href="home/css/index/header.css">
-  <link rel="stylesheet" href="home/css/index/center.css">
-  <link rel="stylesheet" href="home/css/index/main.css">
-  <link rel="stylesheet" href="home/css/index/footer.css">
-  
+  <script src="js/script.js"></script>
+  <script src="js/hamburger.js"></script>
 </head>
+
 <body>
-  <header>
-    <nav class="upper-navbar">
-      <a href="/">
-        <img src="home/img/header/logo-trsprnt-alb.png" class="mc-logo-1">
-      </a>
-      <a href="contact/" class="contact">
-        Contact 
-        <img src="home/img/header/contact.png" class="contact-img">
-      </a>
-    </nav>
-    <nav class="navbar">
-        <div class="articole">
-          <ul>
-            <a href="articole/" class="articole-a">
-              Rasfoieste Articole
-              <img class="articole-img" src="home/img/header/book-open.png">
-            </a>
-          </ul>
-        </div>
-        <ul class="informatii-ul">
-          <a href="informatii/">Informatii</a>
-        </ul>
-    </nav>
-  </header>
+  <main>
+    <!-- BACKGROUND IMAGE -->
+    <div class="parallax">
+      <div class="parallax-image"></div>
+    </div>
 
-  <div class="body">
-    <div class="img-container">
-      <div class="infotaiment">
-        <div>
-          <p class="main-h1">Gata să-ți faci curtea de vis?</p>
-        </div>
-        <div>
-          <p>Sau să-ți schimbi felul cum arată ceva la casă?</p>
-        </div>
-        <div>
-          <p>Sau pur și simplu un adaos curții tale.</p>
-        </div>
-        <a href="articole/" class="buton-articole">
-          <p class="articole-txt">Răsfoiește Articole</p>
+    <div class="hamburger-menu">
+      <button id="hamburger-button" onclick="myFunction()">
+        <img src="img/ciocolata.png" alt="Menu">
+      </button>
+
+      <div id="hamburger-wrapper">
+        <button id="close-menu" onclick="closeMenu()">X</button>
+        <a href="">Acasă</a>
+        <a href="">Galerie</a>
+        <a href="">Locație</a>
+        <a href="">Rezervări</a>
+        <a href="">Contact</a>
+      </div>
+    </div>
+
+    <span>
+      <img src="img/logo-alb.png" alt="Logo Culoare Alba">
+      <h2>Bine ați venit la Pensiunea Turistică - Hanul din Meri!</h2>
+    </span>
+
+    <!-- NAVBAR -->
+    <nav>
+      <div>
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo" id="navbar-logo">
         </a>
       </div>
-      <img src="home/img/body/body-wallpaper.png" class="body-img">
+
+      <div class="navbar-articles">
+        <a href="">Acasă</a>
+        <a href="">Galerie</a>
+        <a href="">Locație</a>
+        <a href="">Rezervări</a>
+        <a href="" id="navbar-articles-contact">Contact</a>
+      </div>
+    </nav>
+  </main>
+
+  <div class="informatii">
+    <img src="img/atentie.png" alt="Informatie">
+    <h3>
+      Fiind situată în nordul județului Dâmbovița, pensiunea „Hanul din Meri” este așezată pe malul stând al Ialomiței,
+      într-o zonă deluroasă - liniștită - înconjurată de o frumoasă livadă de meri oferind un peisaj pitoresc - unde
+      gazdele
+      ospitaliere creează o atmosferă primitoare și caldă, special pentru dumneavoastră.
+      Pensiunea „Hanul din Meri„ oferă cazare în stilul tradițional - unde vă puteți simții ca în trecut - îmbinat cu
+      modernul.
+    </h3>
+  </div>
+
+  <div class="galerie">
+    <h3>Îmbinăm tradiționalul - cu modernul.</h3>
+    <div class="wrapper">
+      <img src="img/1.png" alt="Imagine">
+      <img src="img/2.png" alt="Imagine">
+      <img src="img/3.png" alt="Imagine">
+      <img src="img/4.png" alt="Imagine">
+      <img src="img/5.png" alt="Imagine">
+      <img src="img/6.png" alt="Imagine">
+      <img src="img/7.png" alt="Imagine">
+      <img src="img/8.png" alt="Imagine">
     </div>
   </div>
 
-  <div class="main">
-    <div class="actiuni-rapide">
-      <p>Acțiuni Rapide</p>
-      <div class="butoane">
-        <a href="articole/casa/" class="butoane-a">
-          <img src="home/img/main/articole-casa.png" id="casa-img">
-          Articole Casă
-        </a>
-        <a href="articole/curte/" class="butoane-a">
-          <img src="home/img/main/articole-curte.png">
-          Articole Curte
-        </a>
-        <a href="informatii/" class="butoane-a">
-          <img src="home/img/main/ar-informatii.png">
-          Informații
-        </a>
-        <a href="contact/" class="butoane-a" id="buton-contact">
-          <img src="home/img/main/ar-contact.png">
-          Contact
-        </a>
-      </div>
+  <div class="locatie">
+    <div class="locatie-wrapper-1">
+      <img src="img/locatie.png" alt="Locatie">
+      <h3>Unde ne aflăm?</h3>
     </div>
 
-    <div class="intrebari">
-      <p class="intrb-p">De ce de la noi?</p>
-      <div class="casete">
-        <div class="caseta" id="caseta">
-          <img src="home/img/casete/cs-livrare.png" class="caseta-img">
-          <h1>Transport rapid disponibil în toată țara</h1>
-          <p>Dispunem de livrarea articolelor, rapid, în toată țara</p>
-        </div>
-        <div class="caseta">
-          <img src="home/img/casete/cs-casca.png" class="caseta-img" id="casca">
-          <h1>Oferim montaje contra-cost</h1>
-          <p>Dispunem de muncitori care vă poate oferii montarea articolelelor cumpărate contra-cost</p>
-        </div>
-        <div class="caseta" id="caseta">
-          <img src="home/img/casete/cs-casa.png" class="caseta-img">
-          <h1>Oferim articole variate</h1>
-          <p>Oferim o gamă variată de articole legate de casă, curte, decorațiuni ș.a.m.d</p>
-        </div>
-        <div class="caseta" id="caseta-dolar">
-          <img src="home/img/casete/cs-dolar.png" class="caseta-img-dolar">
-          <h1>Preț raport calitate</h1>
-          <p>Articolele pe care le dispunem, au prețul în raport cu calitatea pe care o oferim</p>
-        </div>
-      </div>
+    <div class="locatie-wrapper-2">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.2137597636997!2d25.45188811549864!3d45.14226607909843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2e2f2caae67e1%3A0x52d8fb08aba516ef!2sHanul%20din%20Meri!5e0!3m2!1sen!2sro!4v1676581209085!5m2!1sen!2sro"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        class="locatie-wrapper-2-map">
+      </iframe>
+      <h3>
+        Un mare avantaj pentru dumneavoastră, este zona în care se află pensiunea „Hanul din Meri”,
+        fiind așezată în nordul județului Dâmbovița, pe malul stâng al râului Ialomița,
+        într-o zonă deluroasă liniștită, înconjurată de do frumoasă livadă de meri.
+        <br>
+        <br>
+        Accesul la pensiune se face prin două direcții - pe DN71, pensiunea fiind situată la
+        30km distanță de Sinaia - și 30km distanță de Târgoviște.
+        <br>
+        <br>
+        Printre principalele atracții și obiective turistice din zona, puteți vizita - Peștera, Babele,
+        Sfinx-ul - și celelalte locuri impresionante oferite de munții Bucegi,
+        barajul din stațiunea Pucioasa, barajul Bolboci, Mânăstirea Dealu, și Turnul Chindiei,
+        locuri în care dumneavoastră puteți petrece momente de neuitat.
+      </h3>
+    </div>
+
+    <div id="locatie-buton-rezervare-div">
+      <a href="" id="locatie-buton-rezervare">
+        REZERVARE
+      </a>
     </div>
   </div>
-  
-  <footer class="bottom">
-    <img src="home/img/header/logo-trsprnt-alb.png">
-    <h1>Copyright &#169; 2022-2023 | MIHNEA CONSTRUCT S.R.L</h1>
-    <p>Website by <a href="https://28edx.github.io">28edx</a></p>
+
+  <footer>
+    <div class="footer-facebook">
+      <h4>
+        Ne găsești și pe
+      </h4>
+      <a href="https://www.facebook.com/profile.php?id=100057427332729" target="_blank">
+        <img src="img/facebook.png" alt="Facebook">
+      </a>
+    </div>
+
+    <div class="footer-wrapper-1">
+      <h3>Locație</h3>
+      <p> Pensiunea „Hanul din Meri„</p>
+      <p> Buciumeni</p>
+      <p> Cod Poștal: 137065</p>
+      <p> Jud. Dâmbovția, România</p>
+    </div>
+
+    <div class="footer-wrapper-2">
+      <h3>Telefon Rezervări </h3>
+      <p>+40 0726 966 866</p>
+    </div>
+
+    <div class="footer-wrapper-3">
+      <h3>Email</h3>
+      <p>hanuldinmeri@gmail.com</p>
+      <p>hanuldinmeri@yahoo.com</p>
+    </div>
+
+    <div class="footer-wrapper-4">
+      <h3>Proprietar</h3>
+      <p>Serban Dragos Vasile</p>
+      <p>hanuldinmeri@yahoo.com</p>
+      <p>hanuldinmeri@yahoo.com</p>
+    </div>
   </footer>
 </body>
+
 </html>

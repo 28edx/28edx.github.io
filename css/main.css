@@ -1,0 +1,99 @@
+:root{
+  --background-color: #1A1A1A;
+  --font-color: #FFFFFF;
+  --font-color-secondary: #D6D6D6;
+  --red: #A4373A;
+}
+
+*{
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+main{
+  position: relative;
+}
+
+/* BACKGROUND IMAGE */
+.parallax {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  z-index: 0;
+}
+.parallax > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+  bottom: -50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-image{
+  background-image: url("/img/fundal.jpg");
+  filter: grayscale(15%)
+}
+
+/* ------------------------------------------- */
+
+span{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+
+  z-index: 5;
+
+  color: white;
+  text-align: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+span > img{
+  margin: 0;
+  height: 90px;
+  width: 450px;
+  object-fit: cover;
+}
+span > h2{
+  font-size: 20px;
+  margin: 0;
+  margin-top: -20px;
+  color: var(--font-color-secondary);
+}
+
+@media all and (max-width: 450px){
+  span > img{
+    width: 30rem;
+    object-fit: contain;
+  }
+  span > h2{
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 450px){
+ span > img{
+  width: 15rem;
+ } 
+}
+
+@media all and (max-width: 290px){
+  span > img{
+    width: 10rem;
+  }
+}

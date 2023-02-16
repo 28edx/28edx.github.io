@@ -1,0 +1,107 @@
+:root{
+  --background-color: #1A1A1A;
+  --font-color: #FFFFFF;
+  --font-color-secondary: #D6D6D6;
+  --red: #A4373A;
+}
+
+.locatie{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-items: center;
+
+  margin-top: 2rem;
+}
+
+.locatie-wrapper-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.locatie-wrapper-1 > h3{
+  color: var(--font-color);
+  font-size: 35px;
+}
+
+.locatie-wrapper-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.locatie-wrapper-2 h3{
+  color: var(--font-color);
+  width: 50rem;
+  font-weight: normal;
+}
+.locatie-wrapper-2-map{
+  width: 400px;
+  height: 300px;
+}
+#locatie-buton-rezervare-div{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+#locatie-buton-rezervare{
+  color: var(--font-color);
+  background-color: var(--red);
+  padding: 10px 15px;
+  font-size: 20px;
+
+  border-radius: 3px;
+
+  transition: all 0.4s;
+}
+#locatie-buton-rezervare:hover{
+  background-color: #7D0D0D;
+}
+#locatie-buton-rezervare:active{
+  background-color: #470909;
+}
+
+@media all and (max-width: 1030px){
+  .locatie-wrapper-2 h3{
+    width: 30rem;
+  }
+}
+
+@media all and (max-width: 800px){
+  .locatie-wrapper-2{
+    flex-direction: column;
+  }
+
+ .locatie-wrapper-2 h3{
+  width: 70vh;
+ } 
+}
+
+@media all and (max-width: 570px){
+
+  .locatie-wrapper-1 > h3{
+    font-size: 25px;
+  }
+  .locatie-wrapper-1 > img{
+    width: 50px;
+  }
+
+  .locatie-wrapper-2 h3{
+    width: 40vh;
+  }
+
+  .locatie-wrapper-2-map{
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media all and (max-width: 380px){
+  .locatie-wrapper-2 h3{
+    width: 25vh;
+  }
+  .locatie-wrapper-2-map{
+    width: 250px;
+    height: 200px;
+  }
+}
