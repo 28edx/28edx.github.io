@@ -1,21 +1,22 @@
 function myFunction() {
-  var x = document.getElementById("hamburger-wrapper");
-  var b = document.getElementById("hamburger-button")
-  if (x.style.display === "none") {
-    x.style.display = "flex";
-    b.style.display = "none"
+  const hbwrapper = document.getElementById("hamburger-wrapper");
+  const hbbutton = document.getElementById("hamburger-button")
+  if (hbwrapper.style.display === "none") {
+    hbwrapper.style.display = "flex";
+    hbwrapper.style.flexDirection = "column";
+    hbwrapper.style.alignItems = "flex-start";
+    hbwrapper.style.fontSize = "30px";
+    hbbutton.style.display = "none"
   } else {
-    x.style.display = "none";
-    x.style.flexDirection = "column";
-    x.style.alignItems = "center"
+    hbwrapper.style.display = "none";
   }
 }
 
 function closeMenu() {
-  var x = document.getElementById("hamburger-wrapper");
-  var b = document.getElementById("hamburger-button")
-  if (x.style.display === "flex") {
-    x.style.display = "none";
-    b.style.display = "flex";
+  const hbwrapper = document.getElementById("hamburger-wrapper");
+  const hbbutton = document.getElementById("hamburger-button")
+  if (hbwrapper.style.display === "flex") {
+    hbwrapper.style.display = "none";
+    hbbutton.style.display = "flex";
   }
 }

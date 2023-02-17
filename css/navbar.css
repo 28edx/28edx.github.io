@@ -1,11 +1,11 @@
-:root{
+:root {
   --background-color: #1A1A1A;
   --font-color: #FFFFFF;
   --font-color-secondary: #D6D6D6;
   --red: #A4373A;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   z-index: 15;
@@ -13,43 +13,54 @@ nav{
   width: 100%;
   top: 0;
   justify-content: space-around;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 60%), rgba(0, 0, 0, 0) 100%);
 }
-#navbar-logo{
+
+#navbar-logo {
   margin-top: 15px;
 }
-.navbar-articles{
+
+.navbar-articles {
   display: flex;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
-.navbar-articles > a{
+
+.navbar-articles>a {
   color: var(--font-color);
   font-size: 20px;
   font-weight: bold;
   transition: all 0.4s;
 }
-.navbar-articles > a:hover{
+
+.navbar-articles>a:hover {
   color: var(--red);
 }
-#navbar-articles-contact{
+
+#navbar-articles-contact {
   background-color: var(--red);
   padding: 5px 10px;
   border: none;
   border-radius: 2px;
 }
-#navbar-articles-contact:hover{
+
+#navbar-articles-contact:hover {
   background-color: #7D0D0D;
   color: white;
 }
-#navbar-articles-contact:active{
+
+#navbar-articles-contact:active {
   background-color: #470909;
   color: white;
 }
 
 /* PHONE MENU TOGGLE */
-.hamburger-menu{
-  display: none;
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   position: absolute;
   top: 2rem;
@@ -57,14 +68,15 @@ nav{
 
   z-index: 1250;
 }
-.hamburger-menu > button > img{
+
+.hamburger-menu>button>img {
   position: relative;
   width: 30px;
   object-fit: cover;
   z-index: 1;
 }
 
-#hamburger-button{
+#hamburger-button {
   position: relative;
   margin: 0;
   border: none;
@@ -73,11 +85,8 @@ nav{
   border-radius: 15px;
   z-index: 20;
 }
-#hamburger-button:hover{
-  background-color: red;
-}
 
-#hamburger-wrapper{
+#hamburger-wrapper {
   display: none;
 
   position: relative;
@@ -85,20 +94,22 @@ nav{
   top: 0;
   right: 0;
 
-  background-color: rgba(1, 1, 1, 20%);
+  background-color: rgba(1, 1, 1, 50%);
   padding: 40px 15px;
 
   z-index: 1;
 }
-#hamburger-wrapper > a{
+
+#hamburger-wrapper>a {
   color: var(--font-color);
 }
-#close-menu{
+
+#close-menu {
   position: absolute;
   top: 5px;
   right: 5px;
   background-color: rgba(0, 0, 0, 0.553);
-  border:none;
+  border: none;
   border-radius: 15px;
   margin: 0;
   font-size: 20px;
@@ -108,12 +119,12 @@ nav{
   z-index: 25;
 }
 
-@media all and (max-width: 570px){
-  nav{
+@media all and (max-width: 570px) {
+  nav {
     display: none;
   }
 
-  .hamburger-menu{
+  .hamburger-menu {
     display: flex;
     flex-direction: column;
     align-items: center;

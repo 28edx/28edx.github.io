@@ -1,3 +1,4 @@
+/*
 window.addEventListener('scroll', function(e) {
   const scrollY = window.pageYOffset;
 
@@ -11,3 +12,4 @@ window.addEventListener('scroll', function(e) {
       
   });
 });
+*/
