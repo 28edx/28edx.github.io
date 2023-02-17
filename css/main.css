@@ -25,7 +25,7 @@ main{
   height: 100vh;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+
 
   z-index: 0;
 }
@@ -90,6 +90,13 @@ span > h2{
  span > img{
   width: 15rem;
  } 
+
+ .parallax > div{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+ }
 }
 
 @media all and (max-width: 290px){
