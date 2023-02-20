@@ -15,14 +15,26 @@
   <link rel="stylesheet" href="css/locatie.css">
   <link rel="stylesheet" href="css/footer.css">
 
-  <script src="js/script.js"></script>
-  <script src="js/hamburger.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <style>
+    a{
+      text-decoration: none;
+    }
+    h2{
+      font-size: 20px;
+    }
+    h3{
+        font-size: 20px;
+    }
+  </style>
 </head>
 
-<body>
-  <main>
+<body style="background-color: #1A1A1A; text-decoration: none;">
+  <main id="acasa">
     <!-- BACKGROUND IMAGE | broken -->
-    <img src="img/fundal.jpg" alt="Fundal" class="fundal">
+    <img src="img/fundal.png" alt="Fundal" class="fundal">
     <span>
       <img src="img/logo-alb.png" alt="Logo Culoare Alba">
       <h2>Bine ați venit la Pensiunea Turistică - Hanul din Meri!</h2>
@@ -37,10 +49,10 @@
       </div>
 
       <div class="navbar-articles">
-        <a href="">Acasă</a>
-        <a href="">Galerie</a>
-        <a href="">Locație</a>
-        <a href="">Rezervări</a>
+        <a href="#acasa" id="home">Acasă</a>
+        <a href="#galerie" id="gallery">Galerie</a>
+        <a href="#locatie">Locație</a>
+        <a href="#rezervare">Rezervări</a>
         <a href="" id="navbar-articles-contact">Contact</a>
       </div>
     </nav>
@@ -58,7 +70,7 @@
     </h3>
   </div>
 
-  <div class="galerie">
+  <div class="galerie" id="galerie">
     <h3>Îmbinăm tradiționalul - cu modernul.</h3>
     <div class="wrapper">
       <img src="img/1.png" alt="Imagine">
@@ -72,7 +84,7 @@
     </div>
   </div>
 
-  <div class="locatie">
+  <div class="locatie" id="locatie">
     <div class="locatie-wrapper-1">
       <img src="img/locatie.png" alt="Locatie">
       <h3>Unde ne aflăm?</h3>
@@ -101,8 +113,8 @@
       </h3>
     </div>
 
-    <div id="locatie-buton-rezervare-div">
-      <a href="" id="locatie-buton-rezervare">
+    <div class="locatie-buton-rezervare-div" id="rezervare">
+      <a href="rezervare/index.html" class="locatie-buton-rezervare">
         REZERVARE
       </a>
     </div>
@@ -144,6 +156,13 @@
       <p>hanuldinmeri@yahoo.com</p>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

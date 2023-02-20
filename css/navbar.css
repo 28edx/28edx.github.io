@@ -5,6 +5,19 @@
   --red: #A4373A;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  background-color: #1A1A1A;
+  width: 1vh;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #4a4545;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -54,6 +67,10 @@ nav {
 #navbar-articles-contact:active {
   background-color: #470909;
   color: white;
+}
+
+.active{
+  color: var(--red);
 }
 
 @media all and (max-width: 570px) {

@@ -40,11 +40,11 @@
   width: 400px;
   height: 300px;
 }
-#locatie-buton-rezervare-div{
+.locatie-buton-rezervare-div{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-#locatie-buton-rezervare{
+.locatie-buton-rezervare{
   color: var(--font-color);
   background-color: var(--red);
   padding: 10px 15px;
@@ -54,10 +54,10 @@
 
   transition: all 0.4s;
 }
-#locatie-buton-rezervare:hover{
+.locatie-buton-rezervare:hover{
   background-color: #7D0D0D;
 }
-#locatie-buton-rezervare:active{
+.locatie-buton-rezervare:active{
   background-color: #470909;
 }
 
