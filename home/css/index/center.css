@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.body{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.body-img{
+  width: 100%;
+}
+.img-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.infotaiment{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 65%);
+  display: flex;
+  margin-left: 200px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 45px;
+  border: none;
+  border-radius: 15px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.infotaiment p{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-h1{
+  font-size: 28px;
+  font-weight: bold;
+}
+p{
+  font-size: 20px;
+}
+.articole-txt{
+  font-size: 15px;
+}
+.buton-articole{
+  background-color: rgb(19, 117, 49);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  padding: 4px 10px;
+  margin-top: 1vh;
+  margin-left: 12vh;
+
+  border-radius: 5px;
+
+  transition: all 0.1s;
+}
+.buton-articole:hover{
+  background-color: #2fb65a;
+}
+
+@media all and (max-width: 1200px) {
+  .body-img{
+    width: 100%;
+  }
+  .img-container{
+    justify-content: center;
+  }
+  .infotaiment{
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 700px){
+  .main-h1{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 10px;
+  }
+  .articole-txt{
+    font-size: 15px;
+  }
+  .buton-articole{
+    padding: 2px 5px;
+    margin-left: 7vh;
+  }
+  .buton-articole p{
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 580px){
+  .infotaiment{
+    padding: 10px 10px;
+  }
+  .body-img{
+    height: 150px;
+  }
+}
+
+@media all and (max-width: 450px)
+{
+  .body-img{
+    height: 250px;
+    object-fit: cover;
+  }
+  .img-container{
+    justify-content: center;
+  }
+  .infotaiment{
+    background-color: rgba(0, 0, 0, 65%);
+    margin-left: 0;
+    padding: 12px 16px;
+  }
+  .main-h1{
+    font-size: 17px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .buton-articole{
+    padding: 1px 3px;
+    margin-top: 1vh;
+    margin-left: 10vh;
+  }
+  .buton-articole p{
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 300px){
+  .infotaiment{
+    padding: 5px 5px;
+  }
+  .main-h1{
+    font-size: 14px;
+  }
+  p{
+    font-size: 10px;
+  }
+  .buton-articole{
+    margin-left: 6vh;
+  }
+  .buton-articole p{
+    font-size: 10px;
+  }
+}
