@@ -1,0 +1,107 @@
+:root {
+  --background-color: #1A1A1A;
+  --font-color: #FFFFFF;
+  --font-color-secondary: #D6D6D6;
+  --red: #A4373A;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  background-color: #1A1A1A;
+  width: 1vh;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #4a4545;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  z-index: 15;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  justify-content: space-around;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 60%), rgba(0, 0, 0, 0) 100%);
+}
+
+#navbar-logo {
+  margin-top: 15px;
+}
+
+.navbar-articles {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.navbar-articles > a {
+  color: var(--font-color);
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.navbar-articles>a:hover {
+  color: var(--red);
+}
+
+#navbar-articles-contact {
+  background-color: var(--red);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+#navbar-articles-contact:hover {
+  background-color: #7D0D0D;
+  color: white;
+}
+
+#navbar-articles-contact:active {
+  background-color: #470909;
+  color: white;
+}
+
+.active{
+  color: var(--red);
+}
+
+@media all and (max-width: 570px) {
+  nav {
+    flex-direction: column;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 30%) 70%, rgba(0, 0, 0, 0)
+    );
+    padding-bottom: 15px;
+    align-items: center;
+  }
+
+  .navbar-articles{
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+@media all and (max-width: 380px){
+  nav{
+    position: absolute;
+  }
+
+  .navbar-articles{
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 320px){
+  #navbar-logo {
+    width: 25vh;
+    object-fit: cover;
+  }
+}
