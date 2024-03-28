@@ -1,0 +1,66 @@
+*{
+    color: white;
+}
+
+body{
+    /*background-color: #f4f4f4; */
+
+    background-image: linear-gradient(
+        to bottom,
+        rgb(0 0 0 / 70%),
+        rgb(0 0 0 / 70%)
+      ), url("/28edx.github.io/imagini/fundal3.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+}
+
+.info-content{
+    width: 50REM;
+}
+
+.img-david-ip{
+    display: flex;
+    flex-direction: column;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    width: 270px;
+    padding: 10px;
+    margin-top: 15px;
+
+    background-color: #fffdfd;
+}
+.img-david-ip img{
+    width: 250px;
+}
+.img-david-ip em{
+    color: black;
+}
+
+.img-david-mirage{
+    display: flex;
+    flex-direction: column;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    width: 550px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    background-color: #f4f4f4;
+}
+.img-david-mirage img{
+    width: 500px;
+}
+
+.img-david-mirage em{
+    color: black;
+}
