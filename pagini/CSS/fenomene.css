@@ -1,27 +1,30 @@
-*{
+* {
     color: white;
 }
 
-body{
-    /*background-color: #f4f4f4; */
-
-    background-image: linear-gradient(
-        to bottom,
-        rgb(0 0 0 / 70%),
-        rgb(0 0 0 / 70%)
-      ), url("../../imagini/fundal3.png");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100% 100%;
+p {
+    margin: 0;
+    padding: 0;
 }
 
-.info-content{
-    width: 50REM;
+#img-palat img {
+    width: 600px;
 }
 
-.img-david-ip{
+#istoric-buba img {
+    width: 500px;
+}
+
+#skibidi-david img {
+    width: 400px;
+}
+
+#filmulet,
+#skibidi-david,
+#istoric-buba,
+#img-palat,
+.img-david-ip,
+.img-david-mirage {
     display: flex;
     flex-direction: column;
 
@@ -29,38 +32,56 @@ body{
     border-width: 1px;
     border-radius: 5px;
 
-    width: 270px;
-    padding: 10px;
-    margin-top: 15px;
-
-    background-color: #fffdfd;
-}
-.img-david-ip img{
-    width: 250px;
-}
-.img-david-ip em{
-    color: black;
-}
-
-.img-david-mirage{
-    display: flex;
-    flex-direction: column;
-
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-
-    width: 550px;
+    width: fit-content;
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
 
     background-color: #f4f4f4;
 }
-.img-david-mirage img{
-    width: 500px;
+
+#filmulet em,
+#skibidi-david em,
+#istoric-buba em,
+#img-palat em,
+.img-david-ip em,
+.img-david-mirage em {
+    color: black;
 }
 
-.img-david-mirage em{
-    color: black;
+#filmulet p,
+#skibidi-david p,
+.img-david-mirage p,
+.img-david-ip p,
+#istoric-buba p{
+    margin: 0;
+}
+
+body {
+    /*background-color: #f4f4f4; */
+
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 70%),
+            rgb(0 0 0 / 70%)), url("../../imagini/fundal3.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.cuprins {
+    width: 20%;
+}
+
+.info-content {
+    width: fit-content;
+}
+
+.img-david-ip img {
+    width: 250px;
+}
+
+.img-david-mirage img {
+    width: 500px;
 }

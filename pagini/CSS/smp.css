@@ -1,0 +1,138 @@
+body {
+    /*background-color: #f4f4f4; */
+
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 70%),
+            rgb(0 0 0 / 70%)), url("../../imagini/SMP/fundal5.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+*{
+    color: white;
+}
+
+#atentie{
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(124, 124, 124, 0.2);
+    padding-left: 3vh;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    border-left: 2px solid;
+}
+#atentie p{
+    display: inline-block;
+    margin: 0;
+}
+#atentie-p{
+    display: flex;
+    flex-direction: column;
+}
+#atentie-svg{
+    width: 4em;
+    margin-right: 2vh;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(329deg) brightness(103%) contrast(101%);
+    mask: url(../../svg/info-circle-fill.svg) no-repeat center;
+}
+
+#avertizare{
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(151, 21, 21, 0.2);
+    padding-left: 3vh;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    border-left: 2px solid rgba(217, 69, 69, 0.8);
+}
+#avertizare p{
+    display: inline-block;
+    margin: 0;
+}
+#avertizare-p{
+    display: flex;
+    flex-direction: column;
+}
+#blockquote-svg{
+    width: 4em;
+    margin-right: 2vh;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(329deg) brightness(103%) contrast(101%);
+    mask: url(../../svg/cone-striped.svg) no-repeat center;
+}
+
+#img2020{
+    width: 50vh;
+}
+
+#acordeon-poze em{
+    color: black;
+}
+
+
+
+
+
+
+.card-body {
+    background-color: rgba(124, 124, 124, 0.2);
+}
+
+h4{
+    font-weight: bold;
+}
+
+.cuprins{
+    width: fit-content;
+}
+
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80vh;
+}
+.accordion-body img{
+    width: 80vh;
+}
+
+blockquote{
+    display: flex;
+    align-items: center;
+}
+blockquote p{
+    display: inline-block;
+    margin: 0;
+}
+#blockquote-svg{
+    width: 4em;
+    margin-right: 2vh;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(329deg) brightness(103%) contrast(101%);
+    mask: url(../../svg/cone-striped.svg) no-repeat center;
+}
+
+#blockquote-cosmote{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.reguli{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: fit-content;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+.reguli img{
+    width: 70vh;
+}
+.reguli em{
+    color:black;
+}
