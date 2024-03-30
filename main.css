@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'PantonExtraBold'; /*a name to be used later*/
+    font-family: 'Panton'; /*a name to be used later*/
     src: url('./fonts/Panton-ExtraBold.ttf')
 }
 
@@ -67,6 +67,11 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content-grid{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 footer{
@@ -189,11 +194,36 @@ header h2{
     pad: 0;
 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
 }
 
 .page{
     color: white;
+}
+
+.card{
+    margin-top: 3vh;
+    --bs-card-border-width: none;
+}
+
+
+.card-body h2{
+    font-family: 'Panton';
+}
+.card-body p{
+    margin-bottom: 1rem;
+}
+.card img{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.content-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
 }
 
 
