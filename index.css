@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'Panton-Black';
+    src: url('./fonts/Panton-Black.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-XBold';
+    src: url('./fonts/Panton-ExtraBold.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-Bold';
+    src: url('./fonts/Panton-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-Regular';
+    src: url('./fonts/Panton-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-SemiBold';
+    src: url('./fonts/Panton-SemiBold.ttf')
+}
+
+
+body {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 80%),
+            rgb(0 0 0 / 70%)), url("./img/fundaluri/1.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    backdrop-filter: blur(10px);
+}
+
+span {
+    font-family: 'Panton';
+}
+
+nav {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.body-content {
+    width: 120rem;
+}
+
+#h2-derulare {
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+}
+#h2-derulare-2 {
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+}
+
+/* navbar */
+.navbar {
+    padding: 1rem;
+}
+#nav-buton-arhiva{
+    height: 42px;
+    font-family: 'Panton-XBold';
+    font-size: 18px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* dropdown */
+.btn-secondary {
+    background-image: linear-gradient(0.25turn, #FBAE3C, #F99424);
+    border-style: none;
+}
+
+.dropdown span {
+    font-family: 'Panton-XBold';
+    font-size: 20px;
+}
+
+/* containers stanga / dreapta */
+#container-left,
+#container-right {
+    padding-top: 5rem;
+}
+
+#container-left img {
+    width: 335px;
+    box-shadow: 0px 0px 25px 5px rgba(249, 148, 36, 0.3);
+}
+
+#container-left-content {
+    width: 21rem;
+}
+
+#container-left-content span {
+    color: white;
+    font-size: 36px;
+    font-family: 'Panton-Regular';
+}
+
+.card {
+    width: 800px;
+    height: 600px;
+
+    background-color: rgb(16, 16, 16, 0.85);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    overflow: hidden;
+    border: 1px solid rgb(255 255 255 / 5%);
+
+    border-left-style: solid;
+    border-left-color: #FA9A2A;
+    border-left-width: 3px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.card h1,
+.card h3 {
+    text-align: center;
+    color: white;
+}
+
+.card h1 {
+    font-family: 'Panton-Bold';
+}
+
+.card h3 {
+    font-family: 'Panton-SemiBold';
+}
+
+#card-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#card-content h1,
+#card-content h3 {
+    z-index: 1;
+}
+
+#card-content img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* mijloc */
+
+#fluid-container-arrow-fill {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(329deg) brightness(103%) contrast(101%);
+}
+#fluid-container-arrow-fill-2 {
+    width: 24px;
+    height: 24px;
+    filter: invert(0%) sepia(0%) saturate(2%) hue-rotate(329deg) brightness(103%) contrast(101%);
+}
+
+#fluid-container-derulare h3 {
+    color: white;
+    font-size: 25px;
+}
+
+#fluid-container-derulare h2 {
+    font-family: "Panton-Bold";
+}
+
+#fluid-container-derulare h3 {
+    font-family: 'Panton-Regular';
+}
+
+/* pagini jos */
+
+#container-pages {
+    background-color: rgba(255, 255, 255, 0.95);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 1);
+    padding: 5rem;
+}
+#container-pages-info h1{
+    font-family: 'Panton-Black';
+    margin: 0;
+}
+#container-pages-info h3{
+    font-family: 'Panton-Bold';
+}
+
+#container-pages-2 {
+    background-color: rgb(16, 16, 16, 0.85);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 1);
+    padding: 5rem;
+}
+#container-pages-info-2 h1{
+    color: white;
+
+    font-family: 'Panton-Black';
+    margin: 0;
+}
+#container-pages-info-2 h3{
+    color: white;
+
+    font-family: 'Panton-Bold';
+}
+
+
+.container-card {
+    width: 300px;
+    height: 450px;
+    background-color: black;
+    overflow: hidden;
+    padding: 25px;
+
+    border-radius: 8px;
+}
+
+.container-card h2 {
+    font-family: 'Panton-Bold';
+}
+
+
+.container-card h3 {
+    font-family: 'Panton-SemiBold';
+}
+
+.container-card h2,
+.container-card h3 {
+    color: white;
+}
+
+#card-orange h2 {
+    font-size: 60px;
+
+    font-family: 'Panton-Bold';
+}
+
+#card-orange {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 50%),
+            rgb(0 0 0 / 80%)), url("./img/card-imgs/b-orange.png");
+}
+
+#card-fenomene {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 00%),
+            rgb(0 0 0 / 90%)), url("./img/card-imgs/fenomene.png");
+}
+
+#card-smp {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 30%),
+            rgb(0 0 0 / 80%)), url("./img/card-imgs/card-smps.png");
+}
+
+#card-persoane {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 50%),
+            rgb(0 0 0 / 80%)), url("./img/card-imgs/card-pol.png");
+}
+#card-podcast {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 10%),
+            rgb(0 0 0 / 80%)), url("./img/card-imgs/card-podcast.png");
+}
+#card-ghertoaia {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 50%),
+            rgb(0 0 0 / 80%)), url("./img/card-imgs/card-gheroaia.png");
+}
+
+#card-fenomene h2 {
+    font-size: 50px;
+}
+#cards-button{
+    margin-top: 10px;
+    background-image: linear-gradient(0.25turn, #FBAE3C, #F99424);
+    border-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#cards-button :hover{
+    transition: all 0.2s;
+    font-size: 20px;
+}
+#cards-button span{
+    font-family: 'Panton-Bold';
+}
+
+.container-card {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.container-card-m {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    overflow: hidden;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 8px;
+}
+#cards-button-m{
+    margin-top: 10px;
+    background-image: linear-gradient(0.25turn, #0f0f0f, #323232);
+    border-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.container-card-m h2 {
+    font-family: 'Panton-Bold';
+    font-size: 60px;
+}
+.container-card-m h3 {
+    font-family: 'Panton-SemiBold';
+}
+
+#card-miscelaneu{
+    background-color: rgba(255, 255, 255, 0.85);
+    background-image: radial-gradient(rgba(10, 10, 10, 0.15) 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+}
+
+
+/* modal */
+.modal-header h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+.modal-body span{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+@media only screen and (min-width: 414px) and (max-height: 896px) {}

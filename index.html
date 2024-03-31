@@ -4,183 +4,445 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enciclopedie</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.ico">
+    <title>Totul Breasla Orange</title>
 
-    <link rel="icon" type="image/x-icon" href="./imagini/orange_icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./index.css">
 
     <script src="./js/bootstrap.bundle.js"></script>
+</head>
 
 <body>
 
-    <header>
-        <h2>Enciclopedia Breasla Orange</h2>
+    <!--
+            <header>
+        <h2>
+            Totul Breasla Orange
+        </h2>
+        
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span>
+                    Enciclopedie
+                </span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Breasla Orange</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span>
+                    Enciclopedie
+                </span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Breasla Orange</a></li>
+            </ul>
+        </div>
+
     </header>
+    -->
 
-    <div class="page">
+    <div class="body">
         <div class="body-content">
-            <div class="content">
+            <nav class="navbar" data-bs-theme="dark">
+                <div class="container-fluid justify-content-start gap-4">
 
-                <div class="content-grid">
-                    <div class="info-content">
-                        <div class="docker">
-                            <h1 id="docker-de-informa-ii">Docker de informații</h1>
-                        </div>
-                        <div class="info">
-                            <p>Pagină Enciclopedică creată în totalitate de
-                                către 28edx după ce jegoșeniile de la Fandom ne-au șters pagina</p>
+                    <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="#">
+                        <img src="./img/index/TBO-pic.png" alt="Logo" width="30" height="30"
+                            class="d-inline-block align-text-top" id="logo-logo">
+                        <h2>
+                            Totul Breasla Orange
+                        </h2>
+                    </a>
 
-                            <p>Versiunea antecedentă a acestei pagini era pe wiki fandom, creată tot de 28edxwrd.</p>
-
-                            <p><em>Breasla Orange nu are nimic de aface cu compania de telefonie „Orange”.</em></p>
-
-                        </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span>
+                                Enciclopedie
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pagini/Breasla Orange/" target="_blank">Breasla Orange</a></li>
+                            <li><a class="dropdown-item" href="./pagini/Fenomene/" target="_blank">Fenomene</a></li>
+                            <li><a class="dropdown-item" href="./pagini/SMPuri/" target="_blank">SMP-uri</a></li>
+                            <li><a class="dropdown-item" href="./pagini/Persoane/" target="_blank">Persoane</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">Podcast</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">Gherțoaia</a></li>
+                        </ul>
                     </div>
 
-                    <div class="main-content">
-                        <h1 id="pagina-cas-enciclopedic-">Pagina „Casă” Enciclopedică.</h1>
-                        <hr>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span>
+                                Miscelaneu
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">Arhivă</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#creditsModal">Credite</a></li>
+                        </ul>
+                    </div>
 
-                        <!--  Avertizare  -->
-                        <blockquote id="avertizare">
-                            <div>
-                                <img src="./svg/cone-striped.svg" alt="" id="blockquote-svg">
-                            </div>
-                            <div>
-                                <p><strong>Hei, hei!</strong></p>
-                                <br>
-                                <p>
-                                    <strong>Am abandonat proiectul</strong>, pentru că se pare că pe unii nu prea îi interesează.
-                                </p>
-                            </div>
-                        </blockquote>
+                    <a class="btn btn-primary p-2" href="#" role="button" id="nav-buton-arhiva">Arhivă</a>
+                </div>
+            </nav>
 
-                        <blockquote id="avertizare">
-                            <div>
-                                <img src="./svg/cone-striped.svg" alt="" id="blockquote-svg">
-                            </div>
-                            <div>
-                                <p><strong>Hei, hei!</strong></p>
-                                <br>
-                                <p>
-                                    Nu te aștepta să mai rămână extrem de mult site-ul online.
-                                </p>
-                            </div>
-                        </blockquote>
-                        <!--  sfarsit Avertizare  -->
+            <!-- conținut principal -->
+            <div class="d-flex align-items-center flex-row container-fluid" id="container-fluid-left">
 
-                        <h4 id="bine-ai-venit-la-pagina-oficial-enciclopedic-orange-">Bine ai venit la pagina oficială
-                            Enciclopedică Orange!</h4>
-                        <p>Aici vei găsi toate detaliile breslei Orange.</p>
-                        <p>Vizionează paginile atașate mai jos pentru a începe! :-) (<em>more coming</em>)</p>
+                <div class="d-flex flex-column left-5 container-fluid justify-content-center align-items-center"
+                    id="container-left">
+                    <div class="d-flex flex-column" id="container-left-content">
+                        <span>
+                            Bine ai venit la
+                        </span>
+                        <img src="./img/index/TBO-pic.png" alt="orange logo">
+                        <span>
+                            Pagină întreținută în totalitate de 28edx
+                        </span>=
                     </div>
                 </div>
 
-                <div class="container-cards">
-                    <div class="content-cards" id="col1">
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/orange.png" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">Breasla Orange</h2>
-                                <p class="card-text">Totul despre istoricul breslei orange, precum și diferite fenomene.
-                                </p>
-                                <a href="./pagini/Breasla Orange/" class="btn btn-primary">Citește</a>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/fundal-feno.png" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">Fenomene</h2>
-                                <p class="card-text">Diverse și diverse fenomene care au ieșit din breaslă.
-                                </p>
-                                <a href="./pagini/Fenomene/" class="btn btn-primary">Citește</a>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/SMP/fundal5.png" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">SMP-uri</h2>
-                                <p class="card-text">Toate SMP-urile (breslele) create de a-lungul timpului.
-                                </p>
-                                <a href="./pagini/SMPuri/" class="btn btn-primary">Citește</a>
+                <div class="d-flex container-fluid justify-content-center align-items-center" id="container-right">
+                    <div class="d-flex justify-content-center shadow card" id="card-content">
+                        <img src="./img/index/overlay-card.png" alt="">
+                        <h1>
+                            O pagină realizată cu scopul de a <strong>păstra istoria</strong>
+                        </h1>
+                        <h3>
+                            și de a documenta prezentul
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- conținut mijloc -->
+            <div class="d-flex flex-column align-items-center gap-1 mt-5 fluid-container" id="fluid-container-derulare">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./img/svg/arrow-down-fill.svg" alt="" id="fluid-container-arrow-fill">
+                    <h2 id="h2-derulare" class="m-0 ">
+                        Derulează în jos pentru a răsfoi paginile
+                    </h2>
+                    <img src="./img/svg/arrow-down-fill.svg" alt="" id="fluid-container-arrow-fill">
+                </div>
+                <div>
+                    <h3>sau prin accesarea meniurilor din bara de navigare</h3>
+                </div>
+            </div>
+
+            <!-- conținut jos -->
+            <div class="d-flex flex-column align-items-center mt-5" id="container-pages">
+                <!-- conținut jos ! PRIMA COLOANA -->
+                <h2 style="color: red;"><strong>Atenție</strong>! Paginile de mai jos sunt în curs de actualizare </h2>
+                <h2 style="color: red;"> pentru a fi la același standard ca pagina de start!</h2>
+                <div class="mt-5 d-flex align-items-center flex-column" id="container-pages-info">
+                    <h5 class="m-0">Secțiunea</h5>
+                    <h1>Enciclopedie</h1>
+                    <h3>Documentație enciclopedică</h3>
+                </div>
+
+                <div class="row gap-5 mt-3 cards">
+
+                    <div class="container-card shadow-lg" id="card-orange">
+                        <div id="card-content-position">
+                            <h2>Breasla Orange</h2>
+                            <h3>Totul despre Breasla Orange</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+                                <a class="btn btn-primary" href="./pagini/Breasla Orange/index.html" role="button"
+                                    id="cards-button" target="_blank">
+                                    <span>
+                                        Citește
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="content-cards" id="col2">
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/pol-pfp.jpg" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">Persoane</h2>
-                                <p class="card-text">Totul despre persoanele care aparțin breslei orange.
-                                </p>
-                                <a href="./pagini/Persoane/" class="btn btn-primary">Citește</a>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/placeholder.jpeg" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">Arhivă</h2>
-                                <p class="card-text">Filmulețe, fotografii ș.a.m.d arhivate pentru a păstra trecutul.
-                                </p>
-                                <a href="./pagini/Arhivă/" class="btn btn-primary">Citește</a>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/placeholder.jpeg" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">Credite</h2>
-                                <p class="card-text">Credite acordate persoanelor care au contribuit acestui website.
-                                </p>
-                                <a href="./pagini/Breasla Orange/" class="btn btn-primary">Citește</a>
+                    <div class="container-card shadow-lg" id="card-fenomene">
+                        <div id="card-content-position">
+                            <h2 style="font-size: 50px;">Fenomene</h2>
+                            <h3>Fenomenele sau „meme-urile” breslei</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+                                <a class="btn btn-primary" href="./pagini/Fenomene/" role="button" id="cards-button"
+                                    target="_blank">
+                                    <span>
+                                        Citește
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="content-cards" id="col2">
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/pol-pfp.jpg" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">Gherțoaia</h2>
-                                <p class="card-text">Totul despre persoanele care aparțin breslei orange.
-                                </p>
-                                <a href="./pagini/Breasla Orange/" class="btn btn-primary">Citește</a>
+                    <div class="container-card shadow-lg" id="card-smp">
+                        <div id="card-content-position">
+                            <h2 style="font-size: 60px;">SMP-uri</h2>
+                            <h3>Serverele de Minecraft făcute de membrii breslei</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+                                <a class="btn btn-primary" href="./pagini/SMPuri/" role="button" id="cards-button"
+                                    target="_blank">
+                                    <span>
+                                        Citește
+                                    </span>
+                                </a>
                             </div>
                         </div>
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/placeholder.jpeg" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">Istoric schimbări</h2>
-                                <p class="card-text">Istoric cu schimbările ce au avut loc pe website.
-                                </p>
-                                <a href="./pagini/Arhivă/" class="btn btn-primary">Citește</a>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 18rem;">
-                            <img src="./imagini/placeholder.jpeg" class="card-img-top" alt="orange icon">
-                            <div class="card-body">
-                                <h2 class="card-title">pol brainrot</h2>
-                                <p class="card-text">Credite acordate persoanelor care au contribuit acestui web-site.
-                                </p>
-                                <a href="./pagini/Breasla Orange/" class="btn btn-primary">Citește</a>
+                    </div>
+
+                    <div class="container-card shadow-lg" id="card-persoane">
+                        <div id="card-content-position">
+                            <h2 style="font-size: 60px;">Persoane</h2>
+                            <h3>Persoanele care fac/au făcut parte din breaslă</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+                                <a class="btn btn-primary" href="./pagini/Persoane/" role="button" id="cards-button"
+                                    target="_blank">
+                                    <span>
+                                        Citește
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <br>
-                <br>
-                <h5>Ultima actualizare: 30.05.2023 la ora 12:35</h5>
+
+                <!-- conținut jos ! A DOUA COLOANA -->
+                <div class="row gap-5 mt-3 cards">
+
+                    <div class="container-card shadow-lg" id="card-podcast">
+                        <div id="card-content-position">
+                            <h2 style="font-size: 60px;">Podcast</h2>
+                            <h3>Totul despre podcastul breslei</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+                                <!-- pagina nu exista -->
+                                <a href="#logo-logo">
+                                    <button class="btn btn-primary" role="button" id="cards-button-m"
+                                        data-bs-toggle="modal" data-bs-target="#infoModal">
+                                        <span>
+                                            Citește
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-card shadow-lg" id="card-ghertoaia">
+                        <div id="card-content-position">
+                            <h2 style="font-size: 60px;">Gherțoaia</h2>
+                            <h3>Totul despre satul ficțional Gherțoaia</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+                                <!-- pagina nu exista -->
+                                <a href="#logo-logo">
+                                    <button class="btn btn-primary" role="button" id="cards-button-m"
+                                        data-bs-toggle="modal" data-bs-target="#infoModal">
+                                        <span>
+                                            Citește
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- conținut jos mijloc -->
+                <div class="d-flex flex-column align-items-center gap-1 mt-5 fluid-container"
+                    id="fluid-container-derulare">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./img/svg/arrow-down-fill.svg" alt="" id="fluid-container-arrow-fill-2">
+                        <h2 id="h2-derulare-2" class="m-0">
+                            Derulează ȘI mai jos pentru secțiunea de Miscelaneu
+                        </h2>
+                        <img src="./img/svg/arrow-down-fill.svg" alt="" id="fluid-container-arrow-fill-2">
+                    </div>
+                    <div>
+                        <h3 style="color: black;">sau prin accesarea meniurilor din bara de navigare</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- conținut jos ! A TREIA COLOANA ! miscelaneu -->
+
+            <div class="d-flex flex-column align-items-center mt-5" id="container-pages-2">
+                <div class="mt-5 d-flex align-items-center flex-column" id="container-pages-info-2">
+                    <h5 style="color: white;" class="m-0">Secțiunea</h5>
+                    <h1>Miscelaneu</h1>
+                    <h3>Pagini care nu au rol de enciclopedie</h3>
+                </div>
+
+                <div class="row gap-5 mt-3 cards">
+
+                    <div class="container-card-m shadow-lg" id="card-miscelaneu">
+                        <div id="card-content-position">
+                            <h2>Arhivă</h2>
+                            <h3>Pagină dedicată păstrarea istoriei</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+                                <!-- pagina nu exista -->
+                                <a href="#logo-logo">
+                                    <button class="btn btn-primary" role="button" id="cards-button-m"
+                                        data-bs-toggle="modal" data-bs-target="#infoModal">
+                                        <span>
+                                            Citește
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-card-m shadow-lg" id="card-miscelaneu">
+                        <div id="card-content-position">
+                            <h2>Credite</h2>
+                            <h3>Cum a fost realizat acest proiect?</h3>
+                            <div class="d-flex justify-content-center mt-2 card-button">
+
+                                <!-- buton -->
+                                <a href="#logo-logo">
+                                    <button class="btn btn-primary" role="button" id="cards-button-m"
+                                        data-bs-toggle="modal" data-bs-target="#creditsModal">
+                                        <span>
+                                            Citește
+                                        </span>
+                                    </button>
+                                </a>
+
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="creditsModal" tabindex="-1"
+                                    aria-labelledby="creditsModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="creditsModalLabel">Credite</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <span>
+                                                    Dezvoltator: 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Artist User Interface (UI): 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Artist User Experience (UX): 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Quality Control: 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Dependențe: Bootstrap 5
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Artist Grafic: 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Front-End: 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Back-End: 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Găzduire: GitHub Pages
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Proofreader 1: Pol
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Proofreader 2: 28edxwrd
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Evaluator Artistic: pol și david
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Dependență Grafică: Figma și Adobe Photoshop 2024
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Dependență de Codare: Visual Studio Code
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    HR: 28edxwrd SRL
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Font-uri: Monsterrat (Google), Panton, Seage UI
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    Linii de cod pagină index: 401
+                                                </span>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Închide</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        (c) ~ 28edxwrd 2024
-    </footer>
-
+    <div class="modal fade" id="infoModal" tabindex="-1"
+    aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="infoModalLabel">Informație destul de importantă</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>
+                    Pagina pe care ai selectato încă nu există.
+                </span>
+                <br>
+                <span>
+                    Te rog încearcă mai târziu.
+                </span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Închide</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
