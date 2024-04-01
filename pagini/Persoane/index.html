@@ -4,256 +4,448 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/icon.ico">
     <title>SMP-uri</title>
 
-    <link rel="icon" type="image/x-icon" href="../../imagini/orange_icon.ico">
-
-    <link rel="stylesheet" href="../CSS/basic.css">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/persoane.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/pages/enciclopedie.css">
+    <link rel="stylesheet" href="../../css/blockquote.css">
+    <link rel="stylesheet" href="../../fonts.css">
 
     <script src="../../js/bootstrap.bundle.js"></script>
 
+</head>
+
 <body>
+    <div class="body">
+        <div class="body-content">
 
-    <header>
-        <a href="../../">
-            <button type="button" class="btn btn-primary">
-                Acasă
-            </button>
-        </a>
-        <h2>Enciclopedia Breasla Orange</h2>
-    </header>
+            <!-- NAVBAR n HEADER -->
+            <div class="header-content">
+                <nav class="navbar" data-bs-theme="dark">
+                    <div class="container-fluid justify-content-start gap-4">
 
-    <div class="body-content">
+                        <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="../../#">
+                            <img src="../../img/icon.ico" alt="Logo" width="30" height="30"
+                                class="d-inline-block align-text-top" id="logo-logo">
+                            <h2>
+                                Totul Breasla Orange
+                            </h2>
+                        </a>
 
-        <div class="content">
-            <!-- CONTINUT -->
-            <!-- DOCKER -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    Enciclopedie
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../pagini/Breasla Orange/" target="_blank">Breasla
+                                        Orange</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/Fenomene/" target="_blank">Fenomene</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/SMPuri/" target="_blank">SMP-uri</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/Persoane/" target="_blank">Persoane</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Podcast</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Gherțoaia</a></li>
+                            </ul>
+                        </div>
 
-            <div class="info-content">
-                <div class="docker">
-                    <h1 id="docker-de-informa-ii">Docker de informații</h1>
-                </div>
-                <div class="info">
-                    <p>Istoria membrilor din cadrul breslei orange, precum și detalii despre fiecare în parte.</p>
-                    <p></p>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    Miscelaneu
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Arhivă</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#creditsModal">Credite</a></li>
+                            </ul>
+                        </div>
+
+                        <a class="btn btn-primary p-2" href="#" role="button" id="nav-buton-arhiva"
+                            data-bs-toggle="modal" data-bs-target="#infoModal"> Arhivă</a>
+                    </div>
+                </nav>
+
+                <!-- HEADER -->
+
+                <div class="container" id="header-container">
+                    <div class="row">
+                        <div class="col d-flex flex-column justify-content-end" id="header-text">
+                            <h4 class="m-0 text-light">Enciclopedie</h4>
+                            <h1 class="m-0 mb-1 text-light">Persoane</h1>
+                        </div>
+                        <div class="col col-lg-2 p-0">
+                            <div>
+                                <img src="../../img/pagini/persoane/image.jpg" alt="logo orange" id="col-orange-logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <!-- CONTENT -->
 
+            <div class="container mt-0" id="container-content">
+                <div class="row">
 
-            <div>
+                    <!-- TEXT -->
+                    <div class="col mt-5" id="content-col">
+                        <h1 id="prs-brs">Persoanele breslei</h1>
+                        <hr>
+                        <p>Datând din 2014, membri breslei s-au întâlnit prin diferite circumstanțe și întâmplări,
+                            fiecare având
+                            povestea sa.</p>
+                        <p>Aici vei afla totul despre membri breslei.</p>
 
-                <!--  Avertizare  -->
-                <blockquote id="avertizare">
-                    <div>
-                        <img src="../../svg/cone-striped.svg" alt="" id="blockquote-svg">
-                    </div>
-                    <div id="avertizare-p">
-                        <p><strong>Hei, hei!</strong></p>
-                        <p>
-                            Pagina aceasta <strong>este în curs de actualizare</strong>! Se așteaptă să fie greșeli
-                            gramaticale, probleme vizuale, lucruri stricăcioase ș.a.m.d.
+                        <h3 id="ist-prt">Istoria</h3>
+                        <hr>
+                        <blockquote>
+                            <p><em>De ținut cont, că această istorie este din perspectiva autorului.</em></p>
+                        </blockquote>
+                        <p>Spre sfârșitul lui 2014, <em>edx</em> și <em>edibos</em> s-au întâlnit pe un server de
+                            Minecraft de
+                            „Build my Thing”, pe chat. Aceștia și-au dat numele de utilizator de pe skype și au început
+                            să
+                            vorbească.</p>
+                        <p>Nu se știe cu exactitate ce s-a întâmplat după, dar se presupune că nu au mai vorbit până în
+                            2016.
                         </p>
-                        <p>
-                            Pe lângă asta, <strong>pot fi elemente lipsă din pagină</strong> care vor urma a fi
-                            adăugate. Meseria-i muncă grea în unul :d
+                        <p>În 2016, pe skype, <em>edx</em> și <em>edibos</em> au început să vorbească mai des, și să
+                            înregistreze filmulețe cu Unturned.</p>
+
+                        <figure>
+                            <a href="../../img/pagini/persoane/unturned_picles.png" target="_blank">
+                                <img src="../../img/pagini/persoane/unturned_picles.png" alt="">
+                            </a>
+                            <p style="font-size: 15px;">
+                                <em>Imagine cu un filmuleț cu Unturned din 2016.</em>
+                            </p>
+                        </figure>
+
+                        <p>În rest, nu se știe ce altceva s-ar fi petrecut, dar se presupune că nu au mai vorbit până în
+                            2017,
+                            dar
+                            și faptul că într-un mesaj pe skype din 2017, <em>edx</em> a spus, și parafrazez „<em>Cmz
+                                ma, nu am
+                                mai
+                                vorbit de un an</em>”.</p>
+
+                        <p>În 2017, <em>mai precis 24.08.2017</em> <em>edx</em> a început din nou o conversație cu
+                            <em>edibos</em>,
+                            care pe atunci îl intitula ca <em>piucles</em>. Aceștia au discutat ceva vreme de vremurile
+                            pe care
+                            le-au trăit în 2016, și și-au dat numele de discord reciproc.
                         </p>
-                        <p>
-                            Te-aș ruga foarte mult să raportezi orice problemă pe discord! :D
+
+                        <figure>
+                            <a href="../../img/pagini/persoane/skype1.png" target="_blank">
+                                <img src="../../img/pagini/persoane/skype1.png" alt="">
+                            </a>
+                            <p style="font-size: 15px;">
+                                <em>Conversație din 2017.</em>
+                            </p>
+                        </figure>
+
+                        <p>Pe data de 31.08.2017 au început să curgă conversațile pe discord.</p>
+                        <p>Ei obișnuiau să își petreacă timpul făcând intr-uri în panzoid, sau jucându-se Minecraft pe
+                            Hypixel.net
+                            (<em>SkyWars</em>).</p>
+                        <figure>
+                            <a href="../../img/pagini/persoane/discord1.png" target="_blank">
+                                <img src="../../img/pagini/persoane/discord1.png" alt="">
+                            </a>
+                            <p style="font-size: 15px;">
+                                <em>Conversație din 2017.</em>
+                            </p>
+                        </figure>
+
+                        <p>Între august 2017 și octombrie 2017 nu se știe ce s-a întâmplat, deoarece nu au mai vorbit pe
+                            discord, se
+                            presupune că încă vorbeau pe skype.</p>
+                        <p>La îcenputul lui 2018, <em>edx</em> îî scrie lui <em>edibos</em> dar conversația nu durează
+                            mult și
+                            din
+                            nou nu mai vorbesc.</p>
+                        <p>În vara lui 2018, <em>edibos</em> îî scrie lui <em>edx</em>, unde, ambii își dau fiecăruia
+                            serverele
+                            de
+                            discord.</p>
+                        <p>Din 2018 până în 2019, nu se știe cu exactitate ce se întâmplă, dar ei nu au vorbit așa de
+                            mult.
+                            Totul a
+                            început din 2019, unde, până în prezent, încă țin legătura.</p>
+                        <p>În 2019, ei se jucau foarte mult Minecraft, dar acest an a fost unul din cei mai groaznici
+                            ani pentru
+                            această prietenie. Ambii erau enervanți ca dracu, unul mai mult decât celălalt, și se lăsa
+                            foarte
+                            mult
+                            cu blocări, înjuri ș.a.m.d.</p>
+                        <p>Din 2020, lucrurile decurg la fel, blocări, înjuri e.t.c, atâta că <em>edibos</em> era un
+                            spamator
+                            (<em>author note: încă te țin minte când mă spamai cu curu</em>).</p>
+                        <p>În vara lui 2020, apar trei personaje noi, <em>David</em>, <em>Buba</em> și <em>Pol</em>. În
+                            vara lui
+                            2020, toți 4 (<em>pol neconfirmat</em>) făceau parte din serverul lui <em>edibos</em>
+                            „Cosmote”.
+                            Înspre
+                            sfârșitul verii, septembrie același an, din nefericire, ambii <em>edx</em> și
+                            <em>edibos</em> au
+                            avut
+                            cea mai mare ceartă de până atunci, unde din nou, s-a lăsat cu blocaj. Toată șarada a durat
+                            o lună
+                            jumate.</p>
+                        <p>În octombrie 2020, <em>edx</em> și <em>edibos</em> se împrietenesc după ce <em>edx</em> și-a
+                            cerut
+                            scuze
+                            față de <em>edibos</em>. Aceștia au început să vorbească din nou.</p>
+                        <p>De la începutul lui 2021, <em>edx</em> se împrietenește carecumsecade cu <em>David</em> și cu
+                            <em>Buba</em>.
                         </p>
-                    </div>
-                </blockquote>
-                <!--  sfarsit Avertizare  -->
-
-                <!--  Atentie  -->
-                <blockquote id="atentie">
-                    <div>
-                        <img src="../../svg/info-circle-fill.svg" alt="" id="atentie-svg">
-                    </div>
-                    <div id="atentie-p">
-                        <p><strong>De ținut cont!</strong></p>
-                        <p>
-                            Dacă vrei să îți faci propria descriere, te invit cu drag, eu nu le fac, deoarece nu vreau
-                            să pară că instig ceva urât.
+                        <p>Din 2021 până în vara lui 2023, totul era ok, atâta cu Buba care dădea blocaj mereu. </p>
+                        <p>În vara lui 2023, <em>edx</em> și <em>David</em> îi scriu lui <em>Pol</em>, care a fost dat
+                            dispărut
+                            din
+                            2020. De atunci și până în prezent, persoanele actuale sunt <em>edx</em>, <em>edibos</em>,
+                            <em>David</em> și <em>Pol</em>, unde, <em>Buba</em> nu se știe nimic de el.
                         </p>
-                    </div>
-                </blockquote>
-                <!--  sfarsit Atentie  -->
+                        <br>
 
-                <!--  Atentie  -->
-                <blockquote id="atentie">
-                    <div>
-                        <img src="../../svg/info-circle-fill.svg" alt="" id="atentie-svg">
-                    </div>
-                    <div id="atentie-p">
-                        <p><strong>De ținut cont!</strong></p>
-                        <p>
-                            Și pentru edibos care se întreabă că de ce mai scriu astea aici, că oricum a dat exemplu că nu le citește nimeni sau că sunt plictisitoare, le pun că îmi place să aibă personalitate site-ul.
+                        <h3 id="28e">28edxwrd</h3>
+                        <hr>
+                        <p>Pe numele legal, ███████ Eduard ███████, alias „28edxwrd”, este fondatorul breslei orange.
                         </p>
+                        <p>Născut pe data de 28.11.2004 (<em>20 de ani</em>), localnic Fieni, Dâmbovița.</p>
+                        <p>Tehnician hacker darknet.</p>
+                        <figure>
+                            <a href="../../img/pagini/persoane/discord/edx-pfp.png" target="_blank">
+                                <img src="../../img/pagini/persoane/discord/edx-pfp.png" alt="">
+                            </a>
+                            <p style="font-size: 15px;">
+                                <em>Imagine Discord.</em>
+                            </p>
+                        </figure>
+                        <br>
+
+                        <h3 id="pol">Pol</h3>
+                        <hr>
+                        <p>Pe numele legal, ███████ Paul ███████.</p>
+                        <p>Născut pe data de 2004 (<em>20 de ani</em>), localnic Iași, Iași.</p>
+                        <img src="../../img/pagini/persoane/alegatie.png" alt="">
+                        <figure>
+                            <a href="../../img/pagini/persoane/discord/pol-pfp.jpg" target="_blank">
+                                <img src="../../img/pagini/persoane/discord/pol-pfp.jpg" alt="">
+                            </a>
+                            <p style="font-size: 15px;">
+                                <em>Imagine Discord.</em>
+                            </p>
+                        </figure>
+                        <br>
+
+                        <h3 id="edb">edibos</h3>
+                        <hr>
+                        <p>Pe numele legal, ███████ Eduard ███████, alias „edibos / killedi”.</p>
+                        <p>Născut pe data de 27.12.2003 (<em>21 de ani</em>), localnic Hășdate, Cluj-Napoca.</p>
+                        <p>Este pe jumătate român, tehnician în aparate.</p>
+                        <figure>
+                            <a href="../../img/pagini/persoane/discord/edibos-pfp.png" target="_blank">
+                                <img src="../../img/pagini/persoane/discord/edibos-pfp.png" alt="">
+                            </a>
+                            <p style="font-size: 15px;">
+                                <em>Imagine Discord.</em>
+                            </p>
+                        </figure>
+                        <br>
+
+                        <h3 id="dvd">David</h3>
+                        <hr>
+                        <p>Pe numele legal, ███████ David ███████.</p>
+                        <p>Născut pe data de 23.07.2003 (<em>21 de ani</em>), localnic Mănăștur, Cluj-Napoca.</p>
+                        <figure>
+                            <a href="../../img/pagini/persoane/discord/david-pfp.png" target="_blank">
+                                <img src="../../img/pagini/persoane/discord/david-pfp.png" alt="">
+                            </a>
+                            <p style="font-size: 15px;">
+                                <em>Imagine Discord.</em>
+                            </p>
+                        </figure>
+                        <br>
+
+                        <h3 id="bba">Buba</h3>
+                        <hr>
+                        <p>Pe numele legal, ███████ Paul ███████.</p>
+                        <p>Născut pe data de 2003 (<em>21 de ani</em>), localnic Gherțoaia, Cluj-Napoca.</p>
+
+                        <br>
+                        <br>
+                        <h5>Ultima actualizare: 01.04.2023 la ora 19:52</h5>
                     </div>
-                </blockquote>
-                <!--  sfarsit Atentie  -->
 
-                <h1 id="persoanele-breslei">Persoanele breslei</h1>
-                <hr>
-                <p>Datând din 2014, membri breslei s-au întâlnit prin diferite circumstanțe și întâmplări, fiecare având
-                    povestea sa.</p>
-                <p>Aici vei afla totul despre membri breslei.</p>
+                    <div class="col" id="content-sidebar-col">
+                        <div class="sticky p-4">
+                            <h2>Cuprins</h2>
+                            <hr>
+                            <ol>
+                                <li>
+                                    <a href="#prs-brs">
+                                        Personale Breslei
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#ist-prt">
+                                        Istoria
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#28e">
+                                        28edxwrd
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#pol">
+                                        Pol
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#edb">
+                                        edibos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#dvd">
+                                        David
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#bba">
+                                        Buba
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
 
-                <p>-- curpins --</p>
 
-                <h3 id="istoricul-prieteniilor">Istoricul prieteniilor</h3>
-                <hr>
-                <blockquote>
-                    <p><em>De ținut cont, că această istorie este din perspectiva autorului.</em></p>
-                </blockquote>
-                <p>Spre sfârșitul lui 2014, <em>edx</em> și <em>edibos</em> s-au întâlnit pe un server de Minecraft de
-                    „Build my Thing”, pe chat. Aceștia și-au dat numele de utilizator de pe skype și au început să
-                    vorbească.</p>
-                <p>Nu se știe cu exactitate ce s-a întâmplat după, dar se presupune că nu au mai vorbit până în 2016.
-                </p>
-                <p>În 2016, pe skype, <em>edx</em> și <em>edibos</em> au început saă convorbească mai des, și să
-                    înregistreze filmulețe cu Unturned.</p>
-
-                <div class="info-img">
-                    <img src="../../imagini/Persoane/unturned_picles.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Imagine cu un filmuleț cu Unturned din 2016.</em>
-                    </p>
                 </div>
-
-                <p>În rest, nu se știe ce altceva s-ar fi petrecut, dar se presupune că nu au mai vorbit până în 2017,
-                    dar
-                    și faptul că într-un mesaj pe skype din 2017, <em>edx</em> a spus, și parafrazez „<em>Cmz ma, nu am
-                        mai
-                        vorbit de un an</em>”.</p>
-
-                <p>În 2017, <em>mai precis 24.08.2017</em> <em>edx</em> a început din nou o conversație cu
-                    <em>edibos</em>,
-                    care pe atunci îl intitula ca <em>piucles</em>. Aceștia au discutat ceva vreme de vremurile pe care
-                    le-au trăit în 2016, și și-au dat numele de discord reciproc.
-                </p>
-                <div class="info-img" id="skype1">
-                    <img src="../../imagini/Persoane/skype1.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Conversație din 2017.</em>
-                    </p>
-                </div>
-
-                <p>Pe data de 31.08.2017 au început să curgă conversațile pe discord.</p>
-                <p>Ei obișnuiau să își petreacă timpul făcând intr-uri în panzoid, sau jucându-se Minecraft pe
-                    Hypixel.net
-                    (<em>SkyWars</em>).</p>
-                <div class="info-img" id="discord1">
-                    <img src="../../imagini/Persoane/discord1.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Conversație din 2017.</em>
-                    </p>
-                </div>
-
-                <p>Între august 2017 și octombrie 2017 nu se știe ce s-a întâmplat, deoarece nu au mai vorbit pe
-                    discord, se
-                    presupune că încă vorbeau pe skype.</p>
-                <p>La îcenputul lui 2018, <em>edx</em> îî scrie lui <em>edibos</em> dar conversația nu durează mult și
-                    din
-                    nou nu mai vorbesc.</p>
-                <p>În vara lui 2018, <em>edibos</em> îî scrie lui <em>edx</em>, unde, ambii își dau fiecăruia serverele
-                    de
-                    discord.</p>
-                <p>Din 2018 până în 2019, nu se știe cu exactitate ce se întâmplă, dar ei nu au vorbit așa de mult.
-                    Totul a
-                    început din 2019, unde, până în prezent, încă țin legătura.</p>
-                <p>În 2019, ei se jucau foarte mult Minecraft, dar acest an a fost unul din cei mai groaznici ani pentru
-                    această prietenie. Ambii erau enervanți ca dracu, unul mai mult decât celălalt, și se lăsa foarte
-                    mult
-                    cu blocări, înjuri ș.a.m.d.</p>
-                <p>Din 2020, lucrurile decurg la fel, blocări, înjuri e.t.c, atâta că <em>edibos</em> era un spamator
-                    (<em>author note: încă te țin minte când mă spamai cu curu</em>).</p>
-                <p>În vara lui 2020, apar trei personaje noi, <em>David</em>, <em>Buba</em> și <em>Pol</em>. În vara lui
-                    2020, toți 4 (<em>pol neconfirmat</em>) făceau parte din serverul lui <em>edibos</em> „Cosmote”.
-                    Înspre
-                    sfârșitul verii, septembrie același an, din nefericire, ambii <em>edx</em> și <em>edibos</em> au
-                    avut
-                    cea mai mare ceartă de până atunci, unde din nou, s-a lăsat cu blocaj. Toată șarada a durat o lună
-                    jumate.</p>
-                <p>În octombrie 2020, <em>edx</em> și <em>edibos</em> se împrietenesc după ce <em>edx</em> și-a cerut
-                    scuze
-                    față de <em>edibos</em>. Aceștia au început să vorbească din nou.</p>
-                <p>De la începutul lui 2021, <em>edx</em> se împrietenește carecumsecade cu <em>David</em> și cu
-                    <em>Buba</em>.
-                </p>
-                <p>Din 2021 până în vara lui 2023, totul era ok, atâta cu Buba care dădea blocaj mereu. </p>
-                <p>În vara lui 2023, <em>edx</em> și <em>David</em> îi scriu lui <em>Pol</em>, care a fost dat dispărut
-                    din
-                    2020. De atunci și până în prezent, persoanele actuale sunt <em>edx</em>, <em>edibos</em>,
-                    <em>David</em> și <em>Pol</em>, unde, <em>Buba</em> nu se știe nimic de el.
-                </p>
-
-
-                <h3 id="28edxwrd">28edxwrd</h3>
-                <hr>
-                <p>Pe numele legal, ███████ Eduard ███████, alais „28edxwrd”, este fondatorul breslei orange.</p>
-                <p>Născut pe data de 28.11.2004 (<em>20 de ani</em>), localnic Fieni, Dâmbovița.</p>
-                <p>Tehnician hacker darknet.</p>
-                <div class="info-img">
-                    <img src="../../imagini/Persoane/edx-pfp.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Imagine Discord.</em>
-                    </p>
-                </div>
-
-                <h3 id="edibos">edibos</h3>
-                <hr>
-                <p>Pe numele legal, ███████ Eduard ███████, alias „edibos / killedi”.</p>
-                <p>Născut pe data de 27.12.2003 (<em>21 de ani</em>), localnic Hășdate, Cluj-Napoca.</p>
-                <p>Este pe jumătate român, tehnician în aparate.</p>
-                <div class="info-img">
-                    <img src="../../imagini/Persoane/edibos-pfp.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Imagine Discord.</em>
-                    </p>
-                </div>
-
-                <h3 id="david">David</h3>
-                <hr>
-                <p>Pe numele legal, ███████ David ███████.</p>
-                <p>Născut pe data de 23.07.2003 (<em>21 de ani</em>), localnic Mănăștur, Cluj-Napoca.</p>
-                <div class="info-img">
-                    <img src="../../imagini/Persoane/david-pfp.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Imagine Discord.</em>
-                    </p>
-                </div>
-
-                <h3 id="pol">Pol</h3>
-                <hr>
-                <p>Pe numele legal, ███████ Paul ███████.</p>
-                <p>Născut pe data de 2004 (<em>20 de ani</em>), localnic Iași, Iași.</p>
-                <img src="../../imagini/Persoane/alegatie.png" alt="">
-                <div class="info-img">
-                    <img src="../../imagini/Persoane/pol-pfp.jpg" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Imagine Discord.</em>
-                    </p>
-                </div>
-
-                <h3 id="buba">Buba</h3>
-                <hr>
-                <p>Pe numele legal, ███████ Paul ███████.</p>
-                <p>Născut pe data de 2003 (<em>21 de ani</em>), localnic Gherțoaia, Cluj-Napoca.</p>
             </div>
         </div>
 
-    </div>
+        <!--    MODAL   -->
 
+        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="infoModalLabel">Informație destul de importantă</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span>
+                            Pagina pe care ai selectat-o încă nu există.
+                        </span>
+                        <br>
+                        <span>
+                            Te rog încearcă mai târziu.
+                        </span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="creditsModalLabel">Credite</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span>
+                            Dezvoltator: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Artist User Interface (UI): 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Artist User Experience (UX): 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Quality Control: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Dependențe: Bootstrap v5.3
+                        </span>
+                        <br>
+                        <span>
+                            Artist Grafic: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Front-End: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Back-End: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Găzduire: GitHub Pages
+                        </span>
+                        <br>
+                        <span>
+                            Proofreader 1: Pol
+                        </span>
+                        <br>
+                        <span>
+                            Proofreader 2: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Evaluator Artistic: pol și david
+                        </span>
+                        <br>
+                        <span>
+                            Dependență Grafică: Figma și Adobe Photoshop 2024
+                        </span>
+                        <br>
+                        <span>
+                            Dependență de Codare: Visual Studio Code
+                        </span>
+                        <br>
+                        <span>
+                            HR: 28edxwrd SRL
+                        </span>
+                        <br>
+                        <span>
+                            Font-uri: Monsterrat (Google), Panton, Seage UI
+                        </span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

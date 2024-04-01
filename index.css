@@ -1,29 +1,3 @@
-@font-face {
-    font-family: 'Panton-Black';
-    src: url('./fonts/Panton-Black.ttf')
-}
-
-@font-face {
-    font-family: 'Panton-XBold';
-    src: url('./fonts/Panton-ExtraBold.ttf')
-}
-
-@font-face {
-    font-family: 'Panton-Bold';
-    src: url('./fonts/Panton-Bold.ttf')
-}
-
-@font-face {
-    font-family: 'Panton-Regular';
-    src: url('./fonts/Panton-Regular.ttf')
-}
-
-@font-face {
-    font-family: 'Panton-SemiBold';
-    src: url('./fonts/Panton-SemiBold.ttf')
-}
-
-
 body {
     background-image: linear-gradient(to bottom,
             rgb(0 0 0 / 80%),
@@ -48,7 +22,7 @@ nav {
     display: flex;
     justify-content: center;
 }
-
+ 
 .body-content {
     width: 120rem;
 }
@@ -65,27 +39,7 @@ nav {
 }
 
 /* navbar */
-.navbar {
-    padding: 1rem;
-}
-#nav-buton-arhiva{
-    height: 42px;
-    font-family: 'Panton-XBold';
-    font-size: 18px;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-}
 
-/* dropdown */
-.btn-secondary {
-    background-image: linear-gradient(0.25turn, #FBAE3C, #F99424);
-    border-style: none;
-}
-
-.dropdown span {
-    font-family: 'Panton-XBold';
-    font-size: 20px;
-}
 
 /* containers stanga / dreapta */
 #container-left,

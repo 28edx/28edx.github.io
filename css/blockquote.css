@@ -1,0 +1,17 @@
+blockquote{
+    background-color: rgb(65, 65, 65, 0.1);
+    padding: 1rem;
+
+    max-width: 85%;
+
+    border-style: solid;
+    border-left-width: 5px;
+    border-color: rgb(70, 70, 70, 0.1);
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-radius: 8px;
+}
+blockquote p{
+    margin: 0;
+}

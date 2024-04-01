@@ -4,563 +4,642 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/icon.ico">
     <title>SMP-uri</title>
 
-    <link rel="icon" type="image/x-icon" href="../../imagini/orange_icon.ico">
-
-    <link rel="stylesheet" href="../CSS/basic.css">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/smp.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/pages/enciclopedie.css">
+    <link rel="stylesheet" href="../../css/blockquote.css">
+    <link rel="stylesheet" href="../../fonts.css">
 
     <script src="../../js/bootstrap.bundle.js"></script>
 
+</head>
+
 <body>
+    <div class="body">
+        <div class="body-content">
 
-    <header>
-        <a href="../../">
-            <button type="button" class="btn btn-primary">
-                Acasă
-            </button>
-        </a>
-        <h2>Enciclopedia Breasla Orange</h2>
-    </header>
+            <!-- NAVBAR n HEADER -->
+            <div class="header-content">
+                <nav class="navbar" data-bs-theme="dark">
+                    <div class="container-fluid justify-content-start gap-4">
 
-    <div class="body-content">
+                        <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="../../#">
+                            <img src="../../img/index/TBO-pic.png" alt="Logo" width="30" height="30"
+                                class="d-inline-block align-text-top" id="logo-logo">
+                            <h2>
+                                Totul Breasla Orange
+                            </h2>
+                        </a>
 
-        <div class="content">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    Enciclopedie
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../pagini/Breasla Orange/" target="_blank">Breasla
+                                        Orange</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/Fenomene/" target="_blank">Fenomene</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/SMPuri/" target="_blank">SMP-uri</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/Persoane/" target="_blank">Persoane</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Podcast</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Gherțoaia</a></li>
+                            </ul>
+                        </div>
 
-            <!-- DOCKER -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    Miscelaneu
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Arhivă</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#creditsModal">Credite</a></li>
+                            </ul>
+                        </div>
 
-            <div class="info-content">
-                <div class="docker">
-                    <h1 id="docker-de-informa-ii">Docker de informații</h1>
-                </div>
-                <div class="info">
-                    <p>SMP-urile create de către membri breslei de-a-lungul timpului.</p>
-                    <p></p>
+                        <a class="btn btn-primary p-2" href="#" role="button" id="nav-buton-arhiva"
+                            data-bs-toggle="modal" data-bs-target="#infoModal"> Arhivă</a>
+                    </div>
+                </nav>
+
+                <!-- HEADER -->
+
+                <div class="container" id="header-container">
+                    <div class="row">
+                        <div class="col d-flex flex-column justify-content-end" id="header-text">
+                            <h4 class="m-0 text-light">Enciclopedie</h4>
+                            <h1 class="m-0 mb-1 text-light">SMP-uri</h1>
+                        </div>
+                        <div class="col col-lg-2 p-0">
+                            <div>
+                                <img src="../../img/pagini/smps/smps.png" alt="logo orange" id="col-orange-logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- CONTINUT -->
-            <div>
-                <h1 id="smp-uri">SMP-uri</h1>
-                <hr>
+            <!-- CONTENT -->
 
-                <!--  Avertizare  -->
-                <blockquote id="avertizare">
-                    <div>
-                        <img src="../../svg/cone-striped.svg" alt="" id="blockquote-svg">
-                    </div>
-                    <div id="avertizare-p">
-                        <p><strong>Hei, hei!</strong></p>
-                        <p>
-                            Pagina aceasta <strong>este în curs de actualizare</strong>! Se așteaptă să fie greșeli
-                            gramaticale, probleme vizuale, lucruri stricăcioase ș.a.m.d.
-                        </p>
-                        <p>
-                            Pe lângă asta, <strong>pot fi elemente lipsă din pagină</strong> care vor urma a fi
-                            adăugate. Meseria-i muncă grea în unul :d
-                        </p>
-                        <p>
-                            Te-aș ruga foarte mult să raportezi orice problemă pe discord! :D
-                        </p>
-                    </div>
-                </blockquote>
-                <!--  sfarsit Avertizare  -->
+            <div class="container mt-0" id="container-content">
+                <div class="row">
 
-                <!--  Atentie  -->
-                <blockquote id="atentie">
-                    <div>
-                        <img src="../../svg/info-circle-fill.svg" alt="" id="atentie-svg">
-                    </div>
-                    <div id="atentie-p">
-                        <p><strong>De ținut cont!</strong></p>
-                        <p>
-                            Din pricina faptului că, cu progresul acestor SMP-uri, sunt
-                            nenumărate fotografii
-                            realizate cu serverele, nu am posibilitatea să umplu această pagină cu pozele acestea, așa
-                            că, pentru fiecare SMP de pe această pagina, am inclus doar 3 poze aleatorii.</p>
+                    <!-- TEXT -->
+                    <div class="col mt-5" id="content-col">
+                        <h1>SMP-urile Grupului</h1>
+                        <p>De-a-lungul timpului, datând din 2020, au existat nenumărate SMP-uri (<strong>en</strong>;
+                            <em>Survival Multiplayer</em> | <strong>ro</strong>; <em>Bresle</em>) realizate de membrii
+                            Orange.
+                        </p>
+                        <p>Au existat SMP-uri cu o durată mare și unele cu o durată mică de joacă.</p>
+                        <h1 id="smp-of">SMP-urile Oficiale</h1>
+                        <hr>
+                        <blockquote>
+                            <p>Acestea sunt SMP-urile create în totalitate de membrii grupului. </p>
+                        </blockquote>
+
+                        <!--                  SMP 2021                       -->
                         <br>
-                        <p>Dacă dorești să vizionezi toate fotografiile cu toate aceste SMP-uri, te voi ruga să vizitezi
-                            pagina <a href="../../pagini/arhiva/">Arhivă</a> unde vei găsi tot ce ai nevoie.</p>
-                        <p>
-                            Pentru un istoric detaliat al paginii, te rog să derulezi în josul paginii pentru a vedea istoricul paginii acesteia!
-                        </p>
-                    </div>
-                </blockquote>
-                <!--  sfarsit Atentie  -->
+                        <h3 id="feb2021">SMP-ul din Februarie 2021</h3>
+                        <hr>
+                        <blockquote>
+                            <p>
+                                <em>Nu se știe cu exactitate durata SMP-ului acestuia, precum și numele său, se
+                                    presupune că era
+                                    denumit DambovitaSMP, dar probabil ca nu.</em>
+                            </p>
+                        </blockquote>
 
-                <!--  Atentie  -->
-                <blockquote id="atentie">
-                    <div>
-                        <img src="../../svg/info-circle-fill.svg" alt="" id="atentie-svg">
-                    </div>
-                    <div id="atentie-p">
-                        <p><strong>De ținut cont!</strong></p>
-                        <p>
-                            Pagina „Arhivă” nu este încă gata, la fel și „Istoricul paginii”.
-                        </p>
-                    </div>
-                </blockquote>
-                <!--  sfarsit Atentie  -->
+                        <!-- TLDR -->
 
-                <p>De-a-lungul timpului, datând din 2020, au existat nenumărate SMP-uri (<strong>en</strong>;
-                    <em>Survival Multiplayer</em> | <strong>ro</strong>; <em>Bresle</em>) realizate de membrii Orange.
-                </p>
-                <p>Au existat SMP-uri cu o durată mare și unele cu o durată mică de joacă.</p>
-
-                <div class="cuprins">
-                    <p>Curpins</p>
-                    <ol>
-                        <li>
-                            <a href="#smp-of">
-                                SMP-uri oficiale
+                        <p class="d-inline-flex gap-1 mb-2">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button"
+                                aria-expanded="false" aria-controls="collapse2" id="dropdown-button">
+                                Detalii la prima vedere
                             </a>
-                            <ul>
-                                <li>
-                                    <a href="#feb2021">
-                                        Februarie 2021
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#feb2022">
-                                        Februarie 2022
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#juani">
-                                                Andra și juanii
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#palat">
-                                                Buba și palatul
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#interdictii">
-                                                Oncioiu și interdicțiile
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#iul2022">
-                                        Iulie 2022
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#reg-sv">
-                                                Regulile alterate
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#dec2022">
-                                        Decembrie 2022
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
+                        </p>
+                        <div class="collapse" id="collapse2">
+                            <div class="card card-body">
+                                <p>
+                                    <strong>Fondatori:</strong> <em>edx</em>, <em>muslec</em>
+                                </p>
+                                <p>
+                                    <strong>Data creării:</strong> 01.02.2021 ~01:00
+                                </p>
+                                <p>
+                                    <strong>Data închiderii:</strong> 10.02.2021 / 20.02.2021
+                                </p>
+                                <p>
+                                    <strong>Membri:</strong> 6 (<em>edx, Muslec, edibos, david, Silviu, oncioiu</em>)
+                                </p>
+                                <p>
+                                    <strong>Durată de viață:</strong> 1-2 săptămâni
+                                </p>
+                            </div>
+                        </div>
+                        <!-- sfarsit TLDR -->
 
-                        <li>
-                            <a href="#smp-ne_of">
-                                SMP-uri neoficiale
+                        <p>SMP-ul din februarie 2021 a fost un SMP realizat de către <strong><em>edx</em></strong> și
+                            <em><strong>Muslec</strong> (membru fost-grup dâmbovița)</em>.
+                        </p>
+                        <p>Prima datare a grupului a fost pe 01.02.2021 la 1 dimineața.</p>
+                        <p>SMP-ul a fost făcut pe versiunea 1.16, iar pe parcursul a câteva zile, următorii membri
+                            notabili s-au alăturat: <em><strong>oncioiu</strong> (membru fost-grup micro 2 târgovșite și
+                                dâmbovița)</em>, <em><strong>Silviu</strong> (membru fost-grup dâmbovița)</em>,
+                            <em><strong>edibos</strong></em> și <em><strong>David</strong></em>.
+                        </p>
+                        <p>SMP-ul se presupune că a durat doar 1-2 săptămâni și a fost realizat pe fost-server
+                            <em>dâmbovița</em>.
+                        </p>
+
+                        <figure class="figure-container">
+                            <div class="container poze text-center">
+                                <div class="row row-gap">
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2021feb/1.png" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2021feb/1.png" alt="imagine smp 2">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2021feb/2.png" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2021feb/2.png" alt="imagine smp 2">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2021feb/3a.png" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2021feb/3a.png" alt="imagine smp 3">
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Fă clic pe imagine pentru a o vizualiza în întregime!
+                                    </p>
+                                </div>
+                            </div>
+                        </figure>
+
+
+                        <!-- GSMP SEZONUL 1-->
+                        <br>
+                        <br>
+                        <h3 id="feb2022">GherțoaiaSMP Sezonul I | Februarie 2022</h3>
+                        <hr>
+                        <!-- TLDR -->
+                        <p class="d-inline-flex gap-1 mb-2">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample" id="dropdown-button">
+                                Detalii la prima vedere
                             </a>
-                            <ul>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <p>
+                                    <strong>Fondatori:</strong> <em>edx</em>, <em>edibos</em>
+                                </p>
+                                <p>
+                                    <strong>Data creării:</strong> 14.02.2022 ~13:00
+                                </p>
+                                <p>
+                                    <strong>Data închiderii:</strong> 09.03.2022
+                                </p>
+                                <p>
+                                    <strong>Membrii:</strong> 6 (<em>edx, edibos, david, oncioiu, buba,
+                                        furniculonci</em>)
+                                </p>
+                                <p>
+                                    <strong>Durată de viață:</strong> 25z
+                                </p>
+                            </div>
+                        </div>
+                        <!-- sfarsit TLDR -->
+
+
+                        <p><strong>GherțoaiaSMP</strong> (<em>nume precedent: DambovitaSMP</em>) a fost un SMP creat de
+                            către
+                            <em><strong>edx</strong></em>, <em><strong>edibos</strong></em> și
+                            <em><strong>oncioiu</strong></em>. A fost creat pe data de 14.02.2022 (<em>ora exactă nu se
+                                știe, se
+                                presupune că a fost 1 după-amiaza</em>).
+                        </p>
+                        <p>Acest server a fost ultimul server care a fost hostat pe gratis, deoarece erau întâmpinate
+                            <em>o
+                                căruță</em> de probleme de LAG pe server.
+                        </p>
+                        <p>Serverul a fost co-hostat de către <em>edx</em> și <em>edibos</em> (<em>nu se știe dacă david
+                                a
+                                ajutat la host</em>), unde <em>edx</em> a donat <em>15 lei</em> iar edibos <em>10
+                                lei</em>.</p>
+                        <p>Membri serverului au fost: <em>edx</em> (<em>butt3rdll</em>), <em>edibos</em>
+                            (<em>27atmos</em>),
+                            <em>David</em> (<em>PepegaPizza</em>), <em>oncioiu</em> (<em>Raulooooo</em>), <em>Buba</em>
+                            (<em>pumndefier</em>) și <em>furniculonci</em>.
+                        </p>
+                        <p>Toată conversația serverului a fost înregistrată și arhivată, se poate găsi aici.</p>
+                        <p>SMP-ul s-a încheiat pe data de <em>09.03.2022</em>, având o durată de viață de <em>25 de
+                                zile</em>.
+                        </p>
+
+                        <br>
+                        <h4 id="juani">Andra și Juanii</h4>
+                        <p>Când membrul <em>g59andra</em> a intrat pe server, membrii <em>edibos</em> și <em>edx</em> au
+                            decis
+                            să o păcălească, punând oi numite <em>Juan</em> pe la ea la fermă și in mina ei, toată
+                            bazaconia
+                            aceasta a durat câteva minute, până când a dat vina pe membrul <em>David</em>, care el nu
+                            făcuse
+                            nimic săracul.</p>
+
+                        <br>
+                        <h4 id="palat">Buba și Palatul</h4>
+                        <p>În timpul serverului, membrul <em>Buba</em> deținea o casă, <em>moderat estetic</em> în
+                            fundul
+                            curții. Membri <em>edibos</em> și <em>edx</em> decid să-i bubuie casa lui buba, rezultând în
+                            <em>edibos</em> primind karma iar membrul <em>buba</em> ne mai intrând pe server.
+                        </p>
+                        <p>Drept răsplată, membri <em>edibos</em>, <em>edx</em> și <em>David</em> au construit o clădire
+                            țigănească, intitulată „Palat”.</p>
+
+                        <br>
+                        <h4 id="interdictii">Oncioiu și interdicțiile</h4>
+                        <p>Membri serverului au realizat diverse și diferite construcții emancipate, precum construcții
+                            avantajoase pentru membri serverului, deoarece deschideau poarta resurselor greu de făcut
+                            rost,
+                            numite atipic „ferme”.</p>
+                        <p>Totuși, membrul <em>Oncioiu</em> a primit nenumărate interziceri (<em>interdicții</em>) la
+                            fermele
+                            realizate de diverșii membri, pe motive necunoscute.</p>
+                        <figure class="figure-container">
+                            <div class="container poze text-center">
+                                <div class="row row-gap">
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2022feb/1.png" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2022feb/1.png" alt="imagine smp 1">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2022feb/2.png" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2022feb/2.png" alt="imagine smp 2">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2022feb/3.png" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2022feb/3.png" alt="imagine smp 3">
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Fă clic pe imagine pentru a o vizualiza în întregime!
+                                    </p>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <!-- GSMP SEZONUL 2-->
+
+                        <br>
+                        <br>
+                        <h3 id="iul2022">GherțoaiaSMP Sezonul II | Iulie 2022</h3>
+                        <hr>
+                        <!-- TLDR -->
+                        <p class="d-inline-flex gap-1 mb-2">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse3" role="button"
+                                aria-expanded="false" aria-controls="collapse3" id="dropdown-button">
+                                Detalii la prima vedere
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse3">
+                            <div class="card card-body">
+                                <p>
+                                    <strong>Fondatori:</strong> <em>edx</em>, <em>edibos</em>, <em>David ,</em>
+                                </p>
+                                <p>
+                                    <strong>Data creării:</strong> 15.07.2022 ~02:00
+                                </p>
+                                <p>
+                                    <strong>Data închiderii:</strong> 16.08.2022 ~18:00
+                                </p>
+                                <p>
+                                    <strong>Membrii:</strong> 6 (<em>edx, edibos, david, TeraCotaYT, cristianno200</em>)
+                                </p>
+                                <p>
+                                    <strong>Durată de viață:</strong> 1l 1z
+                                </p>
+                            </div>
+                        </div>
+                        <!-- sfarsit TLDR -->
+                        <p><strong>GherțoaiaSMP Sezonul 2</strong> (<em>pe scurt; GSMP</em>) este SMP-ul adaos SMP-ului
+                            antecedent, creat pe data de <em>15.07.2022</em> în jurul <em>orei 2 dimineața</em>.</p>
+                        <p>Serverul a fost co-creat de către <em>edx</em>, <em>edibos</em> și <em>David</em>.</p>
+                        <p>Membrii serverului au fost <em>edx</em>, <em>edibos</em>, <em>David</em>, <em>TeraCotaYT</em>
+                            și
+                            <em>cristianno200</em>.
+                        </p>
+                        <p>Serverul s-a încheiat pe data de <em>16.08.2024</em> la <em>ora 6 după-amiaza</em>, având o
+                            durată de
+                            viață de <em>1 lună și 1 zi</em>. Acest server a avut cea mai mare durată de viață dintre
+                            toate.</p>
+
+                        <h4 id="reg-sv">Regulile alterate ale serverului</h4>
+                        <p>Asemena sezonului I, ambele servere aveau reguli pentru a păstra good sportsmanship între
+                            jucători.
+                            În seoznul 2, aceleași reguli au fost păstrate asemena sezonului 1, dar din pricina faptului
+                            că
+                            membrul <em>edibos</em> a fost omorât de membrul <em>edx</em> deoarece bătea câmpii legat de
+                            sabia
+                            pe care o deținea edx, <em>edibos</em> s-a supărat și a zis că nu mai joacă și că nu-și dă
+                            experiența și obiectele pierdute înapoi deoarece „<em>încălca regulile serverului</em>”.</p>
+                        <p>Astfel, regulile au fost alterate de membrul <em>edx</em>, pentru a permite darea înapoi de
+                            obiecte
+                            și experiență înapoi în cazul omorului cauzat de alt jucător.</p>
+                        <div class="reguli">
+                            <img src="../../imagini/SMP/SMP2022iul/reguli.png" alt="regulile serverului">
+                            <span>
+                                <em>
+                                    Poză cu regulile alterate ale serverului.
+                                </em>
+                            </span>
+                        </div>
+
+                        <br>
+                        <br>
+                        <h3 id="dec2022">GherțoaiaSMP Sezonul III | Decembrie 2022</h3>
+                        <hr>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse4" role="button"
+                                aria-expanded="false" aria-controls="collapse4" id="dropdown-button">
+                                Detalii la prima vedere
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse4">
+                            <div class="card card-body">
+                                <p>
+                                    <strong>Fondatori:</strong> <em>edx</em>, <em>edibos</em>, <em>David ,</em>
+                                </p>
+                                <p>
+                                    <strong>Data creării:</strong> 15.07.2022 ~02:00
+                                </p>
+                                <p>
+                                    <strong>Data închiderii:</strong> 16.08.2022 ~18:00
+                                </p>
+                                <p>
+                                    <strong>Membrii:</strong> 6 (<em>edx, edibos, david, TeraCotaYT, cristianno200</em>)
+                                </p>
+                                <p>
+                                    <strong>Durată de viață:</strong> 1l 1z
+                                </p>
+                            </div>
+                        </div>
+                        <p><strong>GherțoaiaSMP Sezonul 3</strong> este ce-l de-al treilea sezon din seria de SMP-uri
+                            „GherțoaiaSMP”, creat pe data de <em>10.12.2022</em> în jurul <em>orei 4 după-amaiaza</em>
+                        </p>
+                        <p>Serverul a fost co-creat de către <em>edx</em> și <em>edibos</em>.</p>
+                        <p>Sezonul 3 a văzut cei mai mulți membri dintre toate SMP-urile, cu un record de 11 jucători
+                            unici.
+                            Membrii serverului au fost: <em>edx</em>, <em>edibos</em>, <em>David</em>,<em>Wh1pZY</em>,
+                            <em>Casian03</em>, <em>cata182</em>, <em>cristianno200</em>, <em>Puff</em>, <em>buba</em>,
+                            <em>Galaxy</em> și <em>coOs</em>.
+                        </p>
+                        <p>Serverul s-a încheiat pe data de <em>03.01.2023</em> la <em>ora 7 dimineața</em>, având cea
+                            mai
+                            scurtă durată de viață (<em>timp în care s-a jucat</em>) de doar aproximativ <em>2
+                                săptămâni</em>.
+                        </p>
+                        <p>Nu a existat nimic notabil.</p>
+
+                        <br>
+                        <br>
+                        <h2 id="smp-ne_of">SMP-uri neoficiale</h2>
+                        <hr>
+                        <blockquote>
+                            <p><em>SMP-urile neoficiale sunt SMP-uri create de diverși membri ai breslei, sau care nu
+                                    făceau
+                                    parte din breaslă, dar care nu viza jucarea en grand (adică cu toată lumea). Aceste
+                                    SMP-uri
+                                    au fost de-obicei servere de scurtă durată.</em></p>
+                        </blockquote>
+
+                        <br>
+                        <!--                  SMP 2020                       -->
+                        <h3 id="cosmote2020">SMP-ul Cosmote(<em>confirmat</em>)
+                            din vara 2020.</h3>
+
+                        <blockquote id="blockquote-cosmote">
+                            <p><em>Nu există suficiente detalii în legătură cu acest SMP precum datarea sa, precum și
+                                    încheierea
+                                    sa, membrii ș.a.m.d</em>.</p>
+                            <a href="https://youtu.be/4Ox-vYu9Ee8">
+                                <img src="../../imagini/SMP/confirmat_de_cocomarla.png" alt="">
+                            </a>
+                        </blockquote>
+
+                        <p>SMP-ul realizat de grupul de discord <em>Cosmote</em> în vara 2020, a fost un SMP care a
+                            durat pe o
+                            porțiune a verii.</p>
+                        <p>Din server, au făcut parte membrii actuali ai breslei <em>edx</em>, <em>edibos</em> și
+                            <em>David</em>.
+                        </p>
+                        <h4 id="constructii">Construcții notabile.</h4>
+                        <ol>
+                            <li>
+                                <p>„Aeroportul” a fost o casă clădită de membra <em>andra</em> care semăna cu un
+                                    aeroport și
+                                    de-obicei era folosit ca arenă de lupte.</p>
+                            </li>
+                            <li>
+                                <p>Aleea pulilor este o construcție <strong>lost-media</strong> realizată de membrul
+                                    <em>edx</em>. Este o cavernă realizată la suprafață din netherrack cu pule de
+                                    netherack
+                                    înauntru, care ducea la portalul de Nether.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Biblioteca subterană a fost un proiect neterminat, condus de <em>edx</em> și
+                                    <em>edibos</em>
+                                    care avea în plan construcția unei biblioteci gigantice subterane. A existat și un
+                                    sătean
+                                    (<em>author note: nu mă refer la David</em>) cărui nume nu se mai știe.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Arena de luptă din nether creată de <em>edx</em> era, cum se deduce din nume, o arenă
+                                    de
+                                    luptă realizată în nether, unde ocazional se mai făcea 1v1 între jucători, câștigând
+                                    prin
+                                    împingerea celuilalt în lavă. Arena avea găuri și high-ground-uri pentru intensitate.
+                                </p>
+                            </li>
+                        </ol>
+
+                        <figure class="figure-container">
+                            <div class="container poze text-center">
+                                <div class="row row-gap">
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2020/1.jpeg" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2020/1.jpeg" alt="imagine smp 1" id="img2020">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="../../imagini/SMP/SMP2020/2.jpeg" target="_blank">
+                                            <img src="../../imagini/SMP/SMP2020/2.jpeg" alt="imagine smp 2" id="img2020">
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Fă clic pe imagine pentru a o vizualiza în întregime!
+                                    </p>
+                                </div>
+                            </div>
+                        </figure>
+
+                        <br>
+                        <h3 id="csmp2022">CafelutsaSMP | Decembrie 2022</h3>
+                        <p>CSMP a fost un SMP creat de <em>edx</em>, <em>edibos</em> și <em>David</em> pe o versiune
+                            învechită
+                            de Minecraft (<em>1.2.4 se presupune</em>) care a durat decât o săptămână.</p>
+                        <p>Nu a avut nimic notabil.</p>
+
+                        <br>
+                        <br>
+                        <h5>Ultima actualizare: 01.04.2023 la ora 19:52</h5>
+                    </div>
+
+                    <div class="col" id="content-sidebar-col">
+                        <div class="sticky p-4">
+                            <h2>Cuprins</h2>
+                            <hr>
+                            <ol>
                                 <li>
-                                    <a href="#cosmote2020">
-                                        Cosmote
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="#constructii">
-                                                Constructii notabile
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#csmp2022">
-                                        CafelutsaSMP
+                                    <a href="#fenomene">
+                                        Fenomene
                                     </a>
                                 </li>
-                            </ul>
-                        </li>
-                    </ol>
-                </div>
-
-                <h1 id="smp-of">SMP-urile Oficiale</h1>
-                <hr>
-                <blockquote>
-                    <p>Acestea sunt SMP-urile create în totalitate de membrii grupului. </p>
-                </blockquote>
-
-                <!--                  SMP 2021                       -->
-                <br>
-                <h3 id="feb2021">SMP-ul din Februarie 2021</h3>
-                <blockquote>
-                    <p>
-                        <em>Nu se știe cu exactitate durata SMP-ului acestuia, precum și numele său, se presupune că era
-                            denumit DambovitaSMP, dar probabil ca nu.</em>
-                    </p>
-                </blockquote>
-
-                <!-- TLDR -->
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse2" role="button"
-                        aria-expanded="false" aria-controls="collapse2">
-                        Detalii la prima vedere
-                    </a>
-                </p>
-                <div class="collapse" id="collapse2">
-                    <div class="card card-body">
-                        <p>
-                            <strong>Fondatori:</strong> <em>edx</em>, <em>muslec</em>
-                        </p>
-                        <p>
-                            <strong>Data creării:</strong> 01.02.2021 ~01:00
-                        </p>
-                        <p>
-                            <strong>Data închiderii:</strong> 10.02.2021 / 20.02.2021
-                        </p>
-                        <p>
-                            <strong>Membri:</strong> 6 (<em>edx, Muslec, edibos, david, Silviu, oncioiu</em>)
-                        </p>
-                        <p>
-                            <strong>Durată de viață:</strong> 1-2 săptămâni
-                        </p>
-                    </div>
-                </div>
-                <!-- sfarsit TLDR -->
-
-                <p>SMP-ul din februarie 2021 a fost un SMP realizat de către <strong><em>edx</em></strong> și
-                    <em><strong>Muslec</strong> (membru fost-grup dâmbovița)</em>.
-                </p>
-                <p>Prima datare a grupului a fost pe 01.02.2021 la 1 dimineața.</p>
-                <p>SMP-ul a fost făcut pe versiunea 1.16, iar pe parcursul a câteva zile, următorii membri
-                    notabili s-au alăturat: <em><strong>oncioiu</strong> (membru fost-grup micro 2 târgovșite și
-                        dâmbovița)</em>, <em><strong>Silviu</strong> (membru fost-grup dâmbovița)</em>,
-                    <em><strong>edibos</strong></em> și <em><strong>David</strong></em>.
-                </p>
-                <p>SMP-ul se presupune că a durat doar 1-2 săptămâni și a fost realizat pe fost-server
-                    <em>dâmbovița</em>.
-                </p>
-
-                <!-- DROPDOWN POZE -->
-                <div class="accordion accordion-flush" id="acordeon">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Poze
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body" id="acordeon-poze">
-                                <!-- IMAGINI -->
-                                <img src="../../imagini/SMP/SMP2021feb/1.png" alt="imagine smp 1">
-                                <img src="../../imagini/SMP/SMP2021feb/2.png" alt="imagine smp 2">
-                                <img src="../../imagini/SMP/SMP2021feb/3a.png" alt="imagine smp 3">
-
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Închide
-                                </button>
-                            </div>
+                            </ol>
                         </div>
                     </div>
+
+
                 </div>
-                <!-- sfarsit DROPDOWN POZE -->
-
-
-                <!-- GSMP SEZONUL 1-->
-                <br>
-                <br>
-                <h3 id="feb2022">GherțoaiaSMP Sezonul I | Februarie 2022</h3>
-
-                <!-- TLDR -->
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Detalii la prima vedere
-                    </a>
-                </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        <p>
-                            <strong>Fondatori:</strong> <em>edx</em>, <em>edibos</em>
-                        </p>
-                        <p>
-                            <strong>Data creării:</strong> 14.02.2022 ~13:00
-                        </p>
-                        <p>
-                            <strong>Data închiderii:</strong> 09.03.2022
-                        </p>
-                        <p>
-                            <strong>Membrii:</strong> 6 (<em>edx, edibos, david, oncioiu, buba, furniculonci</em>)
-                        </p>
-                        <p>
-                            <strong>Durată de viață:</strong> 25z
-                        </p>
-                    </div>
-                </div>
-                <!-- sfarsit TLDR -->
-
-                <p><strong>GherțoaiaSMP</strong> (<em>nume precedent: DambovitaSMP</em>) a fost un SMP creat de către
-                    <em><strong>edx</strong></em>, <em><strong>edibos</strong></em> și
-                    <em><strong>oncioiu</strong></em>. A fost creat pe data de 14.02.2022 (<em>ora exactă nu se știe, se
-                        presupune că a fost 1 după-amiaza</em>).
-                </p>
-                <p>Acest server a fost ultimul server care a fost hostat pe gratis, deoarece erau întâmpinate <em>o
-                        căruță</em> de probleme de LAG pe server.</p>
-                <p>Serverul a fost co-hostat de către <em>edx</em> și <em>edibos</em> (<em>nu se știe dacă david a
-                        ajutat la host</em>), unde <em>edx</em> a donat <em>15 lei</em> iar edibos <em>10 lei</em>.</p>
-                <p>Membri serverului au fost: <em>edx</em> (<em>butt3rdll</em>), <em>edibos</em> (<em>27atmos</em>),
-                    <em>David</em> (<em>PepegaPizza</em>), <em>oncioiu</em> (<em>Raulooooo</em>), <em>Buba</em>
-                    (<em>pumndefier</em>) și <em>furniculonci</em>.
-                </p>
-                <p>Toată conversația serverului a fost înregistrată și arhivată, se poate găsi aici.</p>
-                <p>SMP-ul s-a încheiat pe data de <em>09.03.2022</em>, având o durată de viață de <em>25 de zile</em>.
-                </p>
-
-                <br>
-                <h4 id="juani">Andra și Juanii</h4>
-                <p>Când membrul <em>g59andra</em> a intrat pe server, membrii <em>edibos</em> și <em>edx</em> au decis
-                    să o păcălească, punând oi numite <em>Juan</em> pe la ea la fermă și in mina ei, toată bazaconia
-                    aceasta a durat câteva minute, până când a dat vina pe membrul <em>David</em>, care el nu făcuse
-                    nimic săracul.</p>
-
-                <br>
-                <h4 id="palat">Buba și Palatul</h4>
-                <p>În timpul serverului, membrul <em>Buba</em> deținea o casă, <em>moderat estetic</em> în fundul
-                    curții. Membri <em>edibos</em> și <em>edx</em> decid să-i bubuie casa lui buba, rezultând în
-                    <em>edibos</em> primind karma iar membrul <em>buba</em> ne mai intrând pe server.
-                </p>
-                <p>Drept răsplată, membri <em>edibos</em>, <em>edx</em> și <em>David</em> au construit o clădire
-                    țigănească, intitulată „Palat”.</p>
-
-                <br>
-                <h4 id="interdictii">Oncioiu și interdicțiile</h4>
-                <p>Membri serverului au realizat diverse și diferite construcții emancipate, precum construcții
-                    avantajoase pentru membri serverului, deoarece deschideau poarta resurselor greu de făcut rost,
-                    numite atipic „ferme”.</p>
-                <p>Totuși, membrul <em>Oncioiu</em> a primit nenumărate interziceri (<em>interdicții</em>) la fermele
-                    realizate de diverșii membri, pe motive necunoscute.</p>
-
-                <!-- DROPDOWN POZE -->
-                <div class="accordion accordion-flush" id="acordeon">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Poze
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body" id="acordeon-poze">
-                                <!-- IMAGINI -->
-                                <img src="../../imagini/SMP/SMP2022feb/1.png" alt="imagine smp 1">
-                                <img src="../../imagini/SMP/SMP2022feb/2.png" alt="imagine smp 2">
-                                <img src="../../imagini/SMP/SMP2022feb/3.png" alt="imagine smp 3">
-
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Închide
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- sfarsit DROPDOWN POZE -->
-
-                <!-- GSMP SEZONUL 2-->
-
-                <br>
-                <br>
-                <h3 id="iul2022">GherțoaiaSMP Sezonul II | Iulie 2022</h3>
-
-                <!-- TLDR -->
-                <p class="d-inline-flex gap-1">
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse3" role="button"
-                        aria-expanded="false" aria-controls="collapse3">
-                        Detalii la prima vedere
-                    </a>
-                </p>
-                <div class="collapse" id="collapse3">
-                    <div class="card card-body">
-                        <p>
-                            <strong>Fondatori:</strong> <em>edx</em>, <em>edibos</em>, <em>David ,</em>
-                        </p>
-                        <p>
-                            <strong>Data creării:</strong> 15.07.2022 ~02:00
-                        </p>
-                        <p>
-                            <strong>Data închiderii:</strong> 16.08.2022 ~18:00
-                        </p>
-                        <p>
-                            <strong>Membrii:</strong> 6 (<em>edx, edibos, david, TeraCotaYT, cristianno200</em>)
-                        </p>
-                        <p>
-                            <strong>Durată de viață:</strong> 1l 1z
-                        </p>
-                    </div>
-                </div>
-                <!-- sfarsit TLDR -->
-
-                <p><strong>GherțoaiaSMP Sezonul 2</strong> (<em>pe scurt; GSMP</em>) este SMP-ul adaos SMP-ului
-                    antecedent, creat pe data de <em>15.07.2022</em> în jurul <em>orei 2 dimineața</em>.</p>
-                <p>Serverul a fost co-creat de către <em>edx</em>, <em>edibos</em> și <em>David</em>.</p>
-                <p>Membrii serverului au fost <em>edx</em>, <em>edibos</em>, <em>David</em>, <em>TeraCotaYT</em> și
-                    <em>cristianno200</em>.
-                </p>
-                <p>Serverul s-a încheiat pe data de <em>16.08.2024</em> la <em>ora 6 după-amiaza</em>, având o durată de
-                    viață de <em>1 lună și 1 zi</em>. Acest server a avut cea mai mare durată de viață dintre toate.</p>
-
-                <h4 id="reg-sv">Regulile alterate ale serverului</h4>
-                <p>Asemena sezonului I, ambele servere aveau reguli pentru a păstra good sportsmanship între jucători.
-                    În seoznul 2, aceleași reguli au fost păstrate asemena sezonului 1, dar din pricina faptului că
-                    membrul <em>edibos</em> a fost omorât de membrul <em>edx</em> deoarece bătea câmpii legat de sabia
-                    pe care o deținea edx, <em>edibos</em> s-a supărat și a zis că nu mai joacă și că nu-și dă
-                    experiența și obiectele pierdute înapoi deoarece „<em>încălca regulile serverului</em>”.</p>
-                <p>Astfel, regulile au fost alterate de membrul <em>edx</em>, pentru a permite darea înapoi de obiecte
-                    și experiență înapoi în cazul omorului cauzat de alt jucător.</p>
-                <div class="reguli">
-                    <img src="../../imagini/SMP/SMP2022iul/reguli.png" alt="regulile serverului">
-                    <span>
-                        <em>
-                            Poză cu regulile alterate ale serverului.
-                        </em>
-                    </span>
-                </div>
-
-                <br>
-                <br>
-                <h3 id="dec2022">GherțoaiaSMP Sezonul III | Decembrie 2022</h3>
-                <p><strong>GherțoaiaSMP Sezonul 3</strong> este ce-l de-al treilea sezon din seria de SMP-uri
-                    „GherțoaiaSMP”, creat pe data de <em>10.12.2022</em> în jurul <em>orei 4 după-amaiaza</em></p>
-                <p>Serverul a fost co-creat de către <em>edx</em> și <em>edibos</em>.</p>
-                <p>Sezonul 3 a văzut cei mai mulți membri dintre toate SMP-urile, cu un record de 11 jucători unici.
-                    Membrii serverului au fost: <em>edx</em>, <em>edibos</em>, <em>David</em>,<em>Wh1pZY</em>,
-                    <em>Casian03</em>, <em>cata182</em>, <em>cristianno200</em>, <em>Puff</em>, <em>buba</em>,
-                    <em>Galaxy</em> și <em>coOs</em>.
-                </p>
-                <p>Serverul s-a încheiat pe data de <em>03.01.2023</em> la <em>ora 7 dimineața</em>, având cea mai
-                    scurtă durată de viață (<em>timp în care s-a jucat</em>) de doar aproximativ <em>2 săptămâni</em>.
-                </p>
-                <p>Nu a existat nimic notabil.</p>
-
-                <br>
-                <br>
-                <h2 id="smp-ne_of">SMP-uri neoficiale</h2>
-                <hr>
-                <blockquote>
-                    <p><em>SMP-urile neoficiale sunt SMP-uri create de diverși membri ai breslei, sau care nu făceau
-                            parte din breaslă, dar care nu viza jucarea en grand (adică cu toată lumea). Aceste SMP-uri
-                            au fost de-obicei servere de scurtă durată.</em></p>
-                </blockquote>
-
-                <br>
-                <!--                  SMP 2020                       -->
-                <h3 id="cosmote2020">SMP-ul Cosmote(<em>confirmat</em>)
-                    din vara 2020.</h3>
-
-                <blockquote id="blockquote-cosmote">
-                    <p><em>Nu există suficiente detalii în legătură cu acest SMP precum datarea sa, precum și încheierea
-                            sa, membrii ș.a.m.d</em>.</p>
-                    <a href="https://youtu.be/4Ox-vYu9Ee8">
-                        <img src="../../imagini/SMP/confirmat_de_cocomarla.png" alt="">
-                    </a>
-                </blockquote>
-
-                <p>SMP-ul realizat de grupul de discord <em>Cosmote</em> în vara 2020, a fost un SMP care a durat pe o
-                    porțiune a verii.</p>
-                <p>Din server, au făcut parte membrii actuali ai breslei <em>edx</em>, <em>edibos</em> și
-                    <em>David</em>.
-                </p>
-                <h4 id="constructii">Construcții notabile.</h4>
-                <ol>
-                    <li>
-                        <p>„Aeroportul” a fost o casă clădită de membra <em>andra</em> care semăna cu un aeroport și
-                            de-obicei era folosit ca arenă de lupte.</p>
-                    </li>
-                    <li>
-                        <p>Aleea pulilor este o construcție <strong>lost-media</strong> realizată de membrul
-                            <em>edx</em>. Este o cavernă realizată la suprafață din netherrack cu pule de nethereck
-                            înauntru, care ducea la portalul de Nether.
-                        </p>
-                    </li>
-                    <li>
-                        <p>Biblioteca subterană a fost un proiect neterminat, condus de <em>edx</em> și <em>edibos</em>
-                            care avea în plan construcția unei biblioteci gigantice subterane. A existat și un sătean
-                            (<em>author note: nu mă refer la David</em>) cărui nume nu se mai știe.</p>
-                    </li>
-                    <li>
-                        <p>Arena de luptă din nether creată de <em>edx</em> era, cum se deduce din nume, o arenă de
-                            luptă realizată în nether, unde ocazional se mai făcea 1v1 între jucători, câștigând prin
-                            împginerea celuilalt în lavă. Arena avea găuri și high-grounduri pentru intensitate.</p>
-                    </li>
-                </ol>
-
-
-                <!-- DROPDOWN POZE -->
-                <div class="accordion accordion-flush" id="acordeon">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse3" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Poze
-                            </button>
-                        </h2>
-                        <div id="flush-collapse3" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body" id="acordeon-poze">
-                                <!-- IMAGINI -->
-                                <img src="../../imagini/SMP/SMP2020/1.jpeg" alt="imagine smp 1" id="img2020">
-                                <em>imaginea cu biblioteca subterană</em>
-                                <img src="../../imagini/SMP/SMP2020/2.jpeg" alt="imagine smp 2" id="img2020">
-                                <em>poză de grup la arena de luptă din nether</em>
-
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapse3" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    Închide
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- sfarsit DROPDOWN POZE -->
-
-
-
-                <br>
-                <h3 id="csmp2022">CafelutsaSMP | Decembrie 2022</h3>
-                <p>CSMP a fost un SMP creat de <em>edx</em>, <em>edibos</em> și <em>David</em> pe o versiune învechită
-                    de Minecraft (<em>1.2.4 se presupune</em>) care a durat decât o săptămână.</p>
-                <p>Nu a avut nimic notabil.</p>
-
-
             </div>
-
         </div>
 
-    </div>
+        <!--    MODAL   -->
 
+        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="infoModalLabel">Informație destul de importantă</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span>
+                            Pagina pe care ai selectat-o încă nu există.
+                        </span>
+                        <br>
+                        <span>
+                            Te rog încearcă mai târziu.
+                        </span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="creditsModalLabel">Credite</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span>
+                            Dezvoltator: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Artist User Interface (UI): 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Artist User Experience (UX): 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Quality Control: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Dependențe: Bootstrap v5.3
+                        </span>
+                        <br>
+                        <span>
+                            Artist Grafic: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Front-End: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Back-End: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Găzduire: GitHub Pages
+                        </span>
+                        <br>
+                        <span>
+                            Proofreader 1: Pol
+                        </span>
+                        <br>
+                        <span>
+                            Proofreader 2: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Evaluator Artistic: pol și david
+                        </span>
+                        <br>
+                        <span>
+                            Dependență Grafică: Figma și Adobe Photoshop 2024
+                        </span>
+                        <br>
+                        <span>
+                            Dependență de Codare: Visual Studio Code
+                        </span>
+                        <br>
+                        <span>
+                            HR: 28edxwrd SRL
+                        </span>
+                        <br>
+                        <span>
+                            Font-uri: Monsterrat (Google), Panton, Seage UI
+                        </span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

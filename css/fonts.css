@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Panton-Black';
+    src: url('../fonts/Panton-Black.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-XBold';
+    src: url('../fonts/Panton-ExtraBold.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-Bold';
+    src: url('../fonts/Panton-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-Regular';
+    src: url('../fonts/Panton-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Panton-SemiBold';
+    src: url('../fonts/Panton-SemiBold.ttf')
+}

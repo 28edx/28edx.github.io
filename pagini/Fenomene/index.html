@@ -4,369 +4,575 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/icon.ico">
     <title>Fenomene</title>
 
-    <link rel="icon" type="image/x-icon" href="../../imagini/orange_icon.ico">
-
-    <link rel="stylesheet" href="../CSS/fenomene.css">
-    <link rel="stylesheet" href="../CSS/basic.css">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/pages/enciclopedie.css">
+    <link rel="stylesheet" href="../../css/blockquote.css">
+    <link rel="stylesheet" href="../../fonts.css">
 
     <script src="../../js/bootstrap.bundle.js"></script>
+</head>
 
 <body>
+    <div class="body">
+        <div class="body-content">
 
-    <header>
-        <a href="../../">
-            <button type="button" class="btn btn-primary">
-                Acasă
-            </button>
-        </a>
-        <h2>Enciclopedia Breasla Orange</h2>
-    </header>
+            <!-- NAVBAR n HEADER -->
+            <div class="header-content">
+                <nav class="navbar" data-bs-theme="dark">
+                    <div class="container-fluid justify-content-start gap-4">
 
-    <div class="body-content">
+                        <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="../../#">
+                            <img src="../../img/index/TBO-pic.png" alt="Logo" width="30" height="30"
+                                class="d-inline-block align-text-top" id="logo-logo">
+                            <h2>
+                                Totul Breasla Orange
+                            </h2>
+                        </a>
 
-        <div class="content">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    Enciclopedie
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../pagini/Breasla Orange/" target="_blank">Breasla
+                                        Orange</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/Fenomene/" target="_blank">Fenomene</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/SMPuri/" target="_blank">SMP-uri</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../../pagini/Persoane/" target="_blank">Persoane</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Podcast</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Gherțoaia</a></li>
+                            </ul>
+                        </div>
 
-            <!-- DOCKER -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>
+                                    Miscelaneu
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#infoModal">Arhivă</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#creditsModal">Credite</a></li>
+                            </ul>
+                        </div>
 
-            <div class="info-content">
-                <div class="docker">
-                    <h1 id="docker-de-informa-ii">Docker de informații</h1>
-                </div>
-                <div class="info">
-                    <p>Diferite „Meme-uri” realizate / create de-alungul istoriei grupului.</p>
-                    <p></p>
+                        <a class="btn btn-primary p-2" href="#" role="button" id="nav-buton-arhiva"
+                            data-bs-toggle="modal" data-bs-target="#infoModal"> Arhivă</a>
+                    </div>
+                </nav>
+
+                <!-- HEADER -->
+
+                <div class="container" id="header-container">
+                    <div class="row">
+                        <div class="col d-flex flex-column justify-content-end" id="header-text">
+                            <h4 class="m-0 text-light">Enciclopedie</h4>
+                            <h1 class="m-0 mb-1 text-light">Fenomene</h1>
+                        </div>
+                        <div class="col col-lg-2 p-0">
+                            <div>
+                                <img src="../../img/pagini/feno/feno.png" alt="logo orange" id="col-orange-logo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- CONTINUT -->
+            <!-- CONTENT -->
 
-            <div>
-                <h1 id="fenomene">Fenomene</h1>
-                <hr>
-                <p>Fenomene sau „Memes” care există printre membrii serverului de-alungul timpului.</p>
-                <br>
+            <div class="container mt-0" id="container-content">
+                <div class="row">
 
-                <div class="cuprins">
-                    <p>Curpins</p>
-                    <ol>
-                        <li>
-                            <a href="#fenomene-plurale">
-                                Fenomene plurale
-                            </a>
-
-                            <ul>
-                                <li>
-                                    <a href="#animal">
-                                        Animal
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#saispe">
-                                        Șaișpe
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#cocomarla">
-                                        Cocomarla
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </li>
-
-                        <li>
-                            <a href="#fenomene-singulare">
-                                Fenomenele singulare
-                            </a>
-
-                            <ul>
-                                <li>
-                                    <a href="#david-ip">
-                                        David și IP-ul
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#david-dust2">
-                                        David și Flashul
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#david-mirage">
-                                        David și Connector
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#davidclopo">
-                                        David și clopoțeii
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#davidzilele">
-                                        David și zilele lunii
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#davidskibidi">
-                                        David skibidi
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#racul">
-                                        Racul
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#masina">
-                                        Mașina
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#bubabatrani">
-                                        Buba și bătrânii
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#ghertoaia">
-                                        Gherțoaia
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#bubablocare">
-                                        Buba și blocarea
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#palatbuba">
-                                        Palatul lui buba
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#bubahistory">
-                                        Istoricul lui buba
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#oncioiuint">
-                                        Oncioiu și interdicțiile
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                </div>
-
-                <h2 id="fenomene-plurale">Fenomene plurale</h2>
-                <hr>
-                <blockquote>
-                    <p><em>Această pagină va împărții fenomenele grupului în „Fenomene plurale” care includ, dar nu se
-                            limitează, fenomene care nu generalizează o singură persoană (adică fenomene folosite pentru
-                            toată lumea) și „Fenomene singulare” care de-obicei generalizează pe cineva (adică face
-                            referință la anumite persoane</em>).</p>
-                </blockquote>
+                    <!-- TEXT -->
+                    <div class="col mt-5" id="content-col">
+                        <h1 id="fenomene">Fenomene</h1>
+                        <hr>
+                        <p>Fenomene sau „Memes” care există printre membrii serverului de-alungul timpului.</p>
+                        <br>
+                        <h2 id="fenomene-plurale">Fenomene plurale</h2>
+                        <hr>
+                        <blockquote>
+                            <p><em>Această pagină va împărții fenomenele grupului în „Fenomene plurale” care includ, dar
+                                    nu se
+                                    limitează, fenomene care nu generalizează o singură persoană (adică fenomene
+                                    folosite pentru
+                                    toată lumea) și „Fenomene singulare” care de-obicei generalizează pe cineva (adică
+                                    face
+                                    referință la anumite persoane</em>).</p>
+                        </blockquote>
 
 
-                <h3 id="animal">Animal</h3>
-                <p>Termenul de „<em>animal</em>” provine de la <strong>28edxwrd</strong> care de-obicei se referă la
-                    anumite persoane incompetente sau care „trolează”.</p>
+                        <h3 id="animal">Animal</h3>
+                        <p>Termenul de „<em>animal</em>” provine de la <strong>28edxwrd</strong> care de-obicei se
+                            referă la
+                            anumite persoane incompetente sau care „trolează”.</p>
 
-                <h3 id="saispe">Șaișpe</h3>
-                <p>A face „<em>șaișpe</em>” se referă la o persoană care întoarce spatele unuia, face falsitate și/sau
-                    este vânzător. De-obicei este folosit pentru a categoriza pe cineva care face falsități.</p>
+                        <h3 id="saispe">Șaișpe</h3>
+                        <p>A face „<em>șaișpe</em>” se referă la o persoană care întoarce spatele unuia, face falsitate
+                            și/sau
+                            este vânzător. De-obicei este folosit pentru a categoriza pe cineva care face falsități.</p>
 
-                <h3 id="cocomarla">Cocomarla</h3>
-                <p>Termenul de „<em>cocomarla</em>” se referă la cineva care nu ia treburile în serios.</p>
-                <br>
+                        <h3 id="cocomarla">Cocomarla</h3>
+                        <p>Termenul de „<em>cocomarla</em>” se referă la cineva care nu ia treburile în serios.</p>
+                        <br>
 
 
 
-                <h2 id="fenomene-singulare">Fenomene singulare</h2>
-                <hr>
+                        <h2 id="fenomene-singulare">Fenomene singulare</h2>
+                        <hr>
 
-                <br>
-                <h3 id="david-ip">David și IP-ul</h3>
-                <p>Printre cele mai populare fenomene ale grupului, este faza cu <strong>David și IP-ul</strong> lui
-                    furat de către <em>28edxwrd</em> în 2020.</p>
+                        <br>
+                        <h3 id="david-ip">David și IP-ul</h3>
+                        <p>Printre cele mai populare fenomene ale grupului, este faza cu <strong>David și IP-ul</strong>
+                            lui
+                            furat de către <em>28edxwrd</em> în 2020.</p>
 
-                <h4 id="context">Context</h4>
+                        <h4 id="context">Context</h4>
 
-                <p>Înspre sfârșitul verii lui 2020, <em>28edxwrd</em> îmrepună cu <em>edibos</em> încearcă să ii fure
-                    IP-ul lui <em>David</em> printr-o imagine creată cu <em>Grabify</em> care ia IP-ul oricăruia intră
-                    pe link.</p>
-                <div class="img-david-ip">
-                    <img src="../../imagini/davidip.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>imaginea cu informațiile lui David din 2020</em>
-                    </p>
-                </div>
-                <br>
+                        <p>Înspre sfârșitul verii lui 2020, <em>28edxwrd</em> îmrepună cu <em>edibos</em> încearcă să ii
+                            fure
+                            IP-ul lui <em>David</em> printr-o imagine creată cu <em>Grabify</em> care ia IP-ul oricăruia
+                            intră
+                            pe link.</p>
+                        <figure>
+                            <img src="../../imagini/davidip.png" alt="">
+                            <p style="font-size: 15px;">
+                                <em>imaginea cu informațiile lui David din 2020</em>
+                            </p>
+                        </figure>
+                        <br>
 
-                <p>De atunci și până azi, încă se mai face glume pe seama lui David și IP-ul lui.</p>
+                        <p>De atunci și până azi, încă se mai face glume pe seama lui David și IP-ul lui.</p>
 
-                <br>
-                <h3 id="david-dust2">David și Flashul de pe Dust 2</h3>
+                        <br>
+                        <h3 id="david-dust2">David și Flashul de pe Dust 2</h3>
 
-                <p>În vara lui 2020, în timp ce <em>28edxwrd</em> și <em>David</em> erau angajați pe un 1v1 pe Dust_2 pe
-                    CS:GO, așteptându-l pe <em>edibos</em> pentru a intra într-un meci de Competitive, 28edxwrd îi dă
-                    flash lui David care acesta în loc să acționeze conform militar, decide să se ducă la primul perete
-                    și să golească un întreg cartuș.</p>
-                <p>De atunci au pornit diverse fenomene precum „Faze David”, sau orice GIF sau IMAGINE care depictează o
-                    persoană luându-și flash, va fi categorizat ca <em>david luându-și flash</em>.</p>
+                        <p>În vara lui 2020, în timp ce <em>28edxwrd</em> și <em>David</em> erau angajați pe un 1v1 pe
+                            Dust_2 pe
+                            CS:GO, așteptându-l pe <em>edibos</em> pentru a intra într-un meci de Competitive, 28edxwrd
+                            îi dă
+                            flash lui David care acesta în loc să acționeze conform militar, decide să se ducă la primul
+                            perete
+                            și să golească un întreg cartuș.</p>
+                        <p>De atunci au pornit diverse fenomene precum „Faze David”, sau orice GIF sau IMAGINE care
+                            depictează o
+                            persoană luându-și flash, va fi categorizat ca <em>david luându-și flash</em>.</p>
 
-                <br>
-                <h3 id="david-mirage">David și Connector de pe Mirage + Connect-R</h3>
+                        <br>
+                        <h3 id="david-mirage">David și Connector de pe Mirage + Connect-R</h3>
 
-                <p>În vara lui 2020, în timp ce <em>28edxwrd</em>, <em>David</em> și <em>edibos</em> erau într-un meci
-                    de CS:GO pe mirage, David rămâne ultimul din echipă. Ultimul adversar se afla în zona „Conector”,
-                    darămite, David nu-l vedea, chiar dacă 28edx și edibos urlau la david că „<em>Bă îî acolo!</em>”,
-                    „<em>COAIE ÎÎ VEZI ARMA</em>”, dar David nu-l vedea, pierzând runda.</p>
-                <p>De atunci au pornint diverse fenomene precum că <em>david ar juca cu monitorul stins</em>.</p>
-
-                <div class="img-david-mirage">
-                    <img src="../../imagini/davidmirage.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>desen din 2020 cu david și adversarul de pe connector</em>
-                    </p>
-                </div>
-
-                <p>Pe lângă asta, a pornit și un typo al acelei zone Connector, cu „<em>Connect-r</em> /
-                    <em>Conect-rrrr</em>” de către <em>28edxwrd</em> și <em>edibos</em>.</p>
-
-                <br>
-                <h3 id="davidclopo">David și clopoțeii</h3>
-                <p>În decembrie 2022, în timp ce <em>edx</em> juca la aparate și dădea partajare pe discord, au apărut o
-                    serie de clopoței pe panou, care a fost urmat de fraza lui <em>edx</em> „<em>bă david bagă-te la
-                        somn</em>”.</p>
-                <p>Se referă la faptul că David obișnuiește să se bage la somn foarte devreme.</p>
-
-                <br>
-                <h3 id="davidzilele">David și „Zilele Lunii”</h3>
-                <p>În vara lui 2020, într-o seară pe când <em>David</em> era beat, a fost întrebat de către
-                    <em>edibos</em> și <em>edx</em> „<strong>Spune zilele lunii</strong>”, la care <em>David</em> a
-                    răspuns „Luni, <strong>Mariti</strong>, Miercuri [...]”, care, logic, n-ar avea sens, nu doar faptul
-                    că lunile n-au zile, darămite, „Mariti”.</p>
-
-                <br>
-                <h3 id="davidskibidi">David și Skibidi toilet</h3>
-                <p>La începutul lui 2024, <em>edibos</em> a realizat o fotografie cu membrul <em>David</em> în care îl
-                    depictează ca o toaletă, denumită „<em>Skibidi David</em>”.</p>
-                <div id="skibidi-david">
-                    <img src="../../imagini/skibididavid.png" alt="">
-                    <p style="font-size: 15px;">
-                        <em>Fotografia alterată</em>
-                    </p>
-                </div>
-
-                <br>
-                <h3 id="ghertoaia">Gherțoaia</h3>
-                <h5 id="pagin-dedicat-link-gher-oaia">Pagină dedicată: <a href="gheroaia">Gherțoaia</a></h5>
-                <p>Gherțoaia (<em>un nume de scenă pentru satul „Gherla” din Cluj-Napoca</em>) este cel mai long-running
-                    fenomen creat de către <em>28edxwrd</em> în vara 2020, făcând mișto de satul din care provine[¹]
-                    membrul Buba.</p>
-                <p>Pe lângă asta, termenul de „<em>Gherțoian</em>” se referă la un locatar din Gherțoaia, dar și un
-                    termen stereotipic / generalist pentru persoane de rasă romă.</p>
-
-                <br>
-                <h3 id="racul">Racul</h3>
-                <p>Fenomenul „Racul” provine de la membrul <em>edibos</em>, din vara 2020. Se presupune că răsare de la
-                    cuvântul „Săracul” care a fost prescurat de edibos în „Racul”.</p>
-                <p>Așa că de-obicei când cineva zicea „săracul”, edibos ar fi zis „racul”.</p>
-                <p>Pe lângă asta, mai există și termenul de „cravată”.</p>
-
-                <br>
-                <h3 id="masina">„Mașina”</h3>
-                <p>Fenomenul „Mașina” a luat amploare în vara lui 2020 atunci când <em>edibos</em> și <em>28edxwrd</em>
-                    au dat de un pakistanez care făcea transmisii în direct din presupusul „garajul” său.</p>
-                <p>La un moment dat <em>28edxwrd</em> a intrat în direct cu pakistanezul (<em>se presupune că îl chema
-                        „Mustafa”</em>) și vorbeau de „mașina”.</p>
-
-                <br>
-                <h3 id="bubabatrani">Buba și bătrânii</h3>
-                <p>De asemenea, în vara lui 2020, se vorbea despre cum membrul Buba obișnuiește să spele bătrânei.</p>
-                <p>Nu se știe cineva a venit cu acest fenomen, sau de ce, dar se presupune că a fost <em>edibos</em>.
-                </p>
-
-                <br>
-                <h3 id="bubablocare">Buba și blocarea</h3>
-                <p>Din vara lui 2020, până în prezent, membrul Buba obișnuiește să blocheze orice utilizator și membru
-                    care-l icomodează sau doar pentru a-l măcina.</p>
-
-                <br>
-                <h3 id="palatbuba">Palatul lui Buba</h3>
-                <p>În inceputul lui 2021, pe un SMP, <em>edx</em>, <em>edibos</em> și <em>David</em> au făcut o clădire,
-                    denumită în prezent „Palat”,</p>
-                <p>Clădirea a fost realizată pentru a-l aduce pe Buba înapoi pe SMP după ce <em>edibos</em> și
-                    <em>edx</em> i-au bubuit casa lui Buba, între timp edibos primind karma și pierdându-și obiectele,
-                    dar asta e pe lângă subiect.</p>
-                <div id="img-palat">
-                    <img src="../../imagini/palat.png" alt="">
-                    <span>
-                        <em>Filmuleț depictând construcția „Palatului”</em>
-                    </span>
-                </div>
-
-                <p>Toată bazaconia aceasta a fost înregistrată.</p>
-
-                <div id="filmulet">
-                    <iframe width="520" height="280" src="https://www.youtube.com/embed/ip4Zq6NcgEo"
-                        title="Santier Floresti 2005 | Palat Bizantin" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p style="font-size: 15px;">
-                        <em>Filmuleț depictând construcția „Palatului”</em>
-                    </p>
-                </div>
-
-                <p>Prin urmare, Buba nu a intrat niciodată pe server înapoi, iar palatul, se presupune, că nu a fost
-                    terminat.</p>
-
-                <br>
-                <h3 id="bubahistory">Buba browser history</h1>
-                    <p>În vara lui 2020, buba a dat partajare pe discord și și-a dat leak la istoricul său de pe browser
-                        care conținea, și menționăm „<em>melascula porn</em>” și „<em>luci și jador se fute</em>”</p>
-                    <div id="istoric-buba">
-                        <img src="../../imagini/mleascula.png" alt="">
-                        <p style="font-size: 15px;">
-                            <em>Imaginea cu istoricul lui Buba</em>
+                        <p>În vara lui 2020, în timp ce <em>28edxwrd</em>, <em>David</em> și <em>edibos</em> erau
+                            într-un meci
+                            de CS:GO pe mirage, David rămâne ultimul din echipă. Ultimul adversar se afla în zona
+                            „Conector”,
+                            darămite, David nu-l vedea, chiar dacă 28edx și edibos urlau la david că „<em>Bă îî
+                                acolo!</em>”,
+                            „<em>COAIE ÎÎ VEZI ARMA</em>”, dar David nu-l vedea, pierzând runda.</p>
+                        <p>De atunci au pornint diverse fenomene precum că <em>david ar juca cu monitorul stins</em>.
                         </p>
+
+                        <figure>
+                            <img src="../../imagini/davidmirage.png" alt="">
+                            <p>
+                                <em>desen din 2020 cu david și adversarul de pe connector</em>
+                            </p>
+                        </figure>
+
+                        <p>Pe lângă asta, a pornit și un typo al acelei zone Connector, cu „<em>Connect-r</em> /
+                            <em>Conect-rrrr</em>” de către <em>28edxwrd</em> și <em>edibos</em>.
+                        </p>
+
+                        <br>
+                        <h3 id="davidclopo">David și clopoțeii</h3>
+                        <p>În decembrie 2022, în timp ce <em>edx</em> juca la aparate și dădea partajare pe discord, au
+                            apărut o
+                            serie de clopoței pe panou, care a fost urmat de fraza lui <em>edx</em> „<em>bă david
+                                bagă-te la
+                                somn</em>”.</p>
+                        <p>Se referă la faptul că David obișnuiește să se bage la somn foarte devreme.</p>
+
+                        <br>
+                        <h3 id="davidzilele">David și „Zilele Lunii”</h3>
+                        <p>În vara lui 2020, într-o seară pe când <em>David</em> era beat, a fost întrebat de către
+                            <em>edibos</em> și <em>edx</em> „<strong>Spune zilele lunii</strong>”, la care
+                            <em>David</em> a
+                            răspuns „Luni, <strong>Mariti</strong>, Miercuri [...]”, care, logic, n-ar avea sens, nu
+                            doar faptul
+                            că lunile n-au zile, darămite, „Mariti”.
+                        </p>
+
+                        <br>
+                        <h3 id="davidskibidi">David și Skibidi toilet</h3>
+                        <p>La începutul lui 2024, <em>edibos</em> a realizat o fotografie cu membrul <em>David</em> în
+                            care îl
+                            depictează ca o toaletă, denumită „<em>Skibidi David</em>”.</p>
+                        <figure>
+                            <img src="../../imagini/skibididavid.png" alt="">
+                            <p>
+                                <em>Fotografia alterată</em>
+                            </p>
+                        </figure>
+
+                        <br>
+                        <h3 id="ghertoaia">Gherțoaia</h3>
+                        <h5 id="pagin-dedicat-link-gher-oaia">Pagină dedicată: <a href="gheroaia">Gherțoaia</a></h5>
+                        <p>Gherțoaia (<em>un nume de scenă pentru satul „Gherla” din Cluj-Napoca</em>) este cel mai
+                            long-running
+                            fenomen creat de către <em>28edxwrd</em> în vara 2020, făcând mișto de satul din care
+                            provine[¹]
+                            membrul Buba.</p>
+                        <p>Pe lângă asta, termenul de „<em>Gherțoian</em>” se referă la un locatar din Gherțoaia, dar și
+                            un
+                            termen stereotipic / generalist pentru persoane de rasă romă.</p>
+
+                        <br>
+                        <h3 id="racul">Racul</h3>
+                        <p>Fenomenul „Racul” provine de la membrul <em>edibos</em>, din vara 2020. Se presupune că
+                            răsare de la
+                            cuvântul „Săracul” care a fost prescurat de edibos în „Racul”.</p>
+                        <p>Așa că de-obicei când cineva zicea „săracul”, edibos ar fi zis „racul”.</p>
+                        <p>Pe lângă asta, mai există și termenul de „cravată”.</p>
+
+                        <br>
+                        <h3 id="masina">„Mașina”</h3>
+                        <p>Fenomenul „Mașina” a luat amploare în vara lui 2020 atunci când <em>edibos</em> și
+                            <em>28edxwrd</em>
+                            au dat de un pakistanez care făcea transmisii în direct din presupusul „garajul” său.
+                        </p>
+                        <p>La un moment dat <em>28edxwrd</em> a intrat în direct cu pakistanezul (<em>se presupune că îl
+                                chema
+                                „Mustafa”</em>) și vorbeau de „mașina”.</p>
+
+                        <br>
+                        <h3 id="bubabatrani">Buba și bătrânii</h3>
+                        <p>De asemenea, în vara lui 2020, se vorbea despre cum membrul Buba obișnuiește să spele
+                            bătrânei.</p>
+                        <p>Nu se știe cineva a venit cu acest fenomen, sau de ce, dar se presupune că a fost
+                            <em>edibos</em>.
+                        </p>
+
+                        <br>
+                        <h3 id="bubablocare">Buba și blocarea</h3>
+                        <p>Din vara lui 2020, până în prezent, membrul Buba obișnuiește să blocheze orice utilizator și
+                            membru
+                            care-l incomodează sau doar pentru a-l măcina.</p>
+
+                        <br>
+                        <h3 id="palatbuba">Palatul lui Buba</h3>
+                        <p>În inceputul lui 2021, pe un SMP, <em>edx</em>, <em>edibos</em> și <em>David</em> au făcut o
+                            clădire,
+                            denumită în prezent „Palat”,</p>
+                        <p>Clădirea a fost realizată pentru a-l aduce pe Buba înapoi pe SMP după ce <em>edibos</em> și
+                            <em>edx</em> i-au bubuit casa lui Buba, între timp edibos primind karma și pierdându-și
+                            obiectele,
+                            dar asta e pe lângă subiect.
+                        </p>
+                        <figure>
+                            <img src="../../imagini/palat.png" alt="">
+                            <p>
+                                <em>Captură de ecran cu construcția „Palatului”</em>
+                            </p>
+                        </figure>
+
+                        <p>Toată bazaconia aceasta a fost înregistrată.</p>
+
+                        <figure>
+                            <iframe width="400" height="220" src="https://www.youtube.com/embed/ip4Zq6NcgEo"
+                                title="Santier Floresti 2005 | Palat Bizantin" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p style="font-size: 15px;">
+                                <em>Filmuleț cu construcția „Palatului”</em>
+                            </p>
+                        </figure>
+
+                        <p>Prin urmare, Buba nu a intrat niciodată pe server înapoi, iar palatul, se presupune, că nu a
+                            fost
+                            terminat.</p>
+
+                        <br>
+                        <h3 id="bubahistory">Buba browser history</h3>
+                        <p>În vara lui 2020, buba a dat partajare pe discord și și-a dat leak la istoricul său de pe
+                            browser
+                            care conținea, și menționăm „<em>melascula porn</em>” și „<em>luci și jador se
+                                fute</em>”</p>
+                        <figure>
+                            <img src="../../imagini/mleascula.png" alt="">
+                            <p>
+                                <em>Imaginea cu istoricul lui Buba</em>
+                            </p>
+                        </figure>
+
+                        <br>
+                        <h3 id="oncioiuint">Oncioiu și interdicțiile</h3>
+                        <h5 id="pagin-dedicat-placeholder">Pagină dedicată:
+                            <a href="../../pagini/SMPuri/">
+                                SMP-uri
+                            </a>
+                        </h5>
+                        <p>Tot la începutul lui 2021, pe SMP, Oncioiu obișnuia să primească interdicții de la
+                            anumite
+                            construcții realizate de membrii serverului.</p>
+
+                        <br>
+                        <h3 id="salmonul">Salmonul</h3>
+                        <p>În vara lui 2020, în timpul unui SMP, împreună cu <em>edx</em>, <em>edibos</em> și
+                            <em>David</em>, membrul edx deținea un salmon care a fost omorât de membrul edibos.
+                        </p>
+                        <p>Prin urmare, membrul edx a făcut un mormânt pentru salmon, darămite, membrul edibos a
+                            furat
+                            salmonul din mormânt și l-a mâncat. (<em>author note: .I.</em>).</p>
+
+                        <br>
+                        <br>
+                        <p>[¹]: Nu știm de unde provine Buba.</p>
+                        <br>
+                        <br>
+                        <h5>Ultima actualizare: 01.04.2023 la ora 18:25</h5>
                     </div>
 
-                <br>
-                <h3 id="oncioiuint">Oncioiu și interdicțiile</h3>
-                <h5 id="pagin-dedicat-placeholder">Pagină dedicată: 
-                    <a href="">
-                        SMP-uri
-                    </a>
-                </h5>
-                    <p>Tot la începutul lui 2021, pe SMP, Oncioiu obișnuia să primească interdicții de la anumite
-                        construcții realizate de membrii serverului.</p>
-
-                <br>
-                <h3 id="salmonul">Salmonul</h3>
-                    <p>În vara lui 2020, în timpul unui SMP, împreună cu <em>edx</em>, <em>edibos</em> și
-                        <em>David</em>, membrul edx deținea un salmon care a fost omorât de membrul edibos.</p>
-                    <p>Prin urmare, membrul edx a făcut un mormânt pentru salmon, darămite, membrul edibos a furat
-                        salmonul din mormânt și l-a mâncat. (<em>author note: .I.</em>).</p>
-
-                <br>       
-                <br>
-                    <p>[¹]: Nu știm de unde provine Buba.</p>
-
-
+                    <div class="col" id="content-sidebar-col">
+                        <div class="sticky p-4">
+                            <h2>Cuprins</h2>
+                            <hr>
+                            <ol>
+                                <li>
+                                    <a href="#fenomene">
+                                        Fenomene
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#fenomene-plurale">
+                                        Fenomene Plurale
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#animal">
+                                                Animal
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#saispe">
+                                                Saispe
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#cocomarla">
+                                                Cocomarla
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#fenomene-singulare">
+                                        Fenomene
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#david-ip">
+                                                David și IP-ul
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#david-dust2">
+                                                David și Dust 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#david-mirage">
+                                                David și Mirage
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#davidclopo">
+                                                David și Clopoțeii
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#davidzilele">
+                                                David și Zilele Lunii
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#davidskibidi">
+                                                David și Skibidi
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#ghertoaia">
+                                                Gherțoaia
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#racul">
+                                                Racul
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#masina">
+                                                Mașina
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#bubabatrani">
+                                                Buba și Bătrânii
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#bubablocare">
+                                                Buba și Blocajul
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#palatbuba">
+                                                Buba și „Palatul”
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#bubahistory">
+                                                Buba și Istoricul său
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#oncioiuint">
+                                                Oncioiu și Interdicțiile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#salmonul">
+                                                Salmonul
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
 
-    </div>
+        <!--    MODAL   -->
 
+        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="infoModalLabel">Informație destul de importantă</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span>
+                            Pagina pe care ai selectat-o încă nu există.
+                        </span>
+                        <br>
+                        <span>
+                            Te rog încearcă mai târziu.
+                        </span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="creditsModalLabel">Credite</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <span>
+                            Dezvoltator: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Artist User Interface (UI): 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Artist User Experience (UX): 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Quality Control: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Dependențe: Bootstrap v5.3
+                        </span>
+                        <br>
+                        <span>
+                            Artist Grafic: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Front-End: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Back-End: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Găzduire: GitHub Pages
+                        </span>
+                        <br>
+                        <span>
+                            Proofreader 1: Pol
+                        </span>
+                        <br>
+                        <span>
+                            Proofreader 2: 28edxwrd
+                        </span>
+                        <br>
+                        <span>
+                            Evaluator Artistic: pol și david
+                        </span>
+                        <br>
+                        <span>
+                            Dependență Grafică: Figma și Adobe Photoshop 2024
+                        </span>
+                        <br>
+                        <span>
+                            Dependență de Codare: Visual Studio Code
+                        </span>
+                        <br>
+                        <span>
+                            HR: 28edxwrd SRL
+                        </span>
+                        <br>
+                        <span>
+                            Font-uri: Monsterrat (Google), Panton, Seage UI
+                        </span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
