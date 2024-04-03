@@ -120,6 +120,7 @@ figure {
 }
 
 figure p {
+    text-align: center !important;
     margin: 0 !important;
     font-size: 20px !important;
 }
