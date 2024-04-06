@@ -1,0 +1,206 @@
+body {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 80%),
+            rgb(0 0 0 / 70%)), url("../../img/pagini/arhiva/fundal.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 110%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.body-content {
+    width: 120rem;
+}
+
+* {
+    font-family: 'Panton';
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    margin-top: 10rem;
+    max-width: 40rem;
+
+    background: linear-gradient(180deg, rgba(39, 39, 39, 0.2) 0%, rgba(5, 5, 5, 0.2) 100%);
+    backdrop-filter: blur(12.5px);
+    border-radius: 27px;
+
+    color: white;
+}
+
+#header h1 {
+    font-family: 'Panton-XBold';
+    margin: 0;
+    font-size: 69px;
+}
+
+#header h4 {
+    font-family: 'Panton-SemiBold';
+    font-size: 20px;
+    margin: 0;
+}
+
+#header h3 {
+    font-family: 'Panton-Bold';
+    font-size: 25px;
+    margin: 0;
+}
+
+#header h2 {
+    font-family: 'Panton-Bold';
+}
+
+.btn-primary {
+    width: 326px;
+    height: 55px;
+
+    background: linear-gradient(90deg, #3C88FB 0%, #2824F9 100%);
+    border-radius: 14px;
+}
+
+
+
+
+#lower {
+    margin-top: 10.8rem;
+    background-color: rgb(16, 16, 16, 0.85);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 1);
+    padding: 5rem;
+
+    color: white;
+}
+
+#lower h1 {
+    font-family: 'Panton-Black';
+    margin: 0;
+}
+
+#lower h4 {
+    font-family: 'Panton-Bold';
+    margin: 0;
+}
+
+#lower-grid {
+    color: black;
+
+    margin-top: 3rem;
+}
+
+#lower-grid h1 {
+    font-size: 60px;
+
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 800;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px #000000;
+}
+
+#lower-grid .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    width: 400px;
+    height: 120px;
+}
+
+#lower-grid-card-2016 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2016.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2017 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2017.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2018 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2018.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2019 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2019.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2020 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2020.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2021 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2021.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2022 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2022.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2023 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../img/pagini/arhiva/cards/2023.png');
+    backdrop-filter: blur(2px);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#lower-grid-card-2024 {
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-position: -1px -20px;
+}
+
+blockquote{
+    background-color: rgba(227, 26, 26, 0.1) !important;
+    border-color: rgba(255, 0, 0, 0.1) !important;;
+    width: 35rem;
+}
+blockquote p{
+    font-size: 25px;
+}

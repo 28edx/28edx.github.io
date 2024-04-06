@@ -59,15 +59,15 @@
         <div class="body-content">
             <nav class="navbar" data-bs-theme="dark">
                 <div class="container-fluid justify-content-start gap-4">
-
+            
                     <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="#">
-                        <img src="./img/index/TBO-pic.png" alt="Logo" width="30" height="30"
-                            class="d-inline-block align-text-top" id="logo-logo">
+                        <img src="./img/index/TBO-pic.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"
+                            id="logo-logo">
                         <h2>
                             Totul Breasla Orange
                         </h2>
                     </a>
-
+            
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -76,7 +76,8 @@
                             </span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./pagini/Breasla Orange/" target="_blank">Breasla Orange</a></li>
+                            <li><a class="dropdown-item" href="./pagini/Breasla Orange/" target="_blank">Breasla
+                                    Orange</a></li>
                             <li><a class="dropdown-item" href="./pagini/Fenomene/" target="_blank">Fenomene</a></li>
                             <li><a class="dropdown-item" href="./pagini/SMPuri/" target="_blank">SMP-uri</a></li>
                             <li><a class="dropdown-item" href="./pagini/Persoane/" target="_blank">Persoane</a></li>
@@ -86,7 +87,7 @@
                             </li>
                         </ul>
                     </div>
-
+            
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -95,12 +96,14 @@
                             </span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">Arhivă</a></li>
-                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#creditsModal">Credite</a></li>
+                            <li><a class="dropdown-item" href="./pagini/Arhiva/" target="_blank">Arhiva28</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#creditsModal">Credite</a>
+                            </li>
                         </ul>
                     </div>
-
-                    <a class="btn btn-primary p-2" href="#" role="button" id="nav-buton-arhiva" data-bs-toggle="modal" data-bs-target="#infoModal"> Arhivă</a>
+            
+                    <a class="btn btn-primary p-2" href="./pagini/Arhiva/" role="button" id="nav-buton-arhiva" target="_blank"> Arhivă</a>
                 </div>
             </nav>
 
@@ -245,8 +248,8 @@
                             <h3>Totul despre satul ficțional Gherțoaia</h3>
                             <div class="d-flex justify-content-center mt-2 card-button">
                                 <div class="d-flex justify-content-center mt-2 card-button">
-                                    <a class="btn btn-primary" href="./pagini/Ghertoaia/" role="button" id="cards-button"
-                                        target="_blank">
+                                    <a class="btn btn-primary" href="./pagini/Ghertoaia/" role="button"
+                                        id="cards-button" target="_blank">
                                         <span>
                                             Citește
                                         </span>
@@ -292,14 +295,11 @@
                             <h2>Arhivă</h2>
                             <h3>Pagină dedicată păstrarea istoriei</h3>
                             <div class="d-flex justify-content-center mt-2 card-button">
-                                <!-- pagina nu exista -->
-                                <a href="#logo-logo">
-                                    <button class="btn btn-primary" role="button" id="cards-button-m"
-                                        data-bs-toggle="modal" data-bs-target="#infoModal">
-                                        <span>
-                                            Citește
-                                        </span>
-                                    </button>
+                                <a class="btn btn-primary" href="./pagini/Arhiva/" role="button" id="cards-button"
+                                    target="_blank">
+                                    <span>
+                                        Citește
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -416,31 +416,28 @@
         </div>
     </div>
 
-    <div class="modal fade" id="infoModal" tabindex="-1"
-    aria-labelledby="infoModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="infoModalLabel">Informație destul de importantă</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <span>
-                    Pagina pe care ai selectat-o încă nu există.
-                </span>
-                <br>
-                <span>
-                    Te rog încearcă mai târziu.
-                </span>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary"
-                    data-bs-dismiss="modal">Închide</button>
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infoModalLabel">Informație destul de importantă</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>
+                        Pagina pe care ai selectat-o încă nu există.
+                    </span>
+                    <br>
+                    <span>
+                        Te rog încearcă mai târziu.
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 
 </html>
