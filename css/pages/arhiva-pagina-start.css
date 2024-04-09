@@ -1,0 +1,134 @@
+body {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 60%),
+            rgb(0 0 0 / 60%)), url("../../img/pagini/arhiva/2016/fundal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#container-year {
+    height: 43rem;
+}
+
+.header-content {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+
+body{ 
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 100%;
+    overflow: hidden;
+}
+.content-cards div{
+    background-color: red;
+}
+
+h1 {
+    position: relative;
+    line-height: 110px;
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 128px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px #000000;
+
+    margin: 0;
+}
+
+h1 svg{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    left: 300px;
+}
+h3 {
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px #000000;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px #000000;
+    margin: 0;
+}
+
+#fluid-container-arrow-fill {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(329deg) brightness(103%) contrast(101%);
+    box-shadow: 0px 4px 4px #ffffff;
+}
+
+.row{
+    overflow: hidden;
+}
+.row .col{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.row .col h1{
+    font-size: 60px;
+}
+#content-card-video{
+    background-image: linear-gradient(to bottom,
+    rgb(0 0 0 / 30%),
+    rgb(0 0 0 / 30%)), url('../../img/pagini/arhiva/content-cards-img/video.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#content-card-img{
+    background-image: linear-gradient(to bottom,
+    rgb(0 0 0 / 30%),
+    rgb(0 0 0 / 30%)), url('../../img/pagini/arhiva/content-cards-img/img.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#content-card-misc{
+    background-image: linear-gradient(to bottom,
+    rgb(0 0 0 / 30%),
+    rgb(0 0 0 / 30%)), url('../../img/pagini/arhiva/content-cards-img/misc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#content-card-video:hover{
+    background-image: linear-gradient(to bottom,
+    rgb(0 0 0 / 60%),
+    rgb(0 0 0 / 60%)), url('../../img/pagini/arhiva/content-cards-img/video.png');
+}
+#content-card-img:hover{
+    background-image: linear-gradient(to bottom,
+    rgb(0 0 0 / 60%),
+    rgb(0 0 0 / 60%)), url('../../img/pagini/arhiva/content-cards-img/img.jpeg');
+}
+#content-card-misc:hover{
+    background-image: linear-gradient(to bottom,
+    rgb(0 0 0 / 60%),
+    rgb(0 0 0 / 60%)), url('../../img/pagini/arhiva/content-cards-img/misc.png');
+}
