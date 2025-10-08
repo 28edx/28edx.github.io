@@ -75,70 +75,107 @@
                     </blockquote>
                     <div class="mt-3">
                         <h1>2023</h1>
+                        <p>2023 conține 9 elemente dintre care 9 videoclipuri și 0 poze.</p>
                     </div>
                 </div>
-                <div class="mt-5 mb-4">
-                    <a class="btn btn-primary p-2" href="#lower" role="button">
-                        <h2>Răsfoiește</h2>
+                <div class="d-flex flex-column justify-content-center align-items-center container mt-5 mb-4">
+                    <a class="row btn btn-primary p-2 mb-4" href="#lower" role="button">
+                        <h2>Videoclipuri</h2>
+                    </a>
+                    <a class="row btn btn-primary p-2" href="#lower" role="button">
+                        <h2>Poze</h2>
                     </a>
                 </div>
             </div>
 
             <div class="d-flex justify-content-center flex-column container-fluid text-center" id="lower">
+
                 <div class="d-flex flex-column align-items-center">
-                    <blockquote>
-                        <p><strong>De notat!</strong> Videoclipurile NU sunt în calitatea originală. Au fost compresate la 720p30.</p>
-                    </blockquote>
-                    <h1 class="mb-3">Decembrie, 2023</h1>
+                    <h2 style="max-width: 800px;">Folosind noua inovație tehnologică dâmbovițeană, te poți folosi de căutare pentru a găsi videoclipuri.</h2>
+                    <p>Începe prin a căuta un cuvânt cheie sau o dată specifică.</p>
+                    <!-- Search bar for videos -->
+                    <div class="mb-4" style="width:100%; max-width:600px;">
+                        <input type="text" id="videoSearch" class="form-control" placeholder="Cuvinte cheie sau dată...">
+                    </div>
+                    <!-- Filtered video results will appear here -->
+                    <div id="videoResults"></div>
                 </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="mb-3" style="font-size: 40px;">Poze</h1>
+                </div>
+
                 <div class="d-flex flex-column justify-content-center align-items-center container">
-                    <div class="row">
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_14_12.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 14/12/2023</h4>
+                    <div class="row mb-4">
+                        <img src="../POZE/bleh.png" alt="" style="width: 400px;">
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <h1 class="mb-3" style="font-size: 40px;">Videoclipuri</h1>
+
+                    <div class="d-flex flex-column justify-content-center align-items-center container">
+                        <div class="d-flex flex-column align-items-center">
+                            <blockquote>
+                                <p><strong>De notat!</strong> Videoclipurile NU sunt în calitatea originală. Au fost compresate la 720p30.</p>
+                            </blockquote>
+                            <h2 class="mb-3" style="font-size: 25px;">Decembrie, 2023</h2>
                         </div>
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_14_12_2.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 14/12/2023</h4>
+                    </div>
+
+                    <!-- Video grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="ROBLOX 2023 14 12 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_14_12.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 14/12/2023</p>
+                        </div>
+                        <div class="col" data-name="ROBLOX 2023 14 12 2 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_14_12_2.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 14/12/2023</p>
                         </div>            
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_14_12_4.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 14/12/2023</h4>
+                    <div class="row mb-4">
+                        <div class="col" data-name="ROBLOX 2023 14 12 4 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_14_12_4.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 14/12/2023</p>
                         </div>
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_16_12.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 16/12/2023</h4>
+                        <div class="col" data-name="ROBLOX 2023 16 12 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_16_12.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 16/12/2023</p>
                         </div>            
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_17_12.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 17/12/2023</h4>
+                    <div class="row mb-4">
+                        <div class="col" data-name="ROBLOX 2023 17 12 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_17_12.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 17/12/2023</p>
                         </div>
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_19_12.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 19/12/2023</h4>
+                        <div class="col" data-name="ROBLOX 2023 19 12 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_19_12.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 19/12/2023</p>
                         </div>            
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_19_12_2.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 19/12/2023</h4>
+                    <div class="row mb-4">
+                        <div class="col" data-name="ROBLOX 2023 19 12 2 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_19_12_2.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 19/12/2023</p>
                         </div>
-                        <div class="col">
-                            <video src="../VIDEO/ROBLOX_2023_19_12_3.mp4" class="object-fit-contain" controls width="600"> </video>
-                            <h4>Înregistat la data de 19/12/2023</h4>
+                        <div class="col" data-name="ROBLOX 2023 19 12 3 Lumber Tycoon 2 Decembrie">
+                            <video src="../VIDEO/2023/ROBLOX_2023_19_12_3.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 19/12/2023</p>
                         </div>            
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col" data-name="2023 minecraft buba edi pvp meme decembrie">
+                            <video src="../VIDEO/2023/2023_minecraft_buba_edi_pvp_meme.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de ??/12/2023</p>
+                        </div>        
                     </div>
 
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-
 
     <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -223,27 +260,69 @@
         </div>
     </div>
 
-    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="infoModalLabel">Informație destul de importantă</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <span>
-                        Pagina pe care ai selectat-o încă nu există.
-                    </span>
-                    <br>
-                    <span>
-                        Te rog încearcă mai târziu.
-                    </span>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
-                </div>
-            </div>
-        </div>
+    <script>
+    // Build videos array from the video grid using data attributes
+    const videos = Array.from(document.querySelectorAll('.col[data-name]')).map(col => {
+        const video = col.querySelector('video');
+        const descP = col.querySelector('p.video-desc');
+        return {
+            name: col.getAttribute('data-name'),
+            src: video ? video.getAttribute('src') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Render videos to the page
+    function renderVideos(filtered) {
+        const container = document.getElementById('videoResults');
+        if (!filtered.length) {
+            container.innerHTML = '<p>Nu s-au găsit videoclipuri.</p>';
+            return;
+        }
+        let html = '';
+        for (let i = 0; i < filtered.length; i += 2) {
+            html += '<div class="row mb-4">';
+            for (let j = 0; j < 2; j++) {
+                const video = filtered[i + j];
+                if (video) {
+                    html += `<div class="col">
+                        <video src="${video.src}" class="object-fit-contain" controls width="600" height="317"></video>
+                        <p style="font-size: 15px;">${video.desc}</p>
+                    </div>`;
+                }
+            }
+            html += '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    // Only show videos when searching
+    document.addEventListener('DOMContentLoaded', function() {
+        const search = document.getElementById('videoSearch');
+        const results = document.getElementById('videoResults');
+        results.innerHTML = '';
+        search.addEventListener('input', function() {
+            const query = search.value.trim().toLowerCase();
+            if (!query) {
+                results.innerHTML = '';
+                return;
+            }
+            const keywords = query.split(/\s+/);
+            const filtered = videos.filter(video => {
+                // Count how many keywords match the video name
+                const name = video.name.toLowerCase();
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                // Show if at least one or two keywords match
+                return matchCount >= 1;
+            });
+            renderVideos(filtered);
+        });
+    });
+    </script>
+
     </div>
 </body>
 

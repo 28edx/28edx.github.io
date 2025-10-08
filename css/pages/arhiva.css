@@ -37,6 +37,12 @@ p{
     margin: 0;
 }
 
+.video-desc{
+    font-family: 'TT-Regular';
+    margin: 0;
+    font-size: 15px;
+}
+
 a {
     text-decoration: none;
 }
