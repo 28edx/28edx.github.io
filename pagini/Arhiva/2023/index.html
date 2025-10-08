@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,18 @@
     <script src="../../../js/bootstrap.bundle.js"></script>
 </head>
 
-<body>
+<style>
+    body {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 80%),
+            rgb(0 0 0 / 70%)), url("../POZE/fundal/2023.png") !important;
 
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    }
+</style>
+
+<body>
     <div class="d-flex justify-content-center">
         <div class="body-content">
             <nav class="navbar" data-bs-theme="dark">
@@ -68,21 +78,18 @@
                 </div>
             </nav>
 
-            <div class="d-flex flex-column align-items-center container p-5" id="header">
+            <div class="d-flex flex-column align-items-center container p-5 glass" id="header">
                 <div class="d-flex flex-column align-items-center text-center">
-                    <blockquote>
-                        <p><strong>Atenție!</strong> Pagina este încă în curs de actualizare.</p>
-                    </blockquote>
                     <div class="mt-3">
                         <h1>2023</h1>
-                        <p>2023 conține 9 elemente dintre care 9 videoclipuri și 0 poze.</p>
+                        <p style="max-width: 400px;">Acest an conține 9 elemente dintre care 9 videoclipuri și 0 poze.</p>
                     </div>
                 </div>
                 <div class="d-flex flex-column justify-content-center align-items-center container mt-5 mb-4">
-                    <a class="row btn btn-primary p-2 mb-4" href="#lower" role="button">
+                    <a class="row btn btn-primary p-2 mb-4" href="#videoclipuri" role="button">
                         <h2>Videoclipuri</h2>
                     </a>
-                    <a class="row btn btn-primary p-2" href="#lower" role="button">
+                    <a class="row btn btn-primary p-2" href="#poze" role="button">
                         <h2>Poze</h2>
                     </a>
                 </div>
@@ -101,7 +108,7 @@
                     <div id="videoResults"></div>
                 </div>
 
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center" id="poze">
                     <h1 class="mb-3" style="font-size: 40px;">Poze</h1>
                 </div>
 
@@ -111,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center" id="videoclipuri">
                     <h1 class="mb-3" style="font-size: 40px;">Videoclipuri</h1>
 
                     <div class="d-flex flex-column justify-content-center align-items-center container">

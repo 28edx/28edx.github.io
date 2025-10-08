@@ -43,12 +43,14 @@ p{
     font-size: 15px;
 }
 
+
 a {
     text-decoration: none;
 }
 
 #header {
     margin-top: 10rem;
+    margin-bottom: 15rem;
     max-width: 40rem;
 
     background: linear-gradient(180deg, rgba(39, 39, 39, 0.2) 0%, rgba(5, 5, 5, 0.2) 100%);
@@ -56,6 +58,9 @@ a {
     border-radius: 27px;
 
     color: white;
+    
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
 }
 
 #header h1 {
