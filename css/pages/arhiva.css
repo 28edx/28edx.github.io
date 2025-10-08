@@ -18,7 +18,7 @@ body {
 }
 
 * {
-    font-family: 'TT-DemiBold';
+    font-family: 'TT-Regular';
     margin: 0;
 }
 
@@ -28,7 +28,7 @@ h1{
 }
 
 h4{
-    font-family: 'TT-Regular';
+    font-family: 'TT-DemiBold';
     margin: 0;
 }
 
@@ -76,8 +76,6 @@ a {
     border-radius: 14px;
 }
 
-
-
 #lower {
     margin-top: 10.8rem;
     background-color: rgb(16, 16, 16, 0.85);
@@ -92,7 +90,6 @@ a {
     color: white;
 }
 
-
 #lower-grid {
     color: black;
 
@@ -102,8 +99,7 @@ a {
 #lower-grid h1 {
     font-size: 60px;
 
-    font-family: 'TT Firs Neue Trl';
-    font-style: normal;
+    font-family: 'TT-Bold';
     font-weight: 800;
 
     color: #FFFFFF;
