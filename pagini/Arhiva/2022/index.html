@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../img/icon.ico">
+    <title>Arhivă 2022</title>
+
+    <link rel="stylesheet" href="../../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/pages/arhiva.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/fonts2.css">
+    <link rel="stylesheet" href="../../../css/blockquote.css">
+
+    <script src="../../../js/bootstrap.bundle.js"></script>
+</head>
+
+<style>
+    body {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 80%),
+            rgb(0 0 0 / 70%)), url("../POZE/fundal/2022.png") !important;
+
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    }
+</style>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="body-content">
+            <nav class="navbar" data-bs-theme="dark">
+                <div class="container-fluid justify-content-start gap-4">
+
+                    <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="../../../index.html">
+                        <img src="../../../img/index/TBO-pic.png" alt="Logo" width="30" height="30"
+                            class="d-inline-block align-text-top" id="logo-logo">
+                        <h2>
+                            Totul Breasla Orange
+                        </h2>
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span>
+                                Enciclopedie
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../pagini/Breasla Orange/" target="_blank">Breasla
+                                    Orange</a></li>
+                            <li><a class="dropdown-item" href="../../../pagini/Fenomene/" target="_blank">Fenomene</a></li>
+                            <li><a class="dropdown-item" href="../../../pagini/SMPuri/" target="_blank">SMP-uri</a></li>
+                            <li><a class="dropdown-item" href="../../../pagini/Persoane/" target="_blank">Persoane</a></li>
+                            <li><a class="dropdown-item" href="../../../pagini/Podcast/" target="_blank">Podcast</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../../../pagini/Ghertoaia/" target="_blank">Gherțoaia</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span>
+                                Miscelaneu
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../pagini/Arhiva/" target="_blank">Arhiva28</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#creditsModal">Credite</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="d-flex flex-column align-items-center container p-5 glass" id="header">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <div class="mt-3">
+                        <h1>2022</h1>
+                        <p style="max-width: 400px;">Acest an conține 38 de elemente, dintre care 3 videoclipuri, 24 de poze și 13 videoclipuri de pe YouTube.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center container mt-5 mb-4">
+                    <div class="row dropdown-center">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span style="font-size: 25px; font-weight: bolder;">Videoclipuri</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#vid-feb-2022">Februarie</a></li>
+                            <li><a class="dropdown-item" href="#vid-mai-2022">Iulie</a></li>
+                        </ul>
+                    </div>
+                    <div class="row dropdown-center mt-3">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span style="font-size: 25px; font-weight: bolder;">Imagini</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#poze-feb-2022">Februarie</a></li>
+                            <li><a class="dropdown-item" href="#poze-iul-2022">Iulie</a></li>
+                        </ul>
+                    </div>
+                    <div class="row dropdown-center mt-3">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span style="font-size: 25px; font-weight: bolder;">YouTube</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#ytb-ian-2022">Ianuarie</a></li>
+                            <li><a class="dropdown-item" href="#ytb-feb-2022">Februarie</a></li>
+                            <li><a class="dropdown-item" href="#ytb-mar-2022">Martie</a></li>
+                            <li><a class="dropdown-item" href="#ytb-apr-2022">Aprilie</a></li>
+                            <li><a class="dropdown-item" href="#ytb-aug-2022">August</a></li>
+                            <li><a class="dropdown-item" href="#ytb-dec-2022">Decembrie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center flex-column container-fluid text-center" id="lower">
+                <div class="d-flex flex-column align-items-center">
+                    <h2 style="max-width: 800px;">Folosind noua inovație tehnologică dâmbovițeană, te poți folosi de căutare pentru a găsi videoclipuri.</h2>
+                    <p>Începe prin a căuta un cuvânt cheie sau o dată specifică.</p>
+                    <!-- Search bar for videos -->
+                    <div class="mb-4" style="width:100%; max-width:600px;">
+                        <input type="text" id="videoSearch" class="form-control" placeholder="Cuvinte cheie sau dată...">
+                    </div>
+                    <!-- Filtered video results will appear here -->
+                    <div id="videoResults"></div>
+                </div>
+
+                <!-- SECȚIUNE VIDEOCLIPURI -->
+                <div class="d-flex flex-column align-items-center" id="videoclipuri">
+                    <h1 class="mb-3" style="font-size: 40px;">Videoclipuri</h1>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="vid-feb-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Februarie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- Video grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="2022 Minecraft SMP 25 Demolari Demolări Floresti Florești Meme">
+                            <video src="../VIDEO/2022/2022_minecraft_smp_25_demolari_floresti_meme.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 26/02/2022</p>
+                        </div>
+                        <div class="col" data-name="2022 Buba Palat Meme Imperiu Bizantin">
+                            <video src="../VIDEO/2022/buba_palat_mema.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 26/02/2022</p>
+                        </div>            
+                    </div>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="vid-mai-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Mai, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- Video grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="i just bought a lada gmod 2022 meme">
+                            <video src="../VIDEO/2022/ijustboughtaladagmod.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                            <p class="video-desc" style="font-size: 15px;">Înregistat la data de 22/05/2022</p>
+                        </div>         
+                    </div>
+
+                </div>
+
+                <!-- SECȚIUNE POZE -->
+                <div class="d-flex flex-column align-items-center" id="poze">
+                    <h1 class="mb-2" style="font-size: 40px;">Poze</h1>
+                    <p>Pozele se pot vizualiza în întreaga lor mărime făcând clic pe ele.</p>
+                    <blockquote>
+                        <strong>Atenție.</strong> Ordinea cronologică a pozelor poate să nu fie respectată în totalitate. Așadar, unele poze pot să nu aibă data exactă a capturii. Pozele datate cu "??" înseamnă că nu se cunoaște data exactă a capturii.
+                    </blockquote>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="poze-feb-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Februarie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- Photo grid -->
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_8.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_8.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_13.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_13.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 17/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_11.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_11.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_12.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_12.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_1.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_1.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 18/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_2.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_2.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_3.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_3.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 18/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_4.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_4.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_5.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_5.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_6.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_6.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_7.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_7.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 18/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_9.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_9.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 21/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_10.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_10.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 21/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_15.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_15.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_16_amongus_what_munte.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_16_amongus_what_munte.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_17.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_17.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_18.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_18.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_19.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_19.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_20.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_20.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_22.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_22.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 22/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_21.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_21.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 24/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_23.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_23.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 27/02/2022</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_smp_1_1.png" target="_blank">
+                                <img src="../POZE/2022/2022_smp_1_1.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de ??/02/2022</p>
+                        </div>
+                    </div>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="poze-iul-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Iulie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp februarie 2022">
+                            <a href="../POZE/2022/2022_minecraft_smp_14_lil_tecca_tecuci.png" target="_blank">
+                                <img src="../POZE/2022/2022_minecraft_smp_14_lil_tecca_tecuci.png" alt="" width="600" height="317">
+                            </a>
+                            <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 16/07/2022</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SECȚIUNE YOUTUBE -->
+                <div class="d-flex flex-column align-items-center" id="youtube">
+                    <h1 class="mb-3" style="font-size: 40px;">YouTube</h1>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-ian-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Ianuarie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- YouTube grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="roblox lumber tycoon 2 youtube 2022 ianuarie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Pwi9Gj6YD60?si=aLZr8DviWxCl8sKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 03/01/2022</p>
+                        </div>
+                    </div>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-feb-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Februarie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- YouTube grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp farm timelapse slime februarie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/AO-So5bLpJ0?si=GL9qr0x48o81gGGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 20/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp farm timelapse sugarcane februarie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5q49dAiq5DM?si=Wliqa8lMxUiD8E1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 20/02/2022</p>
+                        </div>                     
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col" data-name="minecraft smp farm timelapse sugarcane februarie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/g6UY2pVV-2E?si=VL2byJWCSiEV0qyx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 20/02/2022</p>
+                        </div>
+                        <div class="col" data-name="minecraft smp santier floresti palat bizantin februarie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ip4Zq6NcgEo?si=zQai90WhLeqoaDBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px; max-width: 40rem;">Publicat la data de 27/02/2022 (Nu se poate reda din cauza drepturilor de autor, apasă pe „<strong>Vizionează pe YouTube</strong>” sau ce scrie acolo.)</p>
+                        </div>                     
+                    </div>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-mar-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Martie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- YouTube grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="terraria skema de berceni berkeni martie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eCMMiuehuG8?si=7cTFd9juhNv_Epz1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 31/03/2022</p>
+                        </div>                 
+                    </div>
+
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-apr-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Aprilie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- YouTube grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="terraria skema de berceni berkeni aprilie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RTiU0QvEZCA?si=JBSZudV18aR0Iaal" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 20/04/2022</p>
+                        </div>
+                        <div class="col" data-name="terraria skema de berceni berkeni aprilie compilație">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/arBpu3mBtcs?si=vhpb5Yfe0nUQ-Trh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 25/04/2022</p>
+                        </div>
+                    </div>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-aug-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">August, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- YouTube grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="ce spun romanii roblox august">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/G2ebAIyYmwE?si=5dz3_UCWqdmjkHB-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 27/08/2022</p>
+                        </div>
+                    </div>
+
+                    <!-- Dată -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-dec-2022">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Decembrie, 2022</h2>
+                        </div>
+                    </div>
+
+                    <!-- YouTube grid -->
+                    <div class="row mb-4">
+                        <div class="col" data-name="pacanele compilatie clopoteii decembrie aparate superbet david">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hcttJzS4AjY?si=pdUA3fVpNG5GcCQt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 23/12/2022</p>
+                        </div>
+                        <div class="col" data-name="roblox obby buba decembrie">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ezju3T2LX4E?si=hd8Tq93PlQJcgR6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 31/12/2022</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="creditsModalLabel">Credite</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>
+                        Dezvoltator: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Artist User Interface (UI): 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Artist User Experience (UX): 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Quality Control: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Dependențe: Bootstrap v5.3
+                    </span>
+                    <br>
+                    <span>
+                        Artist Grafic: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Front-End: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Back-End: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Găzduire: GitHub Pages
+                    </span>
+                    <br>
+                    <span>
+                        Proofreader 1: Pol
+                    </span>
+                    <br>
+                    <span>
+                        Proofreader 2: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Evaluator Artistic: pol și david
+                    </span>
+                    <br>
+                    <span>
+                        Dependență Grafică: Figma și Adobe Photoshop 2024
+                    </span>
+                    <br>
+                    <span>
+                        Dependență de Codare: Visual Studio Code
+                    </span>
+                    <br>
+                    <span>
+                        HR: 28edxwrd SRL
+                    </span>
+                    <br>
+                    <span>
+                        Font-uri: Monsterrat (Google), Panton, Seage UI
+                    </span>
+                    <br>
+                    <span>
+                        Linii de cod pagină index: 448
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Build videos array from the video grid using data attributes
+    const videos = Array.from(document.querySelectorAll('#videoclipuri .col[data-name]')).map(col => {
+        const video = col.querySelector('video');
+        const descP = col.querySelector('p.video-desc');
+        return {
+            type: 'video',
+            name: col.getAttribute('data-name'),
+            src: video ? video.getAttribute('src') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Build photos array from the photo grid using data attributes
+    const photos = Array.from(document.querySelectorAll('#poze .col[data-name]')).map(col => {
+        const img = col.querySelector('img');
+        const link = col.querySelector('a');
+        const descP = col.querySelector('p.photo-desc');
+        return {
+            type: 'photo',
+            name: col.getAttribute('data-name'),
+            src: img ? img.getAttribute('src') : '',
+            href: link ? link.getAttribute('href') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Build youtubes array from the YouTube grid using data attributes
+    const youtubes = Array.from(document.querySelectorAll('#youtube .col[data-name] iframe')).map(iframe => {
+        const col = iframe.closest('.col');
+        const descP = col.querySelector('p.youtube-desc');
+        return {
+            type: 'youtube',
+            name: col.getAttribute('data-name'),
+            src: iframe.getAttribute('src'),
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Render videos and photos to the page
+    function renderResults(filtered) {
+        const container = document.getElementById('videoResults');
+        if (!filtered.length) {
+            container.innerHTML = '<p>Niciun rezultat nu corespunde căutării.</p>';
+            return;
+        }
+        let html = '';
+        for (let i = 0; i < filtered.length; i += 2) {
+            html += '<div class="row mb-4">';
+            for (let j = 0; j < 2; j++) {
+                const item = filtered[i + j];
+                if (item) {
+                    if (item.type === 'video') {
+                        html += `<div class="col">
+                            <video src="${item.src}" class="object-fit-contain" controls width="600" height="317"></video>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    } else if (item.type === 'photo') {
+                        html += `<div class="col">
+                            <a href="${item.href}" target="_blank">
+                                <img src="${item.src}" alt="" width="600" height="317">
+                            </a>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    } else if (item.type === 'youtube') {
+                        html += `<div class="col">
+                            <iframe width="600" height="317" src="${item.src}" frameborder="0" allowfullscreen></iframe>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    }
+                }
+            }
+            html += '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    // Only show results when searching
+    document.addEventListener('DOMContentLoaded', function() {
+        const search = document.getElementById('videoSearch');
+        const results = document.getElementById('videoResults');
+        results.innerHTML = '';
+        search.addEventListener('input', function() {
+            const query = search.value.trim().toLowerCase();
+            if (!query) {
+                results.innerHTML = '';
+                return;
+            }
+            const keywords = query.split(/\s+/);
+            // Filter videos
+            const filteredVideos = videos.filter(item => {
+                const name = item.name.toLowerCase();
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Filter photos
+            const filteredPhotos = photos.filter(item => {
+                const name = item.name.toLowerCase();
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Filter YouTube videos
+            const filteredYoutubes = youtubes.filter(item => {
+                const name = item.name.toLowerCase();
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Combine and render all
+            renderResults([...filteredVideos, ...filteredPhotos, ...filteredYoutubes]);
+        });
+    });
+
+    // Set default volume for all videos
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('video').forEach(function(video) {
+            video.volume = 0.2; // Set to 20% volume for all videos
+        });
+    });
+    </script>
+
+    </div>
+</body>
+
+</html>

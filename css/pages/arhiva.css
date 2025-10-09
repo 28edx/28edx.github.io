@@ -87,6 +87,14 @@ a {
     border-radius: 14px;
 }
 
+.btn-danger {
+    width: 326px;
+    height: 55px;
+
+    background: linear-gradient(90deg, #fb463c 0%, #ff5943 100%);
+    border-radius: 14px;
+}
+
 #lower {
     margin-top: 10.8rem;
     background-color: rgb(16, 16, 16, 0.85);

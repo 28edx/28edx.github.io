@@ -33,7 +33,7 @@
             <nav class="navbar" data-bs-theme="dark">
                 <div class="container-fluid justify-content-start gap-4">
 
-                    <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="#">
+                    <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="../../../index.html">
                         <img src="../../../img/index/TBO-pic.png" alt="Logo" width="30" height="30"
                             class="d-inline-block align-text-top" id="logo-logo">
                         <h2>
@@ -283,7 +283,7 @@
     function renderVideos(filtered) {
         const container = document.getElementById('videoResults');
         if (!filtered.length) {
-            container.innerHTML = '<p>Nu s-au găsit videoclipuri.</p>';
+            container.innerHTML = '<p>Niciun videoclip nu corespunde căutării.</p>';
             return;
         }
         let html = '';
