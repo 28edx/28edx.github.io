@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../img/icon.ico">
+    <title>Arhivă 2022</title>
+
+    <link rel="stylesheet" href="../../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/pages/arhiva.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/fonts2.css">
+    <link rel="stylesheet" href="../../../css/blockquote.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="../../../js/bootstrap.bundle.js"></script>
+</head>
+
+<style>
+    body {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 80%),
+            rgb(0 0 0 / 70%)), url("../POZE/fundal/2021.png") !important;
+
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    }
+</style>
+
+<body data-bs-spy="scroll" data-bs-target="#toc-scrollspy" data-bs-offset="120" tabindex="0">
+    <div class="d-flex justify-content-center">
+        <div class="body-content">
+
+            <!-- Bara de navigare laterală -->
+            <nav id="toc-scrollspy" class="nav nav-pills flex-column mb-4 sticky-toc d-none d-xl-flex">
+                <a class="nav-link" href="#imagini" style="font-weight: bold;">Imagini</a>
+                <a class="nav-link ms-3 my-1" href="#img-feb-2021">Februarie</a>
+                <a class="nav-link" href="#youtube" style="font-weight: bold;">YouTube</a>
+                <a class="nav-link ms-3 my-1" href="#ytb-mar-2021">Martie</a>
+                <a class="nav-link ms-3 my-1" href="#ytb-apr-2021">Aprilie</a>
+                <a class="nav-link ms-3 my-1" href="#ytb-sep-2021">Septembrie</a>
+            </nav>
+
+            <!-- Navbar-ul -->
+            <nav class="navbar" data-bs-theme="dark">
+                <div class="d-flex justify-content-start gap-4">
+
+                    <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="../../../index.html">
+                        <img src="../../../img/index/TBO-pic.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" id="logo-logo">
+                        <h2 class="p-0 m-0">
+                            Totul Breasla Orange
+                        </h2>
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                Enciclopedie
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Breasla Orange/" target="_blank">Breasla
+                                    Orange</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Fenomene/" target="_blank">Fenomene</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/SMPuri/" target="_blank">SMP-uri</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Persoane/" target="_blank">Persoane</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Podcast/" target="_blank">Podcast</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Ghertoaia/" target="_blank">Gherțoaia</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                Miscelaneu
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Arhiva/" target="_blank">Arhiva28</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#creditsModal">Credite</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="d-flex flex-column align-items-center container p-5 glass" id="header">
+                <div class="d-flex justify-content-center align-items-center text-center">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h1>2021</h1>
+                        <blockquote style="max-width: 20rem;"><strong>Atenție.</strong> Există o cantitate mare de elemente în pagină, s-ar putea să dureze până se încarcă toate.</blockquote>
+                        <p style="max-width: 400px;">Acest an conține 39 de elemente, dintre care 0 videoclipuri, 81 de poze și 14 videoclipuri de pe YouTube.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center container mt-4">
+                    <div class="row dropdown-center">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                            <i class="bi bi-camera-video-fill me-2" style="font-size: 1.5em;"></i>
+                            <span style="font-size: 25px; font-weight: bolder;">Videoclipuri</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#vid-feb-2021">Februarie</a></li>
+                        </ul>
+                    </div>
+                    <div class="row dropdown-center mt-3">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-images me-2"></i>
+                            <span style="font-size: 25px; font-weight: bolder;">Imagini</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#img-feb-2021">Februarie</a></li>
+                        </ul>
+                    </div>
+                    <div class="row dropdown-center mt-3">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-youtube me-2"></i>
+                            <span style="font-size: 25px; font-weight: bolder;">YouTube</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#ytb-mar-2021">Martie</a></li>
+                            <li><a class="dropdown-item" href="#ytb-apr-2021">Aprilie</a></li>
+                            <li><a class="dropdown-item" href="#ytb-sep-2021">Septembrie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center flex-column container-fluid text-center" id="lower">
+                <div class="d-flex flex-column align-items-center">
+                    <h2 style="max-width: 800px;">Folosind noua inovație tehnologică dâmbovițeană, te poți folosi de căutare pentru a găsi videoclipuri.</h2>
+                    <p>Începe prin a căuta un cuvânt cheie sau o dată specifică.</p>
+                    <!-- Search bar for videos -->
+                    <div class="mb-4" style="width:100%; max-width:600px;">
+                        <input type="text" id="videoSearch" class="form-control" placeholder="Cuvinte cheie sau dată...">
+                    </div>
+                    <!-- Filtered video results will appear here -->
+                    <div id="videoResults"></div>
+                </div>
+
+                <!-- SECȚIUNE VIDEOCLIPURI -->
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <h1 id="video" class="mb-3" style="font-size: 40px;">Videoclipuri</h1>
+
+                    <!-- VIDEOCLIPURI | Februarie, 2022 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="vid-feb-2022">
+                        <!-- <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Februarie, 2022</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="2022 Minecraft SMP 25 Demolari Demolări Floresti Florești Meme">
+                                <video src="../VIDEO/2022/2022_minecraft_smp_25_demolari_floresti_meme.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                                <p class="video-desc" style="font-size: 15px;">Înregistat la data de 26/02/2022</p>
+                            </div>          
+                        </div> -->
+                        <img src="../POZE/bleh.png" alt="" style="width: 400px;">
+                    </div>
+
+                </div>
+
+                <!-- SECȚIUNE IMAGINI -->
+                <div class="d-flex flex-column align-items-center">
+                    <h1 id="imagini" class="mb-2" style="font-size: 40px;">Imagini</h1>
+                    <p>Pozele se pot vizualiza în întregime făcând clic pe ele.</p>
+                    <!-- <blockquote>
+                        <strong>Atenție.</strong> Ordinea cronologică a pozelor poate să nu fie respectată în totalitate. Așadar, unele poze pot să nu aibă data exactă a capturii. Pozele datate cu "??" înseamnă că nu se cunoaște data exactă a capturii.
+                    </blockquote> -->
+
+                    <!-- IMAGINI | Februarie, 2021 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container mt-3" id="img-feb-2021">
+                        <div class="d-flex flex-column align-items-center">
+
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Februarie, 2021</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_01.34.36.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_01.34.36.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 01:34:36</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_01.36.55.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_01.36.55.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 01:36:55</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_01.56.01.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_01.56.01.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 01:56:01</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_02.01.45.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_02.01.45.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 02:01:45</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_02.07.36.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_02.07.36.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 02:07:36</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_02.34.15.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_02.34.15.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 02:34:15</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_02.52.00.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_02.52.00.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 02:52:00</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-01_17.53.07.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-01_17.53.07.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 01/02/2021 @ 17:53:07</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_00.21.51.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_00.21.51.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 00:21:51</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_00.23.42.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_00.23.42.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 00:23:42</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_01.14.30.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_01.14.30.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 01:14:30</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_01.37.27.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_01.37.27.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 01:37:27</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_01.38.45.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_01.38.45.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 01:38:45</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_01.39.18.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_01.39.18.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 01:39:18</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_02.04.05.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_02.04.05.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 02:04:05</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_02.04.37.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_02.04.37.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 02:04:37</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_11.25.09.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_11.25.09.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 11:25:09</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_11.56.33.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_11.56.33.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 11:56:33</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_12.13.31.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_12.13.31.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 12:13:31</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_14.35.38.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_14.35.38.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 14:35:38</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_16.22.27.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_16.22.27.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 16:22:27</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_16.47.20.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_16.47.20.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 16:47:20</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_16.56.05.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_16.56.05.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 16:56:05</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_16.56.45.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_16.56.45.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 16:56:45</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_16.58.41.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_16.58.41.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 16:58:41</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_17.15.34.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_17.15.34.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 17:15:34</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_20.14.21.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_20.14.21.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 20:14:21</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_21.02.39.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_21.02.39.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 21:02:39</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_21.56.51.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_21.56.51.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 21:56:51</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_22.54.18.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_22.54.18.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 22:54:18</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-02_23.00.05.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-02_23.00.05.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 02/02/2021 @ 23:00:05</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-03_15.50.23.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-03_15.50.23.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 03/02/2021 @ 15:50:23</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-03_20.16.54.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-03_20.16.54.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 03/02/2021 @ 20:16:54</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-03_20.20.44.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-03_20.20.44.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 03/02/2021 @ 20:20:44</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-03_21.09.45.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-03_21.09.45.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 03/02/2021 @ 21:09:45</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-03_21.09.46.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-03_21.09.46.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 03/02/2021 @ 21:09:46</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-04_05.04.11.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-04_05.04.11.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 04/02/2021 @ 05:04:11</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-04_14.43.39.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-04_14.43.39.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 04/02/2021 @ 14:43:39</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-04_05.04.11.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-04_05.04.11.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 04/02/2021 @ 05:04:11</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-04_23.47.21.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-04_23.47.21.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 04/02/2021 @ 23:47:21</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-04_23.51.34.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-04_23.51.34.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 04/02/2021 @ 23:51:34</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-05_02.06.26.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-05_02.06.26.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 05/02/2021 @ 02:06:26</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-05_02.06.30.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-05_02.06.30.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 05/02/2021 @ 02:06:30</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-05_13.38.15.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-05_13.38.15.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 05/02/2021 @ 13:38:15</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-13_20.07.28.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-13_20.07.28.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 13/02/2021 @ 20:07:28</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-05_02.06.30.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-05_02.06.30.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 05/02/2021 @ 02:06:30</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-13_20.18.13.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-13_20.18.13.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 13/02/2021 @ 20:18:13</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-13_23.39.09.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-13_23.39.09.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 13/02/2021 @ 23:39:09</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-14_14.05.57.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-14_14.05.57.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 14/02/2021 @ 14:05:57</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-14_14.06.09.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-14_14.06.09.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 14/02/2021 @ 14:06:09</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-14_14.06.20.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-14_14.06.20.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 14/02/2021 @ 14:06:20</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-14_14.10.46.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-14_14.10.46.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 14/02/2021 @ 14:10:46</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-14_14.39.29.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-14_14.39.29.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 14/02/2021 @ 14:39:29</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-14_14.56.57.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-14_14.56.57.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 14/02/2021 @ 14:56:57</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp februarie 2021">
+                                <a href="../POZE/2021/2021-02-14_19.52.58.png" target="_blank">
+                                    <img src="../POZE/2021/2021-02-14_19.52.58.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 14/02/2021 @ 19:52:58</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECȚIUNE YOUTUBE -->
+                <div class="d-flex flex-column align-items-center">
+                    <h1 id="youtube" class="mb-3" style="font-size: 40px;">YouTube</h1>
+
+                    <!-- YOUTUBE | Martie, 2021 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-mar-2021">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Martie, 2021</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft bedwars bedwards martie la perfectul simplu">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rKya3J-B4Ms?si=z6KJcoXrGUVWkLL5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 13/03/2021</p>
+                            </div>
+                            <div class="col" data-name="minecraft bedwars bedwards martie cam tryhardz azi chat">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XcKfzZxDg0A?si=Ai7Crnep5WWTP3A0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 14/03/2021</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft bedwars bedwards martie la perfectul simplu Ez 3 meciuri mecirui">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/CWVELUti_qE?si=n-GFYvmzjinrz-h6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 16/03/2021</p>
+                            </div>
+                            <div class="col" data-name="minecraft bedwars bedwards martie urcam in topuri bedwars hypixel">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/76VE1nNIqBA?si=ZVRWqrxCVaRN4wfd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 18/03/2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- YOUTUBE | Aprilie, 2021 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-apr-2021">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Aprilie, 2021</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft bedwars bedwards aprilie la perfectul simplu ploua cu fraieri in void">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_NQtvsJczcU?si=6tJ4DC5TRudsrU7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 10/04/2021</p>
+                            </div>
+                            <div class="col" data-name="minecraft bedwars bedwards aprilie la perfectul simplu lag productia gaming void fraieri">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/5BGYyOLjEZg?si=9zArY1ILsgv0I6tG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 26/04/2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- YOUTUBE | Septembrie, 2021 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-sep-2021">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Septembrie, 2021</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="geoguessr septembrie geo guess guessr deal">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/JUEjWMTTe9U?si=bjP9xAm2jkjc67eG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 19/09/2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="creditsModalLabel">Credite</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>
+                        Programator: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Artist User Interface (UI): 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Artist User Experience (UX): 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Quality Control: 28edxwrd, pol, david
+                    </span>
+                    <br>
+                    <span>
+                        Dependențe: Bootstrap v5.3
+                    </span>
+                    <br>
+                    <span>
+                        Artist Grafic: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Găzduire: GitHub Pages
+                    </span>
+                    <br>
+                    <span>
+                        Proofreader: Pol
+                    </span>
+                    <br>
+                    <span>
+                        Dependență Grafică: Adobe XD, Adobe Photoshop 2025, Figma
+                    </span>
+                    <br>
+                    <span>
+                        Dependență de Codare: Visual Studio Code
+                    </span>
+                    <br>
+                    <span>
+                        Font-uri: TT Firs Neue, Times New Roman
+                    </span>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Build videos array from all .col[data-name] that contain a <video>
+    const videos = Array.from(document.querySelectorAll('.col[data-name]')).filter(col => col.querySelector('video')).map(col => {
+        const video = col.querySelector('video');
+        const descP = col.querySelector('p.video-desc');
+        return {
+            type: 'video',
+            name: col.getAttribute('data-name'),
+            src: video ? video.getAttribute('src') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Build photos array from all .col[data-name] that contain an <img>
+    const photos = Array.from(document.querySelectorAll('.col[data-name]')).filter(col => col.querySelector('img')).map(col => {
+        const img = col.querySelector('img');
+        const link = col.querySelector('a');
+        const descP = col.querySelector('p.photo-desc');
+        return {
+            type: 'photo',
+            name: col.getAttribute('data-name'),
+            src: img ? img.getAttribute('src') : '',
+            href: link ? link.getAttribute('href') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Build youtubes array from all .col[data-name] that contain an <iframe>
+    const youtubes = Array.from(document.querySelectorAll('.col[data-name]')).filter(col => col.querySelector('iframe')).map(col => {
+        const iframe = col.querySelector('iframe');
+        const descP = col.querySelector('p.youtube-desc');
+        return {
+            type: 'youtube',
+            name: col.getAttribute('data-name'),
+            src: iframe ? iframe.getAttribute('src') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Render videos and photos to the page
+    function renderResults(filtered) {
+        const container = document.getElementById('videoResults');
+        if (!filtered.length) {
+            container.innerHTML = '<p>Niciun rezultat nu corespunde căutării.</p>';
+            return;
+        }
+        let html = '';
+        for (let i = 0; i < filtered.length; i += 2) {
+            html += '<div class="row mb-4">';
+            for (let j = 0; j < 2; j++) {
+                const item = filtered[i + j];
+                if (item) {
+                    if (item.type === 'video') {
+                        html += `<div class="col">
+                            <video src="${item.src}" class="object-fit-contain" controls width="600" height="317"></video>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    } else if (item.type === 'photo') {
+                        html += `<div class="col">
+                            <a href="${item.href}" target="_blank">
+                                <img src="${item.src}" alt="" width="600" height="317">
+                            </a>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    } else if (item.type === 'youtube') {
+                        html += `<div class="col">
+                            <iframe width="600" height="317" src="${item.src}" frameborder="0" allowfullscreen></iframe>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    }
+                }
+            }
+            html += '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    // Only show results when searching
+    document.addEventListener('DOMContentLoaded', function() {
+        const search = document.getElementById('videoSearch');
+        const results = document.getElementById('videoResults');
+        results.innerHTML = '';
+        search.addEventListener('input', function() {
+            const query = search.value.trim().toLowerCase();
+            if (!query) {
+                results.innerHTML = '';
+                return;
+            }
+            const keywords = query.split(/\s+/);
+            // Filter videos
+            const filteredVideos = videos.filter(item => {
+                const name = item.name.toLowerCase();
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Filter photos
+            const filteredPhotos = photos.filter(item => {
+                const name = item.name.toLowerCase();
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Filter YouTube videos
+            const filteredYoutubes = youtubes.filter(item => {
+                const name = item.name.toLowerCase();
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Combine and render all
+            renderResults([...filteredVideos, ...filteredPhotos, ...filteredYoutubes]);
+        });
+    });
+
+    // Set default volume for all videos
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('video').forEach(function(video) {
+            video.volume = 0.2; // Set to 20% volume for all videos
+        });
+    });
+    </script>
+
+    </div>
+</body>
+
+</html>

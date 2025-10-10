@@ -218,3 +218,25 @@ blockquote{
 blockquote p{
     font-size: 25px;
 }
+
+.sticky-toc {
+  position: fixed;
+  top: 100px;
+  right: 40px;
+  width: 260px;
+  z-index: 1000;
+  background: rgba(255,255,255,0.85);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 1rem;
+}
+
+#poze, #videoclipuri {
+  scroll-margin-top: 130px; /* Adjust to match your navbar/offset */
+  min-height: 200px; /* Ensure enough height */
+}
+
+#img-feb-2021 {
+  scroll-margin-top: 130px; /* Should match or slightly exceed your data-bs-offset */
+  min-height: 200px;
+}
