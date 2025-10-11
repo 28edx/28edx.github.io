@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../../img/icon.ico">
+    <title>Arhivă 2022</title>
+
+    <link rel="stylesheet" href="../../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/pages/arhiva.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/fonts2.css">
+    <link rel="stylesheet" href="../../../css/blockquote.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="../../../js/bootstrap.bundle.js"></script>
+</head>
+
+<style>
+    body {
+    background-image: linear-gradient(to bottom,
+            rgb(0 0 0 / 80%),
+            rgb(0 0 0 / 70%)), url("../POZE/fundal/2020.jpg") !important;
+
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    }
+</style>
+
+<body data-bs-spy="scroll" data-bs-target="#toc-scrollspy" data-bs-offset="120" tabindex="0">
+    <div class="d-flex justify-content-center">
+        <div class="body-content">
+
+            <!-- Bara de navigare laterală -->
+            <nav id="toc-scrollspy" class="nav nav-pills flex-column mb-4 sticky-toc d-none d-xl-flex">
+                <a class="nav-link" href="#video" style="font-weight: bold;">Videoclipuri</a>
+                <a class="nav-link ms-3 my-1" href="#vid-iul-2020">Iulie</a>
+                <a class="nav-link ms-3 my-1" href="#vid-nec-2020">Necunoscut</a>
+                <a class="nav-link" href="#imagini" style="font-weight: bold;">Imagini</a>
+                <a class="nav-link ms-3 my-1" href="#img-iul-2020">Iulie</a>
+                <a class="nav-link ms-3 my-1" href="#img-aug-2020">August</a>
+                <a class="nav-link ms-3 my-1" href="#img-nec-2020">Necunoscut</a>
+                <a class="nav-link" href="#youtube" style="font-weight: bold;">YouTube</a>
+                <a class="nav-link ms-3 my-1" href="#ytb-aug-2020">August</a>
+            </nav>
+
+            <!-- Navbar-ul -->
+            <nav class="navbar" data-bs-theme="dark">
+                <div class="d-flex justify-content-start gap-4">
+
+                    <a class="d-flex navbar-brand flex-row gap-2 align-items-center ms-5" href="../../../index.html">
+                        <img src="../../../img/index/TBO-pic.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" id="logo-logo">
+                        <h2 class="p-0 m-0">
+                            Totul Breasla Orange
+                        </h2>
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                Enciclopedie
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Breasla Orange/" target="_blank">Breasla
+                                    Orange</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Fenomene/" target="_blank">Fenomene</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/SMPuri/" target="_blank">SMP-uri</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Persoane/" target="_blank">Persoane</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Podcast/" target="_blank">Podcast</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Ghertoaia/" target="_blank">Gherțoaia</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                                Miscelaneu
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="../../../pagini/Arhiva/" target="_blank">Arhiva28</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#creditsModal">Credite</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="d-flex flex-column align-items-center container p-5 glass" id="header" style="margin-top: 6rem;">
+                <div class="d-flex justify-content-center align-items-center text-center">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <h1>2020</h1>
+                        <blockquote style="max-width: 20rem;">
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                            <strong>Atenție.</strong> Elementele din acest an nu dispun de suficiente informații precum zile/luni ș.a.m.d. Din cauza asta, vor fi categorizate pe perioade ale anului.
+                        </blockquote>
+                        <p style="max-width: 400px;">Acest an conține 90 de elemente, dintre care 0 videoclipuri, 81 de poze și 8 videoclipuri de pe YouTube.</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center container mt-4">
+                    <div class="row dropdown-center">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-camera-video-fill me-2" style="font-size: 1.5em;"></i>
+                            <span style="font-size: 25px; font-weight: bolder;">Videoclipuri</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#vid-iul-2020">Iulie</a></li>
+                            <li><a class="dropdown-item" href="#vid-nec-2020">Necunoscut</a></li>
+                        </ul>
+                    </div>
+                    <div class="row dropdown-center mt-3">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-images me-2"></i>
+                            <span style="font-size: 25px; font-weight: bolder;">Imagini</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#img-iul-2020">Iulie</a></li>
+                            <li><a class="dropdown-item" href="#img-aug-2020">August</a></li>
+                            <li><a class="dropdown-item" href="#img-nec-2020">Necunoscut</a></li>
+                        </ul>
+                    </div>
+                    <div class="row dropdown-center mt-3">
+                        <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-youtube me-2"></i>
+                            <span style="font-size: 25px; font-weight: bolder;">YouTube</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#ytb-aug-2020">August</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center flex-column container-fluid text-center" id="lower">
+                <div class="d-flex flex-column align-items-center">
+                    <h2 style="max-width: 800px;">Folosind noua inovație tehnologică dâmbovițeană, te poți folosi de căutare pentru a găsi videoclipuri.</h2>
+                    <p>Începe prin a căuta un cuvânt cheie sau o dată specifică.</p>
+                    <!-- Search bar for videos -->
+                    <div class="mb-4" style="width:100%; max-width:600px;">
+                        <input type="text" id="videoSearch" class="form-control" placeholder="Cuvinte cheie sau dată...">
+                    </div>
+                    <!-- Filtered video results will appear here -->
+                    <div id="videoResults"></div>
+                </div>
+
+                <!-- SECȚIUNE VIDEOCLIPURI -->
+                <div class="d-flex flex-column align-items-center">
+                    <h1 id="video" class="mb-3" style="font-size: 40px;">Videoclipuri</h1>
+
+                    <!-- VIDEOCLIPURI | Iulie, 2020 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="vid-iul-2020">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Iulie, 2020</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="CS:GO Dust2 David Flash Meme Perete">
+                                <video src="../VIDEO/2020/2020_csgo_dust2_david_flash_meme_perete_wall.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                                <p class="video-desc" style="font-size: 15px;">Video realizat în iulie 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VIDEOCLIPURI | Necunoscut, 2020 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="vid-nec-2020">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Necunoscut, 2020</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="dame da ne dane romeo fantastick racu memes">
+                                <video src="../VIDEO/2020/dame_dame_.mp4" class="object-fit-contain" controls width="600" height="317"> </video>
+                                <p class="video-desc" style="font-size: 15px;">Video realizat undeva în vara lui 2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SECȚIUNE IMAGINI -->
+                <div class="d-flex flex-column align-items-center">
+                    <h1 id="imagini" class="mb-2" style="font-size: 40px;">Imagini</h1>
+                    <p>Pozele se pot vizualiza în întregime făcând clic pe ele.</p>
+
+                    <!-- IMAGINI | Iulie, 2020 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container mt-3" id="img-iul-2020">
+                        <div class="d-flex flex-column align-items-center">
+
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Iulie, 2020</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp vară casă edi foc arde">
+                                <a href="../POZE/2020/2020_casă_edi_foc_ardsă_arde.png" target="_blank">
+                                    <img src="../POZE/2020/2020_casă_edi_foc_ardsă_arde.png" alt="" width="360" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată în iulie 2020</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp vară mina biblioteca">
+                                <a href="../POZE/2020/2020_smp.jpeg" target="_blank">
+                                    <img src="../POZE/2020/2020_smp.jpeg" alt="" width="200" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată în iulie 2020</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp vară mina biblioteca">
+                                <a href="../POZE/2020/2020_smp_2.jpeg" target="_blank">
+                                    <img src="../POZE/2020/2020_smp_2.jpeg" alt="" width="200" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată în iulie 2020</p>
+                            </div>
+                            <div class="col" data-name="david mirage csgo cs:go flash tunel conectr conector conectrrrrrrr">
+                                <a href="../POZE/2020/davidmirage.png" target="_blank">
+                                    <img src="../POZE/2020/davidmirage.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imaginea capturată în iulie 2020.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGINI | August, 2020 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container mt-3" id="img-aug-2020">
+                        <div class="d-flex flex-column align-items-center">
+
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">August, 2020</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp vară selfie">
+                                <a href="../POZE/2020/2020_smp_3.JPEG" target="_blank">
+                                    <img src="../POZE/2020/2020_smp_3.JPEG" alt="" width="200" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 04/08/2020 @ 04:34</p>
+                            </div>
+                            <div class="col" data-name="minecraft smp vară mina biblioteca">
+                                <a href="../POZE/2020/2020_smp.jpeg" target="_blank">
+                                    <img src="../POZE/2020/2020_smp.jpeg" alt="" width="200" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 11/08/2020 @ 05:11</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="minecraft smp vară mina biblioteca">
+                                <a href="../POZE/2020/2020_smp_2.jpeg" target="_blank">
+                                    <img src="../POZE/2020/2020_smp_2.jpeg" alt="" width="200" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine capturată la data de 11/08/2020 @ 21:21</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGINI | Necunoscut, 2020 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container mt-3" id="img-nec-2020">
+                        <div class="d-flex flex-column align-items-center">
+
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">Necunoscut, 2020</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="buba istoric google">
+                                <a href="../POZE/2020/istoric.png" target="_blank">
+                                    <img src="../POZE/2020/istoric.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine posibil capturată undeva prin vara lui 2020</p>
+                            </div>
+                            <div class="col" data-name="csfweed csf weed tiglu">
+                                <a href="../POZE/2020/unknown-10.png" target="_blank">
+                                    <img src="../POZE/2020/unknown-10.png" alt="" width="400" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imagine posibil de prin vară spre sfârșitul anului 2020</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="triviador">
+                                <a href="../POZE/2020/triviador.png" target="_blank">
+                                    <img src="../POZE/2020/triviador.png" alt="" width="600" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imaginea realizată undeva prin 2020, însă este posibil să fie chiar mai veche.</p>
+                            </div>
+                            <div class="col" data-name="buba editat photoshop meme" style="max-width: 1200px;">
+                                <a href="../POZE/2020/2020_buba_editat_photoshop_meme.png" target="_blank">
+                                    <img src="../POZE/2020/2020_buba_editat_photoshop_meme.png" alt="" height="317">
+                                </a>
+                                <p class="photo-desc mt-2" style="font-size: 15px;">Imaginea realizată undeva prin vara lui 2020.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECȚIUNE YOUTUBE -->
+                <div class="d-flex flex-column align-items-center">
+                    <h1 id="youtube" class="mb-3" style="font-size: 40px;">YouTube</h1>
+
+                    <!-- YOUTUBE | August, 2020 -->
+                    <div class="d-flex flex-column justify-content-center align-items-center container" id="ytb-aug-2020">
+                        <div class="d-flex flex-column align-items-center">
+                            <h2 class="mb-3" style="font-size: 25px;">August, 2020</h2>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col" data-name="lil peep pipeta racu memes" style="max-width: 560px;">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ePh-8iPePMI?si=slJ41F4fmL2oTtBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="youtube-desc mt-2" style="font-size: 15px;">Publicat la data de 10/08/2020 (În cazul în care apare o eroare, apasă pe „<strong>Vizionează pe YouTube</strong>” sau ce scrie acolo. În cazul în care nu apare videoul, fă clic dreapta pe gol și copiază link-ul.)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="creditsModalLabel">Credite</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>
+                        Programator: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Artist User Interface (UI): 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Artist User Experience (UX): 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Quality Control: 28edxwrd, pol, david
+                    </span>
+                    <br>
+                    <span>
+                        Dependențe: Bootstrap v5.3
+                    </span>
+                    <br>
+                    <span>
+                        Artist Grafic: 28edxwrd
+                    </span>
+                    <br>
+                    <span>
+                        Găzduire: GitHub Pages
+                    </span>
+                    <br>
+                    <span>
+                        Proofreader: Pol
+                    </span>
+                    <br>
+                    <span>
+                        Dependență Grafică: Adobe XD, Adobe Photoshop 2025, Figma
+                    </span>
+                    <br>
+                    <span>
+                        Dependență de Codare: Visual Studio Code
+                    </span>
+                    <br>
+                    <span>
+                        Font-uri: TT Firs Neue, Times New Roman
+                    </span>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Build videos array from all .col[data-name] that contain a <video>
+    const videos = Array.from(document.querySelectorAll('.col[data-name]')).filter(col => col.querySelector('video')).map(col => {
+        const video = col.querySelector('video');
+        const descP = col.querySelector('p.video-desc');
+        return {
+            type: 'video',
+            name: col.getAttribute('data-name'),
+            src: video ? video.getAttribute('src') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Build photos array from all .col[data-name] that contain an <img>
+    const photos = Array.from(document.querySelectorAll('.col[data-name]')).filter(col => col.querySelector('img')).map(col => {
+        const img = col.querySelector('img');
+        const link = col.querySelector('a');
+        const descP = col.querySelector('p.photo-desc');
+        return {
+            type: 'photo',
+            name: col.getAttribute('data-name'),
+            src: img ? img.getAttribute('src') : '',
+            href: link ? link.getAttribute('href') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Build youtubes array from all .col[data-name] that contain an <iframe>
+    const youtubes = Array.from(document.querySelectorAll('.col[data-name]')).filter(col => col.querySelector('iframe')).map(col => {
+        const iframe = col.querySelector('iframe');
+        const descP = col.querySelector('p.youtube-desc');
+        return {
+            type: 'youtube',
+            name: col.getAttribute('data-name'),
+            src: iframe ? iframe.getAttribute('src') : '',
+            desc: descP ? descP.textContent : ''
+        };
+    });
+
+    // Render videos and photos to the page
+    function renderResults(filtered) {
+        const container = document.getElementById('videoResults');
+        if (!filtered.length) {
+            container.innerHTML = '<p>Niciun rezultat nu corespunde căutării.</p>';
+            return;
+        }
+        let html = '';
+        for (let i = 0; i < filtered.length; i += 2) {
+            html += '<div class="row mb-4">';
+            for (let j = 0; j < 2; j++) {
+                const item = filtered[i + j];
+                if (item) {
+                    if (item.type === 'video') {
+                        html += `<div class="col">
+                            <video src="${item.src}" class="object-fit-contain" controls max-width="600" height="317"></video>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    } else if (item.type === 'photo') {
+                        html += `<div class="col">
+                            <a href="${item.href}" target="_blank">
+                                <img src="${item.src}" alt="" max-width="600" height="317">
+                            </a>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    } else if (item.type === 'youtube') {
+                        html += `<div class="col">
+                            <iframe max-width="600" height="317" src="${item.src}" frameborder="0" allowfullscreen></iframe>
+                            <p style="font-size: 15px;">${item.desc}</p>
+                        </div>`;
+                    }
+                }
+            }
+            html += '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    function normalizeText(str) {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    }
+
+    // Only show results when searching
+    document.addEventListener('DOMContentLoaded', function() {
+        const search = document.getElementById('videoSearch');
+        const results = document.getElementById('videoResults');
+        results.innerHTML = '';
+        search.addEventListener('input', function() {
+            const query = search.value.trim();
+            if (!query) {
+                results.innerHTML = '';
+                return;
+            }
+            const keywords = query.split(/\s+/).map(normalizeText);
+            // Filter videos
+            const filteredVideos = videos.filter(item => {
+                const name = normalizeText(item.name);
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Filter photos
+            const filteredPhotos = photos.filter(item => {
+                const name = normalizeText(item.name);
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Filter YouTube videos
+            const filteredYoutubes = youtubes.filter(item => {
+                const name = normalizeText(item.name);
+                let matchCount = 0;
+                for (const kw of keywords) {
+                    if (name.includes(kw)) matchCount++;
+                }
+                return matchCount >= 1;
+            });
+            // Combine and render all
+            renderResults([...filteredVideos, ...filteredPhotos, ...filteredYoutubes]);
+        });
+    });
+
+    // Set default volume for all videos
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('video').forEach(function(video) {
+            video.volume = 0.2; // Set to 20% volume for all videos
+        });
+    });
+    </script>
+
+    </div>
+</body>
+
+</html>

@@ -219,6 +219,31 @@ blockquote p{
     font-size: 25px;
 }
 
+
+
+/* Bară laterală */
+#toc-scrollspy {
+    background: rgba(30, 30, 40, 0.25);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+    padding: 1.5rem 1rem;
+    transition: background 0.3s;
+    color: white;
+}
+#toc-scrollspy .nav-link {
+    color: white !important;
+}
+#toc-scrollspy .nav-link.active {
+    color: #000000 !important;
+    background-color: rgba(228, 228, 228, 0.90);
+}
+#toc-scrollspy .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
 .sticky-toc {
   position: fixed;
   top: 100px;
